@@ -7,12 +7,13 @@ import { alternarSom, estaSomLigado, tocarSomAcerto, tocarSomErro } from '../app
 
 interface SessaoProps {
   onFinalizar: () => void
+  onSair: () => void
 }
 
 const FRASES_ACERTO = ['Muito bem! ✅', 'Isso aí! 🎯', 'Mandou bem! ⭐', 'Acertou! 👏']
 const FRASES_ERRO = ['Vamos tentar de novo! 🔁', 'Quase! Olha só... 🔍', 'Essa foi difícil, hein? 🤔']
 
-export function Sessao({ onFinalizar }: SessaoProps) {
+export function Sessao({ onFinalizar, onSair }: SessaoProps) {
   const fila = useSessaoStore((s) => s.fila)
   const posicao = useSessaoStore((s) => s.posicao)
   const feedback = useSessaoStore((s) => s.feedback)
@@ -40,6 +41,9 @@ export function Sessao({ onFinalizar }: SessaoProps) {
   return (
     <main className="tela-com-fade mx-auto flex max-w-md flex-col gap-4 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
       <div className="flex items-center gap-2">
+        <button type="button" aria-label="Sair da sessão" onClick={onSair} className="text-sm font-bold" style={{ color: cores.contorno }}>
+          ← Sair
+        </button>
         <div className="flex-1">
           <BarraProgresso progresso={posicao / fila.length} />
         </div>

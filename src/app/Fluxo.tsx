@@ -100,7 +100,7 @@ export function Fluxo({ aluno }: FluxoProps) {
 
   switch (etapa.tipo) {
     case 'sessao':
-      return <Sessao onFinalizar={finalizarSessao} />
+      return <Sessao onFinalizar={finalizarSessao} onSair={voltarParaHoje} />
     case 'fim':
       return <FimDeSessao onContinuar={voltarParaHoje} />
     case 'trilha':

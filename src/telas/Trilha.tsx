@@ -24,7 +24,12 @@ export function Trilha({ alunoId, versao, onVoltar }: TrilhaProps) {
       className="tela-com-fade mx-auto flex max-w-md flex-col gap-4 p-5"
       style={{ backgroundColor: cores.fundo, minHeight: '100vh', color: cores.contorno }}
     >
-      <h1 className="text-xl font-extrabold">Trilha</h1>
+      <div className="flex items-center gap-2">
+        <button type="button" aria-label="Voltar" onClick={onVoltar} className="text-lg font-bold">
+          ←
+        </button>
+        <h1 className="text-xl font-extrabold">Trilha</h1>
+      </div>
 
       {trilha.map((materia) => (
         <div key={materia.id} className="flex flex-col gap-2">
