@@ -59,5 +59,15 @@ Rode `npm run build` e `npm run test` antes de dizer que uma tarefa terminou.
 
 ## Estado atual
 
-Fase 0. Existe um protótipo em `legado/` (HTML de um arquivo só) e o conteúdo real de dois
-capítulos em `conteudo/`. O protótipo serve de referência de comportamento — não de código.
+Fases 0 e 1 completas. App roda como PWA instalável, offline, com motor Leitner, design
+system e as telas Hoje/Sessão/Fim de sessão. Contas via Supabase (link mágico), seleção de
+perfil da criança, RLS e fila de sincronização (push de respostas, pull de progresso, com a
+regra de conflito) testados de ponta a ponta contra o projeto real.
+
+Existe um protótipo em `legado/` (HTML de um arquivo só, referência de comportamento, não de
+código) e o conteúdo real de 3 capítulos (`conteudo/`), já também semeado nas tabelas do
+Supabase via `supabase/seed_conteudo.sql` — um adiantamento pontual da Fase 3, feito só pra
+desbloquear o teste da Fase 1 (a fila de sync tem foreign key pra `questoes`). A Fase 3 ainda
+precisa trazer os scripts de validação/importação de verdade e o versionamento de conteúdo.
+
+Próxima fase: Fase 2 (gamificação — XP, ofensiva, conquistas, trilha visual).
