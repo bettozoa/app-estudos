@@ -135,31 +135,41 @@ function TelaEscolha({ questao, feedback, onResponder }: EscolhaProps) {
 
 function TelaAssoc({ questao, feedback, onResponder }: EscolhaProps) {
   const pares = questao.pares ?? []
-  const opcoes = useMemo(() => embaralhar(pares.map((p) => p[1])), [questao.id])
-  const [selecionados, setSelecionados] = useState<string[]>(() => pares.map(() => ''))
+  // Cada opção carrega o índice do par de onde veio o texto — precisa ser por posição, não
+  // por texto: em questões que classificam em categorias (ex.: "Planejada"/"Espontânea"), o
+  // mesmo texto aparece mais de uma vez, e as duas ocorrências têm que poder ser escolhidas
+  // em campos diferentes.
+  const opcoes = useMemo(() => embaralhar(pares.map((p, indice) => ({ id: indice, texto: p[1] }))), [questao.id])
+  const [selecionados, setSelecionados] = useState<(number | null)[]>(() => pares.map(() => null))
 
-  useEffect(() => setSelecionados(pares.map(() => '')), [questao.id])
+  useEffect(() => setSelecionados(pares.map(() => null)), [questao.id])
+
+  function textoEscolhido(i: number): string | null {
+    const id = selecionados[i]
+    return id === null ? null : (opcoes.find((o) => o.id === id)?.texto ?? null)
+  }
 
   function conferir() {
-    const acertou = pares.every((par, i) => selecionados[i] === par[1])
+    const acertou = pares.every((par, i) => textoEscolhido(i) === par[1])
     onResponder(acertou)
   }
 
   return (
     <div className="flex flex-col gap-3">
       {pares.map((par, i) => {
-        const usadaEmOutroCampo = (op: string) => selecionados.some((s, j) => j !== i && s === op)
-        const estadoLinha = feedback ? (selecionados[i] === par[1] ? 'certa' : 'errada') : 'neutro'
+        const idUsadoEmOutroCampo = (id: number) => selecionados.some((s, j) => j !== i && s === id)
+        const acertouLinha = textoEscolhido(i) === par[1]
+        const estadoLinha = feedback ? (acertouLinha ? 'certa' : 'errada') : 'neutro'
         const corLinha = { neutro: cores.contorno, certa: cores.verde, errada: cores.laranja }[estadoLinha]
         return (
           <div key={i} className="flex flex-col gap-1">
             <span className="text-base font-bold break-words">{par[0]}</span>
             <select
               disabled={!!feedback}
-              value={selecionados[i]}
+              value={selecionados[i] ?? ''}
               onChange={(e) => {
                 const copia = [...selecionados]
-                copia[i] = e.target.value
+                copia[i] = e.target.value === '' ? null : Number(e.target.value)
                 setSelecionados(copia)
               }}
               className="w-full min-w-0 rounded-lg p-3 text-base"
@@ -167,9 +177,9 @@ function TelaAssoc({ questao, feedback, onResponder }: EscolhaProps) {
             >
               <option value="">escolha...</option>
               {opcoes.map((op) => (
-                <option key={op} value={op} disabled={usadaEmOutroCampo(op)}>
-                  {op}
-                  {usadaEmOutroCampo(op) ? ' (já usada)' : ''}
+                <option key={op.id} value={op.id} disabled={idUsadoEmOutroCampo(op.id)}>
+                  {op.texto}
+                  {idUsadoEmOutroCampo(op.id) ? ' (já usada)' : ''}
                 </option>
               ))}
             </select>
@@ -178,15 +188,15 @@ function TelaAssoc({ questao, feedback, onResponder }: EscolhaProps) {
       })}
 
       {!feedback && (
-        <BotaoPrincipal disabled={selecionados.some((s) => !s)} onClick={conferir}>
+        <BotaoPrincipal disabled={selecionados.some((s) => s === null)} onClick={conferir}>
           Conferir
         </BotaoPrincipal>
       )}
 
-      {feedback && !feedback.acertou && pares.some((par, i) => selecionados[i] !== par[1]) && (
+      {feedback && !feedback.acertou && pares.some((par, i) => textoEscolhido(i) !== par[1]) && (
         <ul className="list-disc pl-5 text-sm">
           {pares.map((par, i) =>
-            selecionados[i] !== par[1] ? (
+            textoEscolhido(i) !== par[1] ? (
               <li key={i}>
                 {par[0]} ➜ {par[1]}
               </li>
