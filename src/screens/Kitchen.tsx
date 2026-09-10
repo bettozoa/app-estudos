@@ -4,6 +4,7 @@ import {
   BotaoPrincipal,
   Card,
   CartaoAlternativa,
+  Confete,
   cores,
   Mascote,
   materiaCores,
@@ -15,6 +16,7 @@ const ESTADOS: EstadoMascote[] = ['acenando', 'comemorando', 'pensando', 'encora
 
 export function Kitchen() {
   const [alternativaEscolhida, setAlternativaEscolhida] = useState<'neutro' | 'certa' | 'errada'>('neutro')
+  const [confeteKey, setConfeteKey] = useState<number | null>(null)
 
   return (
     <main className="mx-auto flex max-w-2xl flex-col gap-8 p-6" style={{ backgroundColor: cores.fundo, color: cores.contorno }}>
@@ -70,6 +72,14 @@ export function Kitchen() {
           <Pilula cor={cores.amarelo}>⭐ 120 XP</Pilula>
           <Pilula>🪙 34</Pilula>
         </div>
+      </section>
+
+      <section className="flex flex-col gap-3">
+        <h2 className="text-lg font-bold">Confete (respeita prefers-reduced-motion)</h2>
+        {confeteKey !== null && <Confete key={confeteKey} />}
+        <BotaoPrincipal variante="secundaria" onClick={() => setConfeteKey((k) => (k ?? 0) + 1)}>
+          Disparar confete
+        </BotaoPrincipal>
       </section>
 
       <section className="flex flex-col gap-3">

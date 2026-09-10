@@ -84,7 +84,53 @@ export async function puxarProgresso(alunoId: string): Promise<number> {
   return data.length
 }
 
+// Stats/conquistas (Fase 2) são um retrato atual, não um log — por isso não passam pela
+// filaSync: cada chamada simplesmente reenvia o que há de mais recente localmente.
+export async function sincronizarStats(alunoId: string): Promise<void> {
+  const stats = await db.alunoStats.get(alunoId)
+  if (!stats || stats.sincronizado) return
+
+  const { error } = await supabase.from('aluno_stats').upsert(
+    {
+      aluno_id: alunoId,
+      xp: stats.xp,
+      nivel: stats.nivel,
+      moedas: stats.moedas,
+      ofensiva: stats.ofensiva,
+      melhor_ofensiva: stats.melhorOfensiva,
+      escudos: stats.escudos,
+      ultimo_dia_ativo: stats.ultimoDiaAtivo,
+      revisoes_em_dia_total: stats.revisoesEmDiaTotal,
+    },
+    { onConflict: 'aluno_id' },
+  )
+  if (error) {
+    console.error('[sync] falhou ao enviar stats, tenta de novo no próximo gatilho:', error)
+    return
+  }
+  await db.alunoStats.update(alunoId, { sincronizado: true })
+}
+
+export async function sincronizarConquistas(alunoId: string): Promise<void> {
+  const pendentes = await db.alunoConquistas.where({ alunoId, sincronizado: false }).toArray()
+  for (const conquista of pendentes) {
+    const { error } = await supabase
+      .from('aluno_conquistas')
+      .upsert(
+        { aluno_id: alunoId, conquista_codigo: conquista.codigo, obtida_em: conquista.obtidaEm },
+        { onConflict: 'aluno_id,conquista_codigo', ignoreDuplicates: true },
+      )
+    if (error) {
+      console.error('[sync] falhou ao enviar conquista, tenta de novo no próximo gatilho:', error)
+      continue
+    }
+    await db.alunoConquistas.update([alunoId, conquista.codigo], { sincronizado: true })
+  }
+}
+
 export async function sincronizar(alunoId: string): Promise<void> {
   await processarFilaSync(alunoId)
   await puxarProgresso(alunoId)
+  await sincronizarStats(alunoId)
+  await sincronizarConquistas(alunoId)
 }

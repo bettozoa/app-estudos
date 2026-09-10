@@ -39,6 +39,21 @@ export interface CapituloProgresso {
   proximoCapituloId: string | null
 }
 
+// ---------- gamificação (seção 7 do PLANO_APP_ESTUDOS.md) ----------
+
+export type SituacaoResposta = 'primeiraVez' | 'revisao' | 'aposErro' | 'erro'
+
+export interface EstatisticasAluno {
+  xp: number
+  nivel: number
+  moedas: number
+  ofensiva: number
+  melhorOfensiva: number
+  escudos: number
+  ultimoDiaAtivo: string | null
+  revisoesEmDiaTotal: number
+}
+
 export type AcaoDoDia =
   | { tipo: 'prova'; rotulo: string; alvo: { provaId: string; materiaId: string; capitulos: string[] } }
   | { tipo: 'revisaoProva'; rotulo: string; alvo: { provaId: string; materiaId: string; capitulos: string[] } }

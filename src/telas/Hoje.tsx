@@ -1,14 +1,22 @@
+import { calcularNivel } from '../domain/nivel'
 import { decidirAcaoDoDia } from '../domain/decidirAcaoDoDia'
-import { BarraProgresso, BotaoPrincipal, Card, cores, Mascote } from '../design'
+import { BarraProgresso, BotaoPrincipal, Card, cores, Mascote, Pilula } from '../design'
+import { useStats } from '../app/useStats'
 import type { ResumoMateria } from '../app/resumoMateria'
 
 interface HojeProps {
+  alunoId: string
+  versao: number
   resumos: ResumoMateria[]
   hoje: Date
   onEstudar: (materiaId: string) => void
+  onVerTrilha: () => void
 }
 
-export function Hoje({ resumos, hoje, onEstudar }: HojeProps) {
+export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha }: HojeProps) {
+  const stats = useStats(alunoId, versao)
+  const info = stats ? calcularNivel(stats.xp) : null
+
   return (
     <main className="mx-auto flex max-w-md flex-col gap-5 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
       <div className="flex flex-col items-center gap-2 pt-4">
@@ -16,11 +24,23 @@ export function Hoje({ resumos, hoje, onEstudar }: HojeProps) {
         <p className="text-xl font-extrabold" style={{ color: cores.contorno }}>
           Vamos estudar?
         </p>
+
+        {stats && info && (
+          <div className="flex flex-wrap justify-center gap-2">
+            <Pilula cor={cores.amarelo}>⭐ Nível {info.nivel}</Pilula>
+            <Pilula cor={cores.laranja}>🔥 {stats.ofensiva} dia(s)</Pilula>
+            <Pilula>🪙 {stats.moedas}</Pilula>
+          </div>
+        )}
       </div>
 
       {resumos.map((resumo) => (
         <CartaoMateria key={resumo.materia.id} resumo={resumo} hoje={hoje} onEstudar={() => onEstudar(resumo.materia.id)} />
       ))}
+
+      <BotaoPrincipal variante="secundaria" onClick={onVerTrilha}>
+        Ver trilha
+      </BotaoPrincipal>
     </main>
   )
 }
