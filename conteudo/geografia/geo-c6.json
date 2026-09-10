@@ -1,0 +1,965 @@
+{
+  "capitulo": {
+    "id": "geo.c6",
+    "materia_id": "geografia",
+    "titulo": "Unidade 3 — Recursos naturais e consumo",
+    "livro": "L3",
+    "paginas": "84-97",
+    "ordem": 1,
+    "publicado": true
+  },
+  "modulos": [
+    {
+      "id": "geo.c6.m1",
+      "titulo": "Os recursos naturais",
+      "ordem": 1
+    },
+    {
+      "id": "geo.c6.m2",
+      "titulo": "As matérias-primas",
+      "ordem": 2
+    },
+    {
+      "id": "geo.c6.m3",
+      "titulo": "Da matéria-prima ao produto",
+      "ordem": 3
+    },
+    {
+      "id": "geo.c6.m4",
+      "titulo": "Consumo e geração de lixo",
+      "ordem": 4
+    },
+    {
+      "id": "geo.c6.m5",
+      "titulo": "Os caminhos e destinos do lixo",
+      "ordem": 5
+    }
+  ],
+  "questoes": [
+    {
+      "id": "geo.c6.m1.q01",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "O que são recursos naturais?",
+      "apoio": null,
+      "alternativas": [
+        "São os elementos existentes na natureza, usados para fabricar produtos e importantes para a sobrevivência dos seres vivos.",
+        "São os produtos que compramos nas lojas.",
+        "São os materiais que descartamos no lixo.",
+        "São as máquinas usadas nas indústrias."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As roupas, os aparelhos eletrônicos e outros objetos são produzidos a partir da exploração dos recursos naturais, ou seja, dos elementos existentes na natureza.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q02",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Quais são exemplos de recursos naturais citados no livro?",
+      "apoio": null,
+      "alternativas": [
+        "A luz e o calor do Sol, o ar, a água, o solo e as plantas.",
+        "O plástico, o vidro e o papel.",
+        "As indústrias, os caminhões e as máquinas.",
+        "O suco, a camiseta e a cadeira."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Esses recursos servem para fabricar produtos e também são importantes para a sobrevivência dos seres vivos no planeta Terra.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q03",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Para que serve a luz do Sol?",
+      "apoio": null,
+      "alternativas": [
+        "É fundamental para o desenvolvimento das plantas, que são usadas na produção de alimentos e madeira.",
+        "Serve apenas para as pessoas respirarem.",
+        "Serve para matar a sede das pessoas.",
+        "Serve para produzir o aço e o vidro."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A luz do Sol faz as plantas se desenvolverem. Já o calor do Sol é responsável por aquecer nosso planeta.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q04",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Por que o ar é um recurso natural importante?",
+      "apoio": null,
+      "alternativas": [
+        "Porque as pessoas e vários animais precisam dele para respirar e, quando se movimenta, forma os ventos, que podem gerar energia elétrica.",
+        "Porque dele são extraídos o arroz e o feijão.",
+        "Porque ele é usado para fabricar vidro.",
+        "Porque ele serve para regar as plantas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O ar serve para respirar e, em movimento, forma os ventos, usados para gerar energia elétrica.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q05",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "O que é plantado e o que é extraído do solo?",
+      "apoio": null,
+      "alternativas": [
+        "Nele são plantados alimentos como arroz, feijão, legumes e frutas; dele também são extraídos materiais usados na produção do aço e do vidro.",
+        "Dele só é extraído o petróleo.",
+        "Nele só é plantada a melancia.",
+        "Dele são extraídos os ventos e a luz."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O solo serve para o cultivo de alimentos e também fornece materiais para produzir aço e vidro.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q06",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Segundo o livro, para que serve a água?",
+      "apoio": null,
+      "alternativas": [
+        "Para matar a sede, para fazer vários produtos, como os sucos, e também para produzir energia elétrica.",
+        "Somente para matar a sede das pessoas.",
+        "Somente para regar as plantas.",
+        "Para produzir o vidro e o aço."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Assim como o vento, o calor e a luz do Sol, a água pode ser usada para produzir energia elétrica.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q07",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Que materiais são extraídos das plantas?",
+      "apoio": null,
+      "alternativas": [
+        "Materiais relacionados à produção de alimentos, de móveis e de borracha.",
+        "Materiais para produzir o aço.",
+        "Materiais para produzir o vidro.",
+        "Somente a água dos sucos."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Das plantas são extraídos diversos materiais, ligados à produção de alimentos, móveis e borracha.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q08",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "assoc",
+      "enunciado": "Relacione cada recurso natural à sua função:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Sol",
+          "Sua luz e seu calor podem ser usados para produzir energia elétrica"
+        ],
+        [
+          "Ar",
+          "É importante para que as pessoas possam respirar"
+        ],
+        [
+          "Água",
+          "Serve para beber e para fazer produtos"
+        ],
+        [
+          "Solo",
+          "É usado no cultivo de diferentes tipos de plantas"
+        ]
+      ],
+      "explicacao": "Cuidado para não trocar Sol e solo! O Sol dá luz e calor; o solo é a terra onde plantamos.",
+      "fonte": "L3 p.91, atividade 1",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q09",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "vf",
+      "enunciado": "O solo é o recurso natural que serve para as pessoas respirarem.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Quem serve para respirar é o ar. O solo é usado no cultivo de plantas.",
+      "fonte": "L3 p.88 e p.91",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q10",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "mc",
+      "enunciado": "O Garfinho, do filme Toy Story 4, foi feito com um garfo descartável, madeira e tecido. O que esses itens têm em comum?",
+      "apoio": null,
+      "alternativas": [
+        "Todos foram produzidos a partir de recursos disponíveis na natureza.",
+        "Todos são feitos de plástico.",
+        "Todos foram comprados em uma loja.",
+        "Nenhum deles pode ser reutilizado."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Bonnie criou o Garfinho a partir de objetos que iriam para o lixo — e todos eles vieram de recursos da natureza.",
+      "fonte": "L3 p.84 e p.85",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m1.q11",
+      "modulo_id": "geo.c6.m1",
+      "tipo": "vf",
+      "enunciado": "Só a água pode ser usada para produzir energia elétrica.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! O vento, o calor e a luz do Sol também podem ser usados para produzir energia elétrica.",
+      "fonte": "L3 p.88",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q01",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "O que é uma matéria-prima?",
+      "apoio": null,
+      "alternativas": [
+        "É o recurso natural utilizado na fabricação de um produto.",
+        "É o produto pronto que compramos.",
+        "É o lixo que sobra da fabricação.",
+        "É a máquina usada na indústria."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Quando um recurso natural é utilizado na fabricação de um produto, ele recebe o nome de matéria-prima.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q02",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "vf",
+      "enunciado": "Cada produto só pode ser feito com uma única matéria-prima.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Na produção de um objeto ou de uma máquina, mais de uma matéria-prima pode ser usada — como acontece no carro.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q03",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Do que é produzido o plástico usado em várias partes dos carros?",
+      "apoio": null,
+      "alternativas": [
+        "Da mistura de petróleo com outros materiais.",
+        "Da areia levada a fornos quentes.",
+        "Do látex extraído da seringueira.",
+        "Do minério de ferro retirado das rochas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O plástico é produzido misturando petróleo e outros materiais.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q04",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Qual é o principal material utilizado para produzir o vidro das janelas dos carros?",
+      "apoio": null,
+      "alternativas": [
+        "A areia, um recurso natural.",
+        "O algodão.",
+        "O ferro.",
+        "A borracha natural."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Para que os vidros sejam fabricados, os materiais usados são misturados e levados a fornos com altas temperaturas.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q05",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Por que o algodão é considerado um recurso natural?",
+      "apoio": null,
+      "alternativas": [
+        "Por ser uma planta. Com ele são feitos tecidos e também as roupas que vestimos.",
+        "Por ser feito nas indústrias.",
+        "Por ser retirado das rochas.",
+        "Por ser extraído do fundo do mar."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O algodão é uma planta. Em muitos carros, os bancos são cobertos de tecido feito de algodão.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q06",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Onde o petróleo é encontrado e para que mais ele serve?",
+      "apoio": null,
+      "alternativas": [
+        "É encontrado no fundo da terra ou do mar e também é usado na fabricação de combustíveis para os automóveis.",
+        "É encontrado nas rochas e serve para fazer vidro.",
+        "É extraído das árvores e serve para fazer pneus.",
+        "É retirado do solo e serve para fazer alimentos."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O petróleo é um recurso natural encontrado no fundo da terra ou do mar. Além do plástico, dele são feitos combustíveis.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q07",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "De onde vem o minério de ferro, usado na produção do aço da carroceria dos carros?",
+      "apoio": null,
+      "alternativas": [
+        "É retirado das rochas que existem na natureza.",
+        "É produzido dentro das indústrias, sem usar a natureza.",
+        "É extraído da seringueira.",
+        "É feito a partir da areia."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O minério de ferro é um recurso natural retirado das rochas. O aço é feito com base na mistura de elementos naturais, como o ferro.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q08",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Os pneus são feitos de vários materiais. Um deles é a borracha natural, que é feita de:",
+      "apoio": null,
+      "alternativas": [
+        "látex, um material extraído de uma árvore chamada seringueira.",
+        "petróleo retirado do fundo do mar.",
+        "areia levada a fornos com altas temperaturas.",
+        "algodão colhido nas plantações."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A borracha natural vem do látex, extraído da seringueira.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q09",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "assoc",
+      "enunciado": "Registre qual matéria-prima é utilizada na fabricação de cada produto:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Camiseta",
+          "Algodão"
+        ],
+        [
+          "Geleia",
+          "Morango"
+        ],
+        [
+          "Pães",
+          "Trigo"
+        ],
+        [
+          "Cadeira",
+          "Madeira"
+        ]
+      ],
+      "explicacao": "Cada produto vem de uma matéria-prima que existe na natureza.",
+      "fonte": "L3 p.91, atividade 2",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m2.q10",
+      "modulo_id": "geo.c6.m2",
+      "tipo": "assoc",
+      "enunciado": "Ligue cada parte do carro à sua matéria-prima:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Janelas",
+          "Vidro, feito de areia"
+        ],
+        [
+          "Pneus",
+          "Borracha natural, do látex"
+        ],
+        [
+          "Carroceria",
+          "Aço, feito com ferro"
+        ],
+        [
+          "Bancos",
+          "Tecido de algodão"
+        ]
+      ],
+      "explicacao": "Um único carro usa várias matérias-primas diferentes, todas vindas da natureza.",
+      "fonte": "L3 p.89",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q01",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "O que acontece com as matérias-primas antes de se tornarem os produtos que consumimos?",
+      "apoio": null,
+      "alternativas": [
+        "Elas passam por várias transformações.",
+        "Elas vão direto para as lojas, sem mudar.",
+        "Elas viram lixo.",
+        "Elas voltam para a natureza."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As matérias-primas podem passar por várias transformações antes de se tornarem os produtos consumidos pelas pessoas.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q02",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "No exemplo do livro, qual é a matéria-prima e qual é o produto?",
+      "apoio": null,
+      "alternativas": [
+        "A matéria-prima é a laranja e o produto é o suco.",
+        "A matéria-prima é o suco e o produto é a laranja.",
+        "A matéria-prima é a máquina e o produto é a fruta.",
+        "A matéria-prima é o copo e o produto é a laranja."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Tanto no formato artesanal quanto no industrial, a matéria-prima é a laranja e o produto é o suco.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q03",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Quando acontece a produção artesanal?",
+      "apoio": null,
+      "alternativas": [
+        "Quando a transformação da matéria-prima é feita manualmente ou com ferramentas que dependem do trabalho manual.",
+        "Quando a transformação é feita por grandes máquinas nas indústrias.",
+        "Quando o produto é vendido em muitas lojas.",
+        "Quando a matéria-prima vem de outro país."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na produção artesanal o trabalho é manual, feito com as mãos ou com ferramentas simples.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q04",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Na produção artesanal, quem costuma cuidar das etapas do processo?",
+      "apoio": null,
+      "alternativas": [
+        "A mesma pessoa pode ficar responsável por todas as etapas.",
+        "Cada etapa fica com um grupo diferente de máquinas.",
+        "Ninguém participa: tudo é automático.",
+        "Só os donos das indústrias."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na forma artesanal, a mesma pessoa pode fazer todas as etapas e costumam ser produzidas pequenas quantidades do mesmo item.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q05",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Como funciona a produção industrial?",
+      "apoio": null,
+      "alternativas": [
+        "A transformação é feita nas indústrias, com a produção dividida em várias etapas, usando máquinas e tecnologias.",
+        "A transformação é feita à mão, em casa.",
+        "Cada produto é feito por uma pessoa só, do começo ao fim.",
+        "São produzidas pequenas quantidades de cada item."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na produção industrial, cada etapa fica sob a responsabilidade de um grupo de pessoas e/ou máquinas.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q06",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Qual é a vantagem da produção industrial em relação à artesanal?",
+      "apoio": null,
+      "alternativas": [
+        "Ela consegue fabricar vários itens por vez, de maneira mais rápida.",
+        "Ela usa menos máquinas.",
+        "Ela produz quantidades menores.",
+        "Ela não precisa de matéria-prima."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A produção industrial fabrica vários itens de uma só vez e mais rapidamente que a artesanal.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q07",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "vf",
+      "enunciado": "Um suco feito em casa, com as laranjas espremidas à mão, é um exemplo de produção artesanal.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Verdadeiro! Quando a transformação é manual, a produção é artesanal.",
+      "fonte": "L3 p.90",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q08",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "O que se pode dizer sobre a forma como Bruno consome tênis?",
+      "apoio": "Bruno adora usar tênis novos. Todos os meses ele vai à loja comprar novos modelos para não perder nenhum lançamento. Ao todo, já possui trinta pares de tênis e costuma usar apenas o modelo que comprou por último, deixando os outros guardados no armário.",
+      "alternativas": [
+        "Ele consome muito mais do que precisa, comprando produtos que nem chega a usar.",
+        "Ele consome de forma consciente, porque guarda tudo com cuidado.",
+        "Ele ajuda a natureza, porque compra sempre novidades.",
+        "Ele não gera nenhum impacto na natureza."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Consumir mais produtos do que o necessário faz com que mais recursos naturais sejam usados para fabricá-los.",
+      "fonte": "L3 p.92, atividade 4a",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m3.q09",
+      "modulo_id": "geo.c6.m3",
+      "tipo": "mc",
+      "enunciado": "O que Bruno poderia fazer com os tênis que não usa mais, ajudando a preservar a natureza?",
+      "apoio": null,
+      "alternativas": [
+        "Doar ou passar adiante os pares que estão guardados, para que outras pessoas os usem.",
+        "Jogar todos no lixo comum.",
+        "Comprar mais pares para completar a coleção.",
+        "Guardar todos para sempre no armário."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Reaproveitar o que já existe evita a fabricação de novos produtos e, assim, economiza recursos naturais.",
+      "fonte": "L3 p.92, atividade 4b",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q01",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "O que costumamos chamar de lixo?",
+      "apoio": null,
+      "alternativas": [
+        "Os materiais que geralmente descartamos, como restos de comida, cascas de alimentos e folhas de papel.",
+        "Apenas as embalagens de plástico.",
+        "Somente aquilo que vai para o aterro sanitário.",
+        "Os produtos novos que compramos."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Fazemos o descarte de diversos materiais diariamente: restos de comida, cascas, papéis e pedaços de lápis, por exemplo.",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q02",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "vf",
+      "enunciado": "O único destino possível para os materiais que descartamos é a lixeira.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Muitos materiais podem ser reaproveitados ou reutilizados antes de virarem lixo.",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q03",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "O que pode ser feito com as cascas de frutas em vez de jogá-las fora?",
+      "apoio": null,
+      "alternativas": [
+        "Elas podem ser reaproveitadas em receitas, como geleias, tortas, doces e bolos.",
+        "Elas só podem ir para o lixão.",
+        "Elas podem ser transformadas em vidro.",
+        "Elas devem ser guardadas no armário."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As cascas de frutas podem virar receitas deliciosas em vez de virar lixo.",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q04",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "O que se pode fazer com embalagens plásticas e de vidro vazias?",
+      "apoio": null,
+      "alternativas": [
+        "Depois de higienizadas, elas podem ser reaproveitadas para armazenar outros produtos e elementos.",
+        "Elas devem sempre ir para o lixão.",
+        "Elas não podem ser reaproveitadas de jeito nenhum.",
+        "Elas devem ser queimadas em casa."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Depois de bem lavadas, as embalagens podem guardar outras coisas — até plantas!",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q05",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "As sacolas plásticas usadas no transporte de produtos:",
+      "apoio": null,
+      "alternativas": [
+        "podem ser reutilizadas em diversas outras situações.",
+        "só servem uma única vez.",
+        "são recursos naturais.",
+        "devem ser descartadas em um lixão."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Reutilizar sacolas é uma forma simples de gerar menos lixo.",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q06",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "O que é importante pensar antes de jogar qualquer material na lixeira?",
+      "apoio": null,
+      "alternativas": [
+        "Se aquilo realmente precisa virar lixo ou se pode ser reutilizado em outro momento.",
+        "Se a lixeira está cheia.",
+        "Se o material é bonito.",
+        "Se alguém está olhando."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Existem diversas maneiras de usar os materiais que sobram das atividades do dia a dia.",
+      "fonte": "L3 p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m4.q07",
+      "modulo_id": "geo.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Por que consumir menos produtos ajuda a natureza?",
+      "apoio": null,
+      "alternativas": [
+        "Porque assim menos recursos naturais precisam ser explorados e menos lixo é gerado.",
+        "Porque as indústrias produzem mais rápido.",
+        "Porque os produtos ficam mais caros.",
+        "Porque o lixo desaparece sozinho."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Todo produto é feito a partir de recursos naturais. Consumindo com consciência, usamos menos a natureza e geramos menos lixo.",
+      "fonte": "L3 p.88, p.92 e p.93",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q01",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Como começa o caminho do lixo na maior parte dos municípios brasileiros?",
+      "apoio": null,
+      "alternativas": [
+        "Pela coleta: caminhões passam nas ruas e recolhem os lixos de casas, restaurantes, escolas etc.",
+        "Pela reciclagem nas fábricas.",
+        "Pelo aterro sanitário.",
+        "Pela cooperativa de catadores."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Tudo começa na coleta do lixo. Muitas vezes o lixo coletado é todo misturado no mesmo caminhão.",
+      "fonte": "L3 p.94",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q02",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "O que é a coleta seletiva de lixo?",
+      "apoio": null,
+      "alternativas": [
+        "Um serviço em que um caminhão passa em um dia específico da semana só para recolher os materiais recicláveis.",
+        "Um serviço que recolhe todo o lixo misturado.",
+        "Um lugar a céu aberto onde o lixo é jogado.",
+        "Uma fábrica que produz novos objetos."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Para a coleta seletiva funcionar, as pessoas devem separar os recicláveis dos restos de alimentos e de outros tipos de lixo.",
+      "fonte": "L3 p.94",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q03",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Quais materiais são recolhidos pela coleta seletiva?",
+      "apoio": null,
+      "alternativas": [
+        "Papel, plástico, metal e vidro.",
+        "Restos de comida e cascas de frutas.",
+        "Somente papel e papelão.",
+        "Terra, areia e pedras."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Esses são os materiais recicláveis, que podem ser utilizados para produzir novos objetos.",
+      "fonte": "L3 p.94",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q04",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "O que significa dizer que um material é reciclável?",
+      "apoio": null,
+      "alternativas": [
+        "Que ele pode ser utilizado para produzir novos objetos.",
+        "Que ele não pode mais ser usado.",
+        "Que ele precisa ir para o lixão.",
+        "Que ele é um recurso natural."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Reciclável: que pode ser utilizado para produzir novos objetos.",
+      "fonte": "L3 p.94",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q05",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "O que é um lixão?",
+      "apoio": null,
+      "alternativas": [
+        "Um lugar proibido por lei, onde o lixo é descartado a céu aberto, ficando exposto.",
+        "O lugar correto para descartar o lixo.",
+        "Uma fábrica de reciclagem.",
+        "Um caminhão que faz a coleta seletiva."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nos lixões, os materiais são descartados a céu aberto. Por isso esses locais são proibidos por lei.",
+      "fonte": "L3 p.95",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q06",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Quais problemas o lixão pode causar?",
+      "apoio": null,
+      "alternativas": [
+        "Danos à natureza, como a contaminação do solo, e danos à saúde das pessoas, por acumular seres transmissores de doenças.",
+        "Nenhum problema, porque o lixo fica bem guardado.",
+        "Apenas mau cheiro, sem nenhum outro risco.",
+        "Só problemas para os animais, nunca para as pessoas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Os lixões contaminam a água e o solo e poluem o ar, afetando diretamente a saúde de muitas pessoas.",
+      "fonte": "L3 p.95 e p.96, atividade 2",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q07",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Por que o aterro sanitário é um lugar correto para descartar o lixo?",
+      "apoio": null,
+      "alternativas": [
+        "Porque é preparado para evitar a poluição do solo e da água, e o lixo é coberto com uma camada de areia.",
+        "Porque o lixo fica a céu aberto.",
+        "Porque o lixo é jogado em qualquer lugar.",
+        "Porque nele o lixo é queimado."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Como o lixo é coberto, o mau cheiro é menor e há menos animais que podem causar doenças nas pessoas.",
+      "fonte": "L3 p.95",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q08",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Para onde vão os materiais recicláveis depois de coletados?",
+      "apoio": null,
+      "alternativas": [
+        "Para centrais públicas de triagem ou cooperativas de catadores, onde são separados e depois enviados a fábricas para virarem outros produtos.",
+        "Direto para o lixão.",
+        "Para os aterros sanitários, junto com o resto do lixo.",
+        "Eles ficam guardados nos caminhões."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nesses lugares os materiais são separados de acordo com suas características e depois transformados em novos produtos.",
+      "fonte": "L3 p.95",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q09",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "assoc",
+      "enunciado": "Associe os lugares de destino do lixo às afirmativas sobre eles:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Aterro sanitário",
+          "Local preparado para receber o lixo com menor possibilidade de poluição dos recursos naturais"
+        ],
+        [
+          "Central de triagem ou cooperativa",
+          "Local em que o material reciclável é separado e depois encaminhado às indústrias"
+        ],
+        [
+          "Lixão",
+          "Local a céu aberto, proibido por lei"
+        ]
+      ],
+      "explicacao": "Aterro sanitário e lixão não são a mesma coisa: o aterro é preparado para proteger o solo e a água; o lixão deixa tudo exposto.",
+      "fonte": "L3 p.95 e p.97, atividade 3",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c6.m5.q10",
+      "modulo_id": "geo.c6.m5",
+      "tipo": "vf",
+      "enunciado": "Os lixões são permitidos por lei no Brasil.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Locais desse tipo são proibidos por lei, pois o lixo fica exposto a céu aberto.",
+      "fonte": "L3 p.95",
+      "dificuldade": 2,
+      "ativo": true
+    }
+  ]
+}

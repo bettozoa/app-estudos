@@ -1,0 +1,586 @@
+{
+  "capitulo": {
+    "id": "geo.c7",
+    "materia_id": "geografia",
+    "titulo": "Unidade 4 — A água",
+    "livro": "L3",
+    "paginas": "106-117",
+    "ordem": 2,
+    "publicado": true
+  },
+  "modulos": [
+    {
+      "id": "geo.c7.m1",
+      "titulo": "A água no nosso dia a dia",
+      "ordem": 1
+    },
+    {
+      "id": "geo.c7.m2",
+      "titulo": "A água na indústria, no campo e de onde vem",
+      "ordem": 2
+    }
+  ],
+  "questoes": [
+    {
+      "id": "geo.c7.m1.q01",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Quantos litros de água, em média, um brasileiro consome por dia em suas atividades?",
+      "apoio": null,
+      "alternativas": [
+        "200 litros — a mesma quantidade que um elefante bebe diariamente.",
+        "2 litros, só para beber.",
+        "12 litros.",
+        "1000 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Os brasileiros consomem, em média, 200 litros de água por dia — o mesmo que um elefante bebe por dia.",
+      "fonte": "L3 p.106",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q02",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Por que é tão importante lavar as mãos com água e sabão?",
+      "apoio": null,
+      "alternativas": [
+        "Porque isso evita que seres causadores de doenças entrem em nosso corpo e prejudiquem nossa saúde.",
+        "Porque assim gastamos mais água.",
+        "Porque deixa as mãos perfumadas.",
+        "Porque as mãos ficam mais fortes."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "É importante lavar as mãos depois de brincar, antes das refeições e logo após usar o banheiro.",
+      "fonte": "L3 p.110",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q03",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Quantos litros podem ser gastos se a torneira ficar aberta durante um minuto de lavagem das mãos?",
+      "apoio": null,
+      "alternativas": [
+        "Pouco mais de 2 litros.",
+        "135 litros.",
+        "279 litros.",
+        "Menos de meio litro."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Em um minuto com a torneira aberta, podem ser gastos pouco mais de 2 litros de água.",
+      "fonte": "L3 p.110",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q04",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Escovando os dentes com a torneira meio aberta durante 5 minutos, quanto se gasta? E fechando a torneira e usando um copo?",
+      "apoio": null,
+      "alternativas": [
+        "12 litros com a torneira aberta e menos de 1 litro com a torneira fechada.",
+        "2 litros com a torneira aberta e 1 litro com ela fechada.",
+        "135 litros com a torneira aberta e 45 litros com ela fechada.",
+        "22 litros com a torneira aberta e 12 litros com ela fechada."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Molhar a escova, fechar a torneira enquanto escova e enxaguar a boca com um copo economiza muita água.",
+      "fonte": "L3 p.110",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q05",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Durante 15 minutos de banho podem ser gastos 135 litros. O que fazer para reduzir esse gasto?",
+      "apoio": null,
+      "alternativas": [
+        "Fechar o chuveiro ao se ensaboar: o gasto cai para 45 litros.",
+        "Deixar de tomar banho.",
+        "Tomar banho com a torneira da pia aberta.",
+        "Aumentar o tempo do banho."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Fechar o chuveiro na hora de se ensaboar reduz o gasto de 135 para 45 litros. Deixar de tomar banho não é solução: a higiene é importante para a saúde.",
+      "fonte": "L3 p.110 e p.115",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q06",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Sobre a lavagem de roupas, é correto afirmar que:",
+      "apoio": null,
+      "alternativas": [
+        "lavar na pia com a torneira aberta por 15 minutos pode gastar até 279 litros; na máquina com até 5 quilos de roupa, o gasto é de 135 litros por lavagem.",
+        "lavar na pia gasta sempre menos água que a máquina.",
+        "a máquina não usa água.",
+        "lavar roupa gasta apenas 5 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O ideal é colocar sempre a quantidade máxima de roupas que a máquina suporta.",
+      "fonte": "L3 p.110",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q07",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Quanta água se gasta lavando louça com a torneira aberta, e qual é a dica para evitar o desperdício?",
+      "apoio": null,
+      "alternativas": [
+        "117 litros a cada 15 minutos; a dica é ensaboar os utensílios com a torneira fechada.",
+        "22 litros a cada 15 minutos; a dica é lavar tudo de uma vez.",
+        "5 litros por dia; a dica é usar mais detergente.",
+        "180 litros por minuto; a dica é usar um regador."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A média para a lavagem de banheiros é de 22 litros; já a lavagem de louça com a torneira aberta gasta 117 litros a cada 15 minutos.",
+      "fonte": "L3 p.111",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q08",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Quanta água um adulto deve beber, em média, por dia para se manter saudável?",
+      "apoio": null,
+      "alternativas": [
+        "Cerca de 2 litros.",
+        "Cerca de 20 litros.",
+        "Cerca de 200 litros.",
+        "Menos de meio litro."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A quantidade pode variar de acordo com as necessidades de cada pessoa, mas a média para um adulto é de 2 litros por dia.",
+      "fonte": "L3 p.111",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q09",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Quantos litros de água são necessários para cozinhar um pacote de macarrão?",
+      "apoio": null,
+      "alternativas": [
+        "5 litros.",
+        "2 litros.",
+        "117 litros.",
+        "180 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A água também é necessária para preparar alimentos e bebidas, e a quantidade varia conforme o alimento.",
+      "fonte": "L3 p.111",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q10",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "mc",
+      "enunciado": "Ao regar as plantas com mangueira, são gastos cerca de 180 litros a cada 10 minutos. Qual é a dica do livro para gastar menos?",
+      "apoio": null,
+      "alternativas": [
+        "Usar um regador para molhar as plantas.",
+        "Regar as plantas duas vezes por dia.",
+        "Deixar a mangueira ligada por mais tempo.",
+        "Não regar mais as plantas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Como todos os seres vivos, as plantas precisam de água — mas dá para regar sem desperdiçar, usando um regador.",
+      "fonte": "L3 p.111",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m1.q11",
+      "modulo_id": "geo.c7.m1",
+      "tipo": "assoc",
+      "enunciado": "Ligue cada atividade à quantidade de água que ela pode gastar:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Banho de 15 minutos",
+          "135 litros"
+        ],
+        [
+          "Escovar os dentes com a torneira meio aberta por 5 minutos",
+          "12 litros"
+        ],
+        [
+          "Regar as plantas por 10 minutos",
+          "180 litros"
+        ],
+        [
+          "Lavar louça por 15 minutos com a torneira aberta",
+          "117 litros"
+        ]
+      ],
+      "explicacao": "Guardar esses números ajuda a perceber quanta água pode ser economizada com pequenas atitudes.",
+      "fonte": "L3 p.110 e p.111",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q01",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "O que significa usar a água de maneira indireta?",
+      "apoio": null,
+      "alternativas": [
+        "É quando consumimos um produto que precisou de água para ser fabricado.",
+        "É quando bebemos água direto da torneira.",
+        "É quando tomamos banho.",
+        "É quando regamos as plantas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A água é importante para fabricar alimentos, remédios, roupas, automóveis e outros produtos. Quando consumimos esses produtos, usamos a água de maneira indireta.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q02",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Quantos litros de água são usados para fabricar uma folha de papel?",
+      "apoio": null,
+      "alternativas": [
+        "10 litros, o que corresponde a cerca de 50 copos d'água.",
+        "2 litros.",
+        "2700 litros.",
+        "400 000 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Uma única folha de papel precisa de 10 litros de água — mais ou menos 50 copos.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q03",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Quantos litros de água são usados para fabricar uma camiseta de algodão?",
+      "apoio": null,
+      "alternativas": [
+        "2700 litros, mais ou menos 135 galões d'água.",
+        "10 litros.",
+        "135 litros.",
+        "15 500 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Fabricar uma camiseta de algodão gasta 2700 litros de água.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q04",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "E para produzir um quilo de carne bovina, quanta água é necessária?",
+      "apoio": null,
+      "alternativas": [
+        "15 500 litros, quantidade que poderia encher uma piscina pequena.",
+        "5 litros.",
+        "200 litros.",
+        "2700 litros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Produzir um quilo de carne bovina usa 15 500 litros de água.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q05",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Para fabricar um automóvel são usados 400 000 litros de água. Essa quantidade daria para:",
+      "apoio": null,
+      "alternativas": [
+        "abastecer, aproximadamente, a casa de 40 famílias de três pessoas por um mês.",
+        "encher um copo d'água.",
+        "lavar uma louça.",
+        "regar uma planta por 10 minutos."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "É muita água! Por isso é importante consumir com consciência.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q06",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "O que quer dizer a palavra diluição?",
+      "apoio": null,
+      "alternativas": [
+        "Ação de misturar água a outra substância.",
+        "Ação de separar o lixo reciclável.",
+        "Ação de regar as plantas.",
+        "Ação de ferver a água."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nas indústrias, a água é usada como matéria-prima, na limpeza de máquinas e na diluição de materiais.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q07",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "O que são as usinas hidrelétricas?",
+      "apoio": null,
+      "alternativas": [
+        "Locais onde a água é usada para produzir eletricidade; boa parte da energia elétrica do Brasil vem delas.",
+        "Fábricas que produzem água potável.",
+        "Locais onde o lixo é reciclado.",
+        "Máquinas que irrigam as plantações."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A usina hidrelétrica de Itaipu, entre o Brasil e o Paraguai, é considerada uma das maiores do mundo.",
+      "fonte": "L3 p.112",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q08",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Como funciona a irrigação por gotejamento?",
+      "apoio": null,
+      "alternativas": [
+        "A água passa por mangueiras com pequenos furos e sai por eles, molhando o solo bem perto de onde as plantas estão.",
+        "Grandes máquinas borrifam água por todo o terreno.",
+        "A chuva molha sozinha a plantação.",
+        "A água é levada em baldes até cada planta."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O gotejamento leva a água direto para perto das plantas, por mangueiras furadas.",
+      "fonte": "L3 p.113",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q09",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "E a irrigação por aspersão?",
+      "apoio": null,
+      "alternativas": [
+        "É usada em plantações maiores, com grandes máquinas que borrifam água por todo o terreno.",
+        "É feita com mangueiras de pequenos furos.",
+        "É usada apenas em hortas pequenas.",
+        "É a água da chuva armazenada em poços."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Aspersão: grandes máquinas borrifam a água por todo o terreno, como uma chuva artificial.",
+      "fonte": "L3 p.113",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q10",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Para que a água é usada na pecuária?",
+      "apoio": null,
+      "alternativas": [
+        "Para saciar a sede dos animais, produzir alimentos como pastagens e rações e limpar os locais onde os animais ficam abrigados, como os currais.",
+        "Apenas para lavar os tratores.",
+        "Somente para irrigar plantações de milho.",
+        "Para produzir energia elétrica nas fazendas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na pecuária a água é essencial para os animais e para a manutenção dos lugares onde eles vivem.",
+      "fonte": "L3 p.113",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q11",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "De que a melancia precisa para se desenvolver?",
+      "apoio": null,
+      "alternativas": [
+        "De bastante água — por isso é preciso observar o período de chuvas — e de uma terra em boas condições, com o solo preparado e com nutrientes.",
+        "Apenas de luz do Sol.",
+        "Somente de adubo, sem água.",
+        "De água salgada."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Antes de plantar, é preciso verificar a disponibilidade de água na região e preparar o solo, vendo se ele precisa de nutrientes.",
+      "fonte": "L3 p.108 e p.109",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q12",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Qual recurso natural faltou no texto e qual atividade foi prejudicada?",
+      "apoio": "No Rio Grande do Sul, o problema é a falta de chuva. No município de Hulha Negra, um produtor rural perdeu 80% da produção de leite. A pastagem, plantada em dezembro, não cresceu e faltou comida para os animais.",
+      "alternativas": [
+        "Faltou água, e a atividade prejudicada foi a pecuária.",
+        "Faltou solo, e a atividade prejudicada foi a indústria.",
+        "Faltou ar, e a atividade prejudicada foi a agricultura.",
+        "Faltou energia elétrica, e a atividade prejudicada foi o comércio."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Sem chuva, a pastagem não cresceu e faltou comida para o gado — por isso a produção de leite caiu.",
+      "fonte": "L3 p.116, atividade 5",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q13",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Por que a água dos mares e oceanos não serve para o consumo humano?",
+      "apoio": null,
+      "alternativas": [
+        "Porque ela é salgada e, por isso, imprópria para o consumo humano.",
+        "Porque ela é muito fria.",
+        "Porque ela está longe das cidades.",
+        "Porque ela está poluída por lixões."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na superfície terrestre há água doce e salgada. A dos mares e oceanos é salgada. A água doce é a própria para consumo.",
+      "fonte": "L3 p.117",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q14",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "vf",
+      "enunciado": "A maior parte da água da Terra é doce e própria para o consumo.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! A maior parte da água da Terra é salgada e está nos mares e oceanos. Apenas uma pequena quantidade é doce — por isso precisamos preservá-la.",
+      "fonte": "L3 p.117",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q15",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Onde podemos encontrar a água doce que está na superfície?",
+      "apoio": null,
+      "alternativas": [
+        "Em rios, lagos, lagoas, riachos e represas.",
+        "Apenas nos mares e oceanos.",
+        "Somente nas geleiras.",
+        "Somente dentro das indústrias."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Parte da água doce fica na superfície, em rios, lagos, lagoas, riachos, represas etc.",
+      "fonte": "L3 p.117",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q16",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "O que é o lençol freático?",
+      "apoio": null,
+      "alternativas": [
+        "O local abaixo da superfície terrestre onde a água doce fica armazenada; ela pode ser retirada por meio de poços.",
+        "Um tipo de represa construída pelas pessoas.",
+        "O nome da água salgada dos oceanos.",
+        "Uma máquina que irriga plantações."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Parte da água doce está abaixo da superfície e é retirada pela construção de poços. Esse local se chama lençol freático.",
+      "fonte": "L3 p.117",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q17",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "Além dos rios e dos lençóis freáticos, onde mais existe água doce?",
+      "apoio": null,
+      "alternativas": [
+        "Nas geleiras e na forma de chuva, granizo e neve.",
+        "Somente nos mares.",
+        "Somente nas piscinas.",
+        "Somente nas usinas hidrelétricas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Há água doce também nas geleiras e nas diferentes formas de precipitação: chuva, granizo e neve.",
+      "fonte": "L3 p.117",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "geo.c7.m2.q18",
+      "modulo_id": "geo.c7.m2",
+      "tipo": "mc",
+      "enunciado": "O que o livro conta sobre a energia gerada pelo vento no Brasil?",
+      "apoio": null,
+      "alternativas": [
+        "O país está entre os dez do mundo que mais produzem energia a partir do vento.",
+        "O Brasil não produz energia com o vento.",
+        "Só o Rio Grande do Norte produz esse tipo de energia.",
+        "O vento só serve para refrescar as pessoas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "No Brasil os ventos geram muita energia elétrica, como no parque eólico de Galinhos, no Rio Grande do Norte.",
+      "fonte": "L3 p.106",
+      "dificuldade": 2,
+      "ativo": true
+    }
+  ]
+}

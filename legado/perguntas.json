@@ -1,0 +1,2250 @@
+{
+ "materias": {
+  "h": {
+   "nome": "História",
+   "emoji": "🏙️",
+   "cor": "#E2542B",
+   "sub": "A história do espaço urbano brasileiro — Livro 3, Unidade 3",
+   "modulos": [
+    "De povoados a cidades: São Vicente",
+    "Recife e as reformas holandesas",
+    "Rio de Janeiro, a cidade do rei",
+    "São Paulo e a produção de café",
+    "Cidades planejadas e Brasília",
+    "Espontânea ou planejada?"
+   ]
+  },
+  "g": {
+   "nome": "Geografia",
+   "emoji": "🌱",
+   "cor": "#2E9E5B",
+   "sub": "Cuidar para não faltar — Livro 3, Unidades 3 e 4",
+   "modulos": [
+    "Os recursos naturais",
+    "As matérias-primas",
+    "Da matéria-prima ao produto",
+    "Consumo e geração de lixo",
+    "Os caminhos e destinos do lixo",
+    "A água no nosso dia a dia",
+    "A água na indústria, no campo e de onde vem"
+   ]
+  }
+ },
+ "questoes": [
+  {
+   "id": "m1q1",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Por volta de que ano surgiram os primeiros povoamentos urbanos no Brasil?",
+   "alts": [
+    "Por volta de 1530, quando os portugueses passaram a morar no país.",
+    "Por volta de 1900, com a produção de café.",
+    "Por volta de 1808, com a chegada da família real.",
+    "Por volta de 1957, quando Natal cresceu."
+   ],
+   "certa": 0,
+   "exp": "Os primeiros povoamentos urbanos surgiram por volta de 1530, quando os portugueses passaram a morar no Brasil. Depois vieram as vilas, com casas, igrejas e comércios.",
+   "fonte": "L3 p.16",
+   "mat": "h"
+  },
+  {
+   "id": "m1q2",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Qual é a ordem certa do crescimento de uma cidade espontânea?",
+   "alts": [
+    "Povoado ➜ vila ➜ cidade",
+    "Cidade ➜ vila ➜ povoado",
+    "Vila ➜ povoado ➜ cidade",
+    "Projeto ➜ obra ➜ cidade"
+   ],
+   "certa": 0,
+   "exp": "Primeiro nasce um pequeno povoado, ele cresce e vira vila e, depois de muito tempo, vira cidade.",
+   "fonte": "L3 p.16 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m1q3",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "O que são cidades espontâneas?",
+   "alts": [
+    "Cidades que surgiram e se desenvolveram sem planejamento.",
+    "Cidades desenhadas por um arquiteto antes de existirem.",
+    "Cidades construídas só para serem capitais.",
+    "Cidades que foram destruídas pelo mar."
+   ],
+   "certa": 0,
+   "exp": "Espontâneas são as cidades que foram crescendo sozinhas, aos poucos, sem ninguém planejar antes.",
+   "fonte": "L3 p.16 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m1q4",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Qual é o nome da primeira vila brasileira e em que ano ela foi fundada?",
+   "alts": [
+    "São Vicente, em 1532",
+    "Salvador, em 1549",
+    "Recife, em 1637",
+    "Rio de Janeiro, em 1808"
+   ],
+   "certa": 0,
+   "exp": "A primeira vila brasileira foi São Vicente, fundada em 1532, perto do mar, no estado de São Paulo.",
+   "fonte": "L3 p.16",
+   "mat": "h"
+  },
+  {
+   "id": "m1q5",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Por que a Vila de São Vicente foi crescendo até virar cidade?",
+   "alts": [
+    "Por causa do comércio pelo porto, da criação de gado, do cultivo de alimentos e, principalmente, dos engenhos de açúcar.",
+    "Por causa da produção de café.",
+    "Porque a família real portuguesa foi morar lá.",
+    "Porque foi escolhida para ser a capital do Brasil."
+   ],
+   "certa": 0,
+   "exp": "São Vicente cresceu com o comércio de mercadorias pelo porto, a criação de gado, o cultivo de alimentos e, principalmente, os engenhos de açúcar construídos pelos portugueses.",
+   "fonte": "L3 p.16",
+   "mat": "h"
+  },
+  {
+   "id": "m1q6",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Por que a Vila de São Vicente precisou ser reconstruída?",
+   "alts": [
+    "Porque em 1542 o mar invadiu e destruiu ruas, casas e a igreja.",
+    "Porque um incêndio destruiu a vila.",
+    "Porque os moradores se mudaram para Brasília.",
+    "Porque os holandeses reformaram a vila."
+   ],
+   "certa": 0,
+   "exp": "Em 1542 o mar invadiu a vila e destruiu grande parte dela. Por isso, ela foi reconstruída um pouco mais distante da praia.",
+   "fonte": "L3 p.16 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m1q7",
+   "mod": 0,
+   "tipo": "vf",
+   "enun": "As primeiras vilas brasileiras precisaram ser reformadas e modernizadas com o passar dos anos, por causa das necessidades de seus moradores.",
+   "certa": 0,
+   "exp": "Verdadeiro! As ruas ficaram mais largas e muitas casas e construções foram feitas.",
+   "fonte": "L3 p.16",
+   "mat": "h"
+  },
+  {
+   "id": "m1q8",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "A obra Fundação de São Vicente, produzida em 1900 por Benedito Calixto, representa:",
+   "alts": [
+    "Povos indígenas e portugueses na Vila de São Vicente.",
+    "A família real chegando ao Rio de Janeiro.",
+    "A construção de Brasília.",
+    "O Viaduto do Chá em São Paulo."
+   ],
+   "certa": 0,
+   "exp": "Nessa pintura aparecem povos indígenas e portugueses na Vila de São Vicente.",
+   "fonte": "L3 p.16",
+   "mat": "h"
+  },
+  {
+   "id": "m1q9",
+   "mod": 0,
+   "tipo": "vf",
+   "enun": "São Vicente foi uma cidade planejada, desenhada antes de ser construída.",
+   "certa": 1,
+   "exp": "Falso! São Vicente nasceu de uma vila que foi crescendo aos poucos: ela é uma cidade espontânea.",
+   "fonte": "L3 p.16 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m1q10",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Observando as duas fotos da cidade de Natal (1957 e atualmente), o que mudou na paisagem?",
+   "alts": [
+    "Hoje há muitos prédios, casas, ruas e uma ponte; antes havia mais vegetação e poucas construções.",
+    "Antes havia mais prédios do que hoje.",
+    "A cidade continua exatamente igual.",
+    "Hoje só existe vegetação no lugar da cidade."
+   ],
+   "certa": 0,
+   "exp": "A paisagem urbana de Natal se transformou: a cidade cresceu, ganhou muitas construções e a vegetação diminuiu.",
+   "fonte": "L3 p.14 e p.15",
+   "mat": "h"
+  },
+  {
+   "id": "m2q1",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Em que estado fica a cidade de Recife?",
+   "alts": [
+    "Pernambuco",
+    "Bahia",
+    "Rio Grande do Norte",
+    "Tocantins"
+   ],
+   "certa": 0,
+   "exp": "Recife é a capital de Pernambuco.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m2q2",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Entre quais anos Recife passou por uma reforma urbana feita pelos holandeses?",
+   "alts": [
+    "Entre 1637 e 1644",
+    "Entre 1808 e 1821",
+    "Entre 1530 e 1542",
+    "Entre 1970 e 1990"
+   ],
+   "certa": 0,
+   "exp": "Recife foi reformada entre 1637 e 1644, quando era administrada por holandeses.",
+   "fonte": "L3 p.17 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m2q3",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "O que os holandeses construíram na cidade de Recife?",
+   "alts": [
+    "Ruas, pontes, casas, jardim botânico e zoológico",
+    "Só igrejas e engenhos de açúcar",
+    "Avenidas largas e prédios monumentais",
+    "Canaletas exclusivas para ônibus"
+   ],
+   "certa": 0,
+   "exp": "Nessa época os holandeses construíram ruas, pontes, casas, um jardim botânico e um zoológico.",
+   "fonte": "L3 p.17 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m2q4",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "O Palácio de Friburgo, em Recife, foi construído para ser a moradia de quem?",
+   "alts": [
+    "De Maurício de Nassau",
+    "Do rei de Portugal",
+    "De Lúcio Costa",
+    "De Benedito Calixto"
+   ],
+   "certa": 0,
+   "exp": "O Palácio de Friburgo foi a moradia de Maurício de Nassau, que governou a cidade durante a administração holandesa.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m2q5",
+   "mod": 1,
+   "tipo": "vf",
+   "enun": "As construções feitas em Recife nessa época demonstravam a riqueza de parte da população.",
+   "certa": 0,
+   "exp": "Verdadeiro! As construções mostravam que parte da população era rica.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m2q6",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Quem administrava a cidade de Recife na época dessa grande reforma?",
+   "alts": [
+    "Os holandeses",
+    "Os franceses",
+    "A família real portuguesa",
+    "Os fazendeiros de café"
+   ],
+   "certa": 0,
+   "exp": "Recife era administrada por holandeses entre 1637 e 1644.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m2q7",
+   "mod": 1,
+   "tipo": "assoc",
+   "enun": "Ligue cada cidade ao motivo pelo qual ela mudou:",
+   "pares": [
+    [
+     "São Vicente",
+     "O mar invadiu a vila em 1542"
+    ],
+    [
+     "Recife",
+     "Reformas feitas pelos holandeses"
+    ],
+    [
+     "Rio de Janeiro",
+     "Chegada da família real portuguesa"
+    ],
+    [
+     "São Paulo",
+     "Riquezas da produção de café"
+    ]
+   ],
+   "exp": "São Vicente foi reconstruída depois da invasão do mar; Recife foi reformada pelos holandeses; o Rio mudou com a família real; São Paulo se modernizou com o dinheiro do café.",
+   "fonte": "L3 p.16 a p.18 e p.34",
+   "mat": "h"
+  },
+  {
+   "id": "m3q1",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Entre quais anos a cidade do Rio de Janeiro passou por grandes reformas?",
+   "alts": [
+    "Entre 1808 e 1821",
+    "Entre 1637 e 1644",
+    "Entre 1530 e 1532",
+    "Entre 1892 e 1938"
+   ],
+   "certa": 0,
+   "exp": "O Rio de Janeiro foi reformado entre 1808 e 1821, quando a família real portuguesa veio para o Brasil.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m3q2",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Por que a família real portuguesa resolveu deixar Portugal?",
+   "alts": [
+    "Porque estava em conflito com a França e queria fugir de uma possível guerra.",
+    "Porque queria construir uma nova capital.",
+    "Porque Portugal foi destruído pelo mar.",
+    "Porque queria plantar café no Brasil."
+   ],
+   "certa": 0,
+   "exp": "A família real estava em conflito com a França e saiu de Portugal para fugir de uma possível guerra.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m3q3",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Quem veio junto com a família real portuguesa para o Rio de Janeiro?",
+   "alts": [
+    "Soldados, comerciantes e funcionários públicos",
+    "Apenas o rei e a rainha",
+    "Trabalhadores vindos de Brasília",
+    "Engenheiros holandeses"
+   ],
+   "certa": 0,
+   "exp": "A família real trouxe soldados, comerciantes e funcionários públicos. Por isso o número de habitantes aumentou muito.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m3q4",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "O embarque da Família Real Portuguesa para o Brasil, obra de Nicolas-Louis-Albert Delerive, mostra um evento que provocou, na época:",
+   "alts": [
+    "O aumento da população da cidade do Rio de Janeiro.",
+    "A ida da população brasileira para Portugal.",
+    "A eleição de um novo presidente do Brasil.",
+    "A construção da cidade de Brasília."
+   ],
+   "certa": 0,
+   "exp": "Com a chegada da família real e de seus acompanhantes, a população do Rio de Janeiro aumentou bastante.",
+   "fonte": "L3 p.19, atividade 3",
+   "mat": "h"
+  },
+  {
+   "id": "m3q5",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Quais construções foram feitas no Rio de Janeiro com a chegada do rei e de sua família?",
+   "alts": [
+    "Estradas, o Museu Nacional, a Biblioteca Real, o Observatório Astronômico e o Jardim Botânico",
+    "Canaletas de ônibus e ciclovias",
+    "O Viaduto do Chá e a Avenida Paulista",
+    "O Palácio de Friburgo e um zoológico"
+   ],
+   "certa": 0,
+   "exp": "Em pouco tempo a paisagem urbana mudou: foram construídas estradas, o Museu Nacional, a Biblioteca Real, o Observatório Astronômico e o Jardim Botânico.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m3q6",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "O Jardim Botânico do Rio de Janeiro, construído há mais de 200 anos, é um espaço muito antigo da cidade. Marque a alternativa correta:",
+   "alts": [
+    "O Jardim Botânico faz parte das modificações acontecidas na cidade por causa da chegada dos portugueses.",
+    "Essa construção serviu como moradia para os novos habitantes portugueses, já que faltavam moradias para todos.",
+    "O Jardim Botânico foi construído pelos holandeses.",
+    "O Jardim Botânico foi planejado por Lúcio Costa."
+   ],
+   "certa": 0,
+   "exp": "O Jardim Botânico foi uma das construções feitas depois que os portugueses chegaram ao Rio de Janeiro.",
+   "fonte": "L3 p.20, atividade 4",
+   "mat": "h"
+  },
+  {
+   "id": "m3q7",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Qual problema apareceu no Rio de Janeiro quando muita gente chegou de uma vez?",
+   "alts": [
+    "Faltou moradia: as melhores casas foram tomadas pelos funcionários da família real e entregues aos portugueses.",
+    "Faltou água para todos os moradores.",
+    "As ruas ficaram largas demais.",
+    "O mar invadiu as casas da cidade."
+   ],
+   "certa": 0,
+   "exp": "A falta de moradia foi um problema. As melhores casas foram tomadas e entregues aos portugueses.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m3q8",
+   "mod": 2,
+   "tipo": "vf",
+   "enun": "As pessoas que foram obrigadas a deixar suas casas para os portugueses ficaram muito satisfeitas com essa mudança.",
+   "certa": 1,
+   "exp": "Falso! Essa situação provocou o descontentamento das pessoas que perderam suas moradias.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m3q9",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "A obra O chafariz do campo, produzida em 1835 por Karl Wilhelm Theremin, retrata:",
+   "alts": [
+    "Uma fonte, construção que se tornou importante quando a família real veio ao Brasil.",
+    "O porto da Vila de São Vicente.",
+    "A construção de Brasília.",
+    "O zoológico construído em Recife."
+   ],
+   "certa": 0,
+   "exp": "As fontes (chafarizes) se tornaram construções importantes na época em que a família real portuguesa veio ao Brasil.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m3q10",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Por que o Brasil foi o destino escolhido pela família real portuguesa?",
+   "alts": [
+    "Porque, nesse período, o Brasil também era administrado pelos portugueses.",
+    "Porque o Brasil já era a capital de Portugal.",
+    "Porque o Brasil tinha acabado de ser planejado.",
+    "Porque os holandeses convidaram a família real."
+   ],
+   "certa": 0,
+   "exp": "Como o Brasil era administrado pelos portugueses na época, a família real decidiu partir para o Rio de Janeiro.",
+   "fonte": "L3 p.17",
+   "mat": "h"
+  },
+  {
+   "id": "m4q1",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Em que época a cidade de São Paulo passou por mudanças que a deixaram mais moderna?",
+   "alts": [
+    "Nos anos de 1900",
+    "Nos anos de 1530",
+    "Entre 1637 e 1644",
+    "Nos anos de 1970"
+   ],
+   "certa": 0,
+   "exp": "Nos anos de 1900 São Paulo passou por reformas que modernizaram a cidade.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m4q2",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Escreva dois exemplos de reformas feitas em São Paulo nessa época. Qual alternativa apresenta exemplos corretos?",
+   "alts": [
+    "A abertura de ruas e avenidas e a criação de praças",
+    "A construção de um zoológico e de um jardim botânico pelos holandeses",
+    "A construção do Museu Nacional e da Biblioteca Real",
+    "O desenho da cidade em formato de avião"
+   ],
+   "certa": 0,
+   "exp": "Entre as reformas de São Paulo estão a abertura de ruas e avenidas, a criação de praças e a iluminação das ruas do centro.",
+   "fonte": "L3 p.18 e p.20, atividade 5a",
+   "mat": "h"
+  },
+  {
+   "id": "m4q3",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Que produto comercializado pelo Brasil nessa época contribuiu para a modernização de São Paulo?",
+   "alts": [
+    "O café",
+    "O açúcar",
+    "O chá-da-Índia",
+    "O ouro"
+   ],
+   "certa": 0,
+   "exp": "As riquezas vieram da produção de café, plantado na região. Por muitos anos ele foi o principal produto comercializado pelo Brasil.",
+   "fonte": "L3 p.18 e p.20, atividade 5b",
+   "mat": "h"
+  },
+  {
+   "id": "m4q4",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Onde moravam as famílias que ficaram ricas com o café, em São Paulo?",
+   "alts": [
+    "Em casarões construídos na cidade",
+    "Em vilas de pescadores",
+    "Em prédios monumentais de Brasília",
+    "No Palácio de Friburgo"
+   ],
+   "certa": 0,
+   "exp": "O dinheiro do café enriqueceu muitas pessoas, que viviam com suas famílias em casarões na cidade. Isso aparece na foto da Avenida Paulista de 1910.",
+   "fonte": "L3 p.18",
+   "mat": "h"
+  },
+  {
+   "id": "m4q5",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Em que ano foi inaugurado o Viaduto do Chá, o primeiro viaduto da cidade de São Paulo?",
+   "alts": [
+    "Em 1892",
+    "Em 1938",
+    "Em 1910",
+    "Em 1821"
+   ],
+   "certa": 0,
+   "exp": "O Viaduto do Chá foi inaugurado em 1892 e foi o primeiro viaduto de São Paulo.",
+   "fonte": "L3 p.20, texto da atividade 6",
+   "mat": "h"
+  },
+  {
+   "id": "m4q6",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Por que o Viaduto do Chá recebeu esse nome?",
+   "alts": [
+    "Porque nas suas proximidades ficava uma extensa plantação de chá-da-Índia.",
+    "Porque foi construído por uma família chamada Chá.",
+    "Porque nele funcionavam muitas casas de chá.",
+    "Porque o piso dele era feito de folhas de chá."
+   ],
+   "certa": 0,
+   "exp": "O nome veio da extensa plantação de chá-da-Índia que existia perto do local.",
+   "fonte": "L3 p.20, texto da atividade 6",
+   "mat": "h"
+  },
+  {
+   "id": "m4q7",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Qual era o objetivo da construção do Viaduto do Chá?",
+   "alts": [
+    "Ligar a Rua Direita à Rua do Chá (atual Rua Barão de Itapetininga), no centro da cidade.",
+    "Ligar São Paulo ao Rio de Janeiro.",
+    "Levar água até o centro da cidade.",
+    "Servir de moradia para os fazendeiros de café."
+   ],
+   "certa": 0,
+   "exp": "O viaduto foi construído para ligar a Rua Direita com a Rua do Chá, hoje chamada Rua Barão de Itapetininga.",
+   "fonte": "L3 p.20, texto da atividade 6",
+   "mat": "h"
+  },
+  {
+   "id": "m4q8",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "O que aconteceu com o Viaduto do Chá em 1938?",
+   "alts": [
+    "O velho viaduto de piso de madeira foi demolido e deu lugar a outro, de concreto, com o dobro de largura.",
+    "Ele foi destruído pelo mar.",
+    "Ele foi transformado em um museu.",
+    "Ele ganhou canaletas exclusivas para ônibus."
+   ],
+   "certa": 0,
+   "exp": "Em 1938 o viaduto antigo, com piso de madeira, foi demolido. No lugar dele foi construído um de concreto, com o dobro de largura.",
+   "fonte": "L3 p.20, texto da atividade 6",
+   "mat": "h"
+  },
+  {
+   "id": "m4q9",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Comparando as imagens do Viaduto do Chá por volta de 1900 e atualmente, que mudanças você observa?",
+   "alts": [
+    "Hoje há muitos prédios altos, mais carros e menos casas baixas; a paisagem ficou mais movimentada.",
+    "Hoje há menos construções do que antes.",
+    "A paisagem continua exatamente igual.",
+    "Hoje o viaduto é feito de madeira."
+   ],
+   "certa": 0,
+   "exp": "Na imagem antiga aparecem construções baixas; hoje o lugar tem prédios altos, muitos carros e uma paisagem bem mais urbanizada.",
+   "fonte": "L3 p.20, atividade 6b",
+   "mat": "h"
+  },
+  {
+   "id": "m4q10",
+   "mod": 3,
+   "tipo": "vf",
+   "enun": "As reformas urbanas citadas no texto do Viaduto do Chá aconteceram na cidade do Rio de Janeiro.",
+   "certa": 1,
+   "exp": "Falso! O Viaduto do Chá fica na cidade de São Paulo.",
+   "fonte": "L3 p.20, atividade 6a",
+   "mat": "h"
+  },
+  {
+   "id": "m5q1",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "As cidades planejadas são aquelas que:",
+   "alts": [
+    "Foram planejadas e projetadas antes de se formarem.",
+    "Se formaram naturalmente ao longo do tempo.",
+    "Foram planejadas depois de terem se formado.",
+    "Cresceram a partir de povoados sem projeto."
+   ],
+   "certa": 0,
+   "exp": "Cidades planejadas são pensadas detalhadamente antes mesmo de sua construção começar.",
+   "fonte": "L3 p.24 e p.30, atividade 1",
+   "mat": "h"
+  },
+  {
+   "id": "m5q2",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "O que costuma ser indicado no projeto de uma cidade planejada?",
+   "alts": [
+    "O comprimento e a largura das ruas, a localização de casas, parques, postos de saúde, escolas, comércio e prédios da administração pública.",
+    "Apenas o nome que a cidade vai ter.",
+    "Somente a quantidade de moradores.",
+    "Apenas a localização do porto."
+   ],
+   "certa": 0,
+   "exp": "Nos projetos das cidades planejadas tudo é pensado antes: ruas, moradias, parques, postos de saúde, escolas, comércio e prédios públicos.",
+   "fonte": "L3 p.24",
+   "mat": "h"
+  },
+  {
+   "id": "m5q3",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Quais são exemplos de cidades brasileiras planejadas citados no livro?",
+   "alts": [
+    "Teresina, Belo Horizonte e Palmas",
+    "Recife, Salvador e Natal",
+    "São Vicente, Manaus e Florianópolis",
+    "São Paulo, Rio de Janeiro e Recife"
+   ],
+   "certa": 0,
+   "exp": "Teresina (PI), Belo Horizonte (MG) e Palmas (TO) são exemplos de cidades planejadas.",
+   "fonte": "L3 p.24",
+   "mat": "h"
+  },
+  {
+   "id": "m5q4",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Por que a cidade de Brasília foi planejada?",
+   "alts": [
+    "Para se tornar a capital do Brasil.",
+    "Para ser uma cidade-fortaleza.",
+    "Para receber o porto de açúcar.",
+    "Para abrigar a família real portuguesa."
+   ],
+   "certa": 0,
+   "exp": "Brasília foi planejada para se tornar a capital do país. Hoje tem avenidas largas, áreas verdes e prédios monumentais.",
+   "fonte": "L3 p.24 e p.35",
+   "mat": "h"
+  },
+  {
+   "id": "m5q5",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Quem criou o desenho da cidade de Brasília?",
+   "alts": [
+    "O arquiteto Lúcio Costa",
+    "O engenheiro Jorge de Macedo",
+    "O engenheiro Roberto Brandão",
+    "Maurício de Nassau"
+   ],
+   "certa": 0,
+   "exp": "O desenho de Brasília foi criado pelo arquiteto Lúcio Costa.",
+   "fonte": "L3 p.24",
+   "mat": "h"
+  },
+  {
+   "id": "m5q6",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Brasília foi projetada em formato de avião. O que esse formato simbolizava?",
+   "alts": [
+    "O progresso e a modernização pelos quais o país estava passando na época.",
+    "A importância dos aeroportos para o Brasil.",
+    "A vontade de construir a cidade em pouco tempo.",
+    "A proteção contra a invasão de estrangeiros."
+   ],
+   "certa": 0,
+   "exp": "O formato de avião era símbolo dos processos de progresso e modernização que o país vivia.",
+   "fonte": "L3 p.24",
+   "mat": "h"
+  },
+  {
+   "id": "m5q7",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Por que construir Brasília foi um grande desafio?",
+   "alts": [
+    "Porque a região era isolada, de difícil acesso e pouco povoada.",
+    "Porque a região era cercada pelo mar.",
+    "Porque já existiam muitas construções no local.",
+    "Porque faltava café na região."
+   ],
+   "certa": 0,
+   "exp": "Como a região era isolada, de difícil acesso e pouco povoada, milhares de trabalhadores tiveram que se deslocar de outras partes do país.",
+   "fonte": "L3 p.25",
+   "mat": "h"
+  },
+  {
+   "id": "m5q8",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Morar em Brasília custava caro. O que isso provocou?",
+   "alts": [
+    "Muitos trabalhadores foram morar em regiões próximas, formando cidades ao redor da capital, que cresceram sem planejamento.",
+    "Todos os trabalhadores voltaram para suas cidades de origem.",
+    "A cidade parou de ser construída.",
+    "O governo diminuiu o tamanho das avenidas."
+   ],
+   "certa": 0,
+   "exp": "As cidades ao redor de Brasília cresceram de maneira improvisada, sem planejamento, o que provocou problemas urbanos e sociais que ainda não foram totalmente resolvidos.",
+   "fonte": "L3 p.25",
+   "mat": "h"
+  },
+  {
+   "id": "m5q9",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Em quanto tempo Brasília foi construída?",
+   "alts": [
+    "Em pouco mais de três anos",
+    "Em mais de cem anos",
+    "Entre 1637 e 1644",
+    "Em cerca de vinte anos"
+   ],
+   "certa": 0,
+   "exp": "Brasília foi construída em pouco mais de três anos, com o trabalho de milhares de pessoas vindas de todo o Brasil.",
+   "fonte": "L3 p.25 e p.35",
+   "mat": "h"
+  },
+  {
+   "id": "m5q10",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Sobre a cidade de Goiânia, é correto afirmar que:",
+   "alts": [
+    "Foi a primeira cidade brasileira planejada no século 20, com influência do estilo Art Déco, e visava ao desenvolvimento do interior do Brasil.",
+    "Foi a primeira vila fundada no Brasil, em 1532.",
+    "Foi planejada pelos holandeses para ser uma cidade-fortaleza.",
+    "Nunca foi planejada: cresceu a partir de um povoado."
+   ],
+   "certa": 0,
+   "exp": "Goiânia foi planejada para 50 mil habitantes (hoje tem mais de 1,4 milhão de pessoas) e o processo visava ao desenvolvimento do interior do Brasil.",
+   "fonte": "L3 p.26",
+   "mat": "h"
+  },
+  {
+   "id": "m5q11",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Por que Salvador, capital da Bahia, é considerada uma cidade planejada?",
+   "alts": [
+    "Porque foi pensada em 1549 para ser uma espécie de \"cidade-fortaleza\", administrativa e militar, e foi a primeira sede do Governo Geral do Brasil.",
+    "Porque foi projetada em formato de avião.",
+    "Porque foi reformada pelos holandeses entre 1637 e 1644.",
+    "Porque foi construída para ser a capital do país."
+   ],
+   "certa": 0,
+   "exp": "O planejamento de Salvador, em 1549, a colocava como cidade administrativa e militar, uma espécie de \"cidade-fortaleza\".",
+   "fonte": "L3 p.26",
+   "mat": "h"
+  },
+  {
+   "id": "m5q12",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "A cidade de Palmas, capital do Tocantins, tem como característica:",
+   "alts": [
+    "Avenidas gigantes e muito espaçadas, traçado em quadrículas e muitas áreas verdes.",
+    "Ruas estreitas que cresceram sem planejamento.",
+    "Ter sido reformada pelos holandeses.",
+    "Ter sido a primeira cidade planejada do Brasil, em 1549."
+   ],
+   "certa": 0,
+   "exp": "Palmas foi uma das últimas grandes experiências de planejamento urbano no Brasil, com traçado em quadrículas para facilitar as funções da cidade.",
+   "fonte": "L3 p.27",
+   "mat": "h"
+  },
+  {
+   "id": "m5q13",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Por que Curitiba ficou conhecida como \"capital ecológica\"?",
+   "alts": [
+    "Por causa dos ônibus biarticulados, das canaletas exclusivas, do programa de coleta de lixo reciclável e do grande número de parques e áreas verdes.",
+    "Porque foi planejada antes de ser construída.",
+    "Porque foi a primeira cidade fundada no Brasil.",
+    "Porque nela fica o maior jardim botânico do país."
+   ],
+   "certa": 0,
+   "exp": "Curitiba não foi planejada, mas passou por um processo de reestruturação entre os anos 70 e 90 que lhe deu esse título.",
+   "fonte": "L3 p.27",
+   "mat": "h"
+  },
+  {
+   "id": "m5q14",
+   "mod": 4,
+   "tipo": "assoc",
+   "enun": "Ligue cada palavra ao seu significado:",
+   "pares": [
+    [
+     "Traçado",
+     "Organização, desenho de um espaço urbano"
+    ],
+    [
+     "Biarticulado",
+     "Ônibus maior, com duas articulações"
+    ],
+    [
+     "Canaleta",
+     "Via onde só os ônibus podem circular"
+    ],
+    [
+     "Art Déco",
+     "Arte decorativa europeia presente no cinema e na arquitetura"
+    ]
+   ],
+   "exp": "Essas palavras aparecem no boxe de vocabulário do livro, junto dos textos sobre Palmas, Curitiba e Goiânia.",
+   "fonte": "L3 p.26 e p.27",
+   "mat": "h"
+  },
+  {
+   "id": "m6q1",
+   "mod": 5,
+   "tipo": "mc",
+   "apoio": "Sinop é uma cidade fundada em 1974 no Mato Grosso. A cidade foi pensada para ser ocupada por pessoas de outros estados do Brasil. Para isso, seu traçado urbano foi pensado e desenvolvido pelo engenheiro civil Roberto Brandão, para, então, ser construída. Atualmente, a cidade conta com características como ruas regulares e avenidas de até 50 metros de largura.",
+   "enun": "Sinop é uma cidade:",
+   "alts": [
+    "Planejada, porque foi pensada e desenhada por um engenheiro antes de ser construída.",
+    "Espontânea, porque cresceu a partir de um povoado.",
+    "Espontânea, porque foi fundada há pouco tempo.",
+    "Planejada, porque foi reformada depois de pronta."
+   ],
+   "certa": 0,
+   "exp": "O traçado urbano de Sinop foi pensado antes da construção, com ruas regulares e avenidas largas. Isso é característica de cidade planejada.",
+   "fonte": "L3 p.30, atividade 2a",
+   "mat": "h"
+  },
+  {
+   "id": "m6q2",
+   "mod": 5,
+   "tipo": "mc",
+   "apoio": "Manaus, no Amazonas, surgiu de um povoado fundado em 1669. Esse povoado se formou ao redor da fortaleza de São José do Rio Negro. Lentamente, o povoado cresceu e tornou-se uma vila. No ano de 1848, o intenso comércio transformou a vila em uma cidade.",
+   "enun": "Manaus é uma cidade:",
+   "alts": [
+    "Espontânea, porque foi crescendo aos poucos: povoado, depois vila e depois cidade.",
+    "Planejada, porque foi construída em volta de uma fortaleza.",
+    "Planejada, porque tem avenidas largas.",
+    "Espontânea, porque foi projetada por um engenheiro."
+   ],
+   "certa": 0,
+   "exp": "Manaus nasceu de um povoado que virou vila e depois cidade, sem projeto anterior. Por isso é espontânea.",
+   "fonte": "L3 p.30, atividade 2b",
+   "mat": "h"
+  },
+  {
+   "id": "m6q3",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Para que serviu a fortaleza de São José do Rio Negro, ao redor da qual Manaus surgiu?",
+   "alts": [
+    "Para proteger a região da invasão de povos estrangeiros.",
+    "Para guardar a produção de café.",
+    "Para servir de moradia ao rei de Portugal.",
+    "Para abrigar o Governo Geral do Brasil."
+   ],
+   "certa": 0,
+   "exp": "A fortaleza foi construída para proteger a região da invasão de povos estrangeiros.",
+   "fonte": "L3 p.30, atividade 2b",
+   "mat": "h"
+  },
+  {
+   "id": "m6q4",
+   "mod": 5,
+   "tipo": "mc",
+   "apoio": "Florianópolis, em Santa Catarina, teve como primeiros habitantes os indígenas tupis-guaranis, que praticavam a agricultura e a pesca. Por volta de 1675, um viajante e explorador chamado Francisco Dias Velho, seus familiares e agregados chegaram à região, dando início a um povoado. Assim, o povoado se tornou uma vila e, com o passar do tempo, transformou-se em cidade.",
+   "enun": "Florianópolis é uma cidade:",
+   "alts": [
+    "Espontânea, porque se formou aos poucos a partir de um povoado.",
+    "Planejada, porque foi pensada por um explorador.",
+    "Planejada, porque seus primeiros habitantes eram indígenas.",
+    "Espontânea, porque tem ruas regulares e avenidas largas."
+   ],
+   "certa": 0,
+   "exp": "O povoado iniciado por Francisco Dias Velho cresceu, virou vila e depois cidade. Isso é crescimento espontâneo.",
+   "fonte": "L3 p.31, atividade 2c",
+   "mat": "h"
+  },
+  {
+   "id": "m6q5",
+   "mod": 5,
+   "tipo": "mc",
+   "apoio": "Maringá se localiza no Paraná e foi inaugurada em 1947. O projeto da cidade foi criado pelo engenheiro Jorge de Macedo. Em seu desenho, foram considerados os espaços que deveriam se tornar parques, praças, ruas e avenidas. As áreas onde havia árvores e vegetação também foram pensadas e preservadas no projeto.",
+   "enun": "Maringá é uma cidade:",
+   "alts": [
+    "Planejada, porque um engenheiro fez o projeto com parques, praças, ruas e avenidas antes da cidade existir.",
+    "Espontânea, porque começou com um povoado de agricultores.",
+    "Espontânea, porque foi inaugurada em 1947.",
+    "Planejada, porque foi reformada nos anos 70."
+   ],
+   "certa": 0,
+   "exp": "O projeto de Maringá foi criado pelo engenheiro Jorge de Macedo antes da cidade ser construída, já pensando nos parques, praças, ruas e avenidas.",
+   "fonte": "L3 p.31, atividade 2d",
+   "mat": "h"
+  },
+  {
+   "id": "m6q6",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "O que pode acontecer quando uma cidade não é planejada e não passa por reformas urbanas ao longo de sua história?",
+   "alts": [
+    "Ela pode crescer de maneira improvisada e ter problemas urbanos e sociais, como aconteceu nas cidades ao redor de Brasília.",
+    "Ela cresce com ruas sempre largas e organizadas.",
+    "Ela nunca aumenta de tamanho.",
+    "Ela se transforma automaticamente em capital."
+   ],
+   "certa": 0,
+   "exp": "Sem planejamento e sem reformas, a cidade cresce de forma improvisada, o que provoca problemas urbanos e sociais.",
+   "fonte": "L3 p.25 e p.28, atividade 3",
+   "mat": "h"
+  },
+  {
+   "id": "m6q7",
+   "mod": 5,
+   "tipo": "vf",
+   "enun": "Todas as cidades brasileiras surgiram a partir de povoados.",
+   "certa": 1,
+   "exp": "Falso! Nem todas: algumas foram projetadas antes de serem construídas. Essas são as cidades planejadas.",
+   "fonte": "L3 p.24 e p.35",
+   "mat": "h"
+  },
+  {
+   "id": "m6q8",
+   "mod": 5,
+   "tipo": "assoc",
+   "enun": "Ligue cada cidade ao tipo a que ela pertence:",
+   "pares": [
+    [
+     "Sinop (MT)",
+     "Planejada"
+    ],
+    [
+     "Manaus (AM)",
+     "Espontânea"
+    ],
+    [
+     "Maringá (PR)",
+     "Planejada"
+    ],
+    [
+     "Florianópolis (SC)",
+     "Espontânea"
+    ]
+   ],
+   "exp": "Sinop e Maringá tiveram projeto antes da construção. Manaus e Florianópolis nasceram de povoados que foram crescendo.",
+   "fonte": "L3 p.30 e p.31",
+   "mat": "h"
+  },
+  {
+   "id": "m6q9",
+   "mod": 5,
+   "tipo": "assoc",
+   "enun": "Revisão geral: ligue cada cidade à sua marca na história:",
+   "pares": [
+    [
+     "São Vicente",
+     "Primeira vila do Brasil, fundada em 1532"
+    ],
+    [
+     "Brasília",
+     "Planejada em formato de avião para ser a capital"
+    ],
+    [
+     "Salvador",
+     "Cidade-fortaleza planejada em 1549"
+    ],
+    [
+     "Goiânia",
+     "Primeira cidade planejada do século 20"
+    ]
+   ],
+   "exp": "Guarde bem essas datas e características: elas aparecem muito nas provas.",
+   "fonte": "L3 p.16, p.24, p.26",
+   "mat": "h"
+  },
+  {
+   "id": "m6q10",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Complete: as cidades que se formaram a partir de povoados que viraram vilas e depois cidades são chamadas de ______, e as que foram projetadas antes de serem construídas são chamadas de ______.",
+   "alts": [
+    "espontâneas / planejadas",
+    "planejadas / espontâneas",
+    "antigas / modernas",
+    "reformadas / fundadas"
+   ],
+   "certa": 0,
+   "exp": "Espontâneas: cresceram sozinhas. Planejadas: foram projetadas antes.",
+   "fonte": "L3 p.34 e p.35",
+   "mat": "h"
+  },
+  {
+   "id": "g1q1",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "O que são recursos naturais?",
+   "alts": [
+    "São os elementos existentes na natureza, usados para fabricar produtos e importantes para a sobrevivência dos seres vivos.",
+    "São os produtos que compramos nas lojas.",
+    "São os materiais que descartamos no lixo.",
+    "São as máquinas usadas nas indústrias."
+   ],
+   "certa": 0,
+   "exp": "As roupas, os aparelhos eletrônicos e outros objetos são produzidos a partir da exploração dos recursos naturais, ou seja, dos elementos existentes na natureza.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q2",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Quais são exemplos de recursos naturais citados no livro?",
+   "alts": [
+    "A luz e o calor do Sol, o ar, a água, o solo e as plantas.",
+    "O plástico, o vidro e o papel.",
+    "As indústrias, os caminhões e as máquinas.",
+    "O suco, a camiseta e a cadeira."
+   ],
+   "certa": 0,
+   "exp": "Esses recursos servem para fabricar produtos e também são importantes para a sobrevivência dos seres vivos no planeta Terra.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q3",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Para que serve a luz do Sol?",
+   "alts": [
+    "É fundamental para o desenvolvimento das plantas, que são usadas na produção de alimentos e madeira.",
+    "Serve apenas para as pessoas respirarem.",
+    "Serve para matar a sede das pessoas.",
+    "Serve para produzir o aço e o vidro."
+   ],
+   "certa": 0,
+   "exp": "A luz do Sol faz as plantas se desenvolverem. Já o calor do Sol é responsável por aquecer nosso planeta.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q4",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Por que o ar é um recurso natural importante?",
+   "alts": [
+    "Porque as pessoas e vários animais precisam dele para respirar e, quando se movimenta, forma os ventos, que podem gerar energia elétrica.",
+    "Porque dele são extraídos o arroz e o feijão.",
+    "Porque ele é usado para fabricar vidro.",
+    "Porque ele serve para regar as plantas."
+   ],
+   "certa": 0,
+   "exp": "O ar serve para respirar e, em movimento, forma os ventos, usados para gerar energia elétrica.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q5",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "O que é plantado e o que é extraído do solo?",
+   "alts": [
+    "Nele são plantados alimentos como arroz, feijão, legumes e frutas; dele também são extraídos materiais usados na produção do aço e do vidro.",
+    "Dele só é extraído o petróleo.",
+    "Nele só é plantada a melancia.",
+    "Dele são extraídos os ventos e a luz."
+   ],
+   "certa": 0,
+   "exp": "O solo serve para o cultivo de alimentos e também fornece materiais para produzir aço e vidro.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q6",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Segundo o livro, para que serve a água?",
+   "alts": [
+    "Para matar a sede, para fazer vários produtos, como os sucos, e também para produzir energia elétrica.",
+    "Somente para matar a sede das pessoas.",
+    "Somente para regar as plantas.",
+    "Para produzir o vidro e o aço."
+   ],
+   "certa": 0,
+   "exp": "Assim como o vento, o calor e a luz do Sol, a água pode ser usada para produzir energia elétrica.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q7",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "Que materiais são extraídos das plantas?",
+   "alts": [
+    "Materiais relacionados à produção de alimentos, de móveis e de borracha.",
+    "Materiais para produzir o aço.",
+    "Materiais para produzir o vidro.",
+    "Somente a água dos sucos."
+   ],
+   "certa": 0,
+   "exp": "Das plantas são extraídos diversos materiais, ligados à produção de alimentos, móveis e borracha.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g1q8",
+   "mod": 0,
+   "tipo": "assoc",
+   "enun": "Relacione cada recurso natural à sua função:",
+   "pares": [
+    [
+     "Sol",
+     "Sua luz e seu calor podem ser usados para produzir energia elétrica"
+    ],
+    [
+     "Ar",
+     "É importante para que as pessoas possam respirar"
+    ],
+    [
+     "Água",
+     "Serve para beber e para fazer produtos"
+    ],
+    [
+     "Solo",
+     "É usado no cultivo de diferentes tipos de plantas"
+    ]
+   ],
+   "exp": "Cuidado para não trocar Sol e solo! O Sol dá luz e calor; o solo é a terra onde plantamos.",
+   "fonte": "L3 p.91, atividade 1",
+   "mat": "g"
+  },
+  {
+   "id": "g1q9",
+   "mod": 0,
+   "tipo": "vf",
+   "enun": "O solo é o recurso natural que serve para as pessoas respirarem.",
+   "certa": 1,
+   "exp": "Falso! Quem serve para respirar é o ar. O solo é usado no cultivo de plantas.",
+   "fonte": "L3 p.88 e p.91",
+   "mat": "g"
+  },
+  {
+   "id": "g1q10",
+   "mod": 0,
+   "tipo": "mc",
+   "enun": "O Garfinho, do filme Toy Story 4, foi feito com um garfo descartável, madeira e tecido. O que esses itens têm em comum?",
+   "alts": [
+    "Todos foram produzidos a partir de recursos disponíveis na natureza.",
+    "Todos são feitos de plástico.",
+    "Todos foram comprados em uma loja.",
+    "Nenhum deles pode ser reutilizado."
+   ],
+   "certa": 0,
+   "exp": "Bonnie criou o Garfinho a partir de objetos que iriam para o lixo — e todos eles vieram de recursos da natureza.",
+   "fonte": "L3 p.84 e p.85",
+   "mat": "g"
+  },
+  {
+   "id": "g1q11",
+   "mod": 0,
+   "tipo": "vf",
+   "enun": "Só a água pode ser usada para produzir energia elétrica.",
+   "certa": 1,
+   "exp": "Falso! O vento, o calor e a luz do Sol também podem ser usados para produzir energia elétrica.",
+   "fonte": "L3 p.88",
+   "mat": "g"
+  },
+  {
+   "id": "g2q1",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "O que é uma matéria-prima?",
+   "alts": [
+    "É o recurso natural utilizado na fabricação de um produto.",
+    "É o produto pronto que compramos.",
+    "É o lixo que sobra da fabricação.",
+    "É a máquina usada na indústria."
+   ],
+   "certa": 0,
+   "exp": "Quando um recurso natural é utilizado na fabricação de um produto, ele recebe o nome de matéria-prima.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q2",
+   "mod": 1,
+   "tipo": "vf",
+   "enun": "Cada produto só pode ser feito com uma única matéria-prima.",
+   "certa": 1,
+   "exp": "Falso! Na produção de um objeto ou de uma máquina, mais de uma matéria-prima pode ser usada — como acontece no carro.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q3",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Do que é produzido o plástico usado em várias partes dos carros?",
+   "alts": [
+    "Da mistura de petróleo com outros materiais.",
+    "Da areia levada a fornos quentes.",
+    "Do látex extraído da seringueira.",
+    "Do minério de ferro retirado das rochas."
+   ],
+   "certa": 0,
+   "exp": "O plástico é produzido misturando petróleo e outros materiais.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q4",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Qual é o principal material utilizado para produzir o vidro das janelas dos carros?",
+   "alts": [
+    "A areia, um recurso natural.",
+    "O algodão.",
+    "O ferro.",
+    "A borracha natural."
+   ],
+   "certa": 0,
+   "exp": "Para que os vidros sejam fabricados, os materiais usados são misturados e levados a fornos com altas temperaturas.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q5",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Por que o algodão é considerado um recurso natural?",
+   "alts": [
+    "Por ser uma planta. Com ele são feitos tecidos e também as roupas que vestimos.",
+    "Por ser feito nas indústrias.",
+    "Por ser retirado das rochas.",
+    "Por ser extraído do fundo do mar."
+   ],
+   "certa": 0,
+   "exp": "O algodão é uma planta. Em muitos carros, os bancos são cobertos de tecido feito de algodão.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q6",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Onde o petróleo é encontrado e para que mais ele serve?",
+   "alts": [
+    "É encontrado no fundo da terra ou do mar e também é usado na fabricação de combustíveis para os automóveis.",
+    "É encontrado nas rochas e serve para fazer vidro.",
+    "É extraído das árvores e serve para fazer pneus.",
+    "É retirado do solo e serve para fazer alimentos."
+   ],
+   "certa": 0,
+   "exp": "O petróleo é um recurso natural encontrado no fundo da terra ou do mar. Além do plástico, dele são feitos combustíveis.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q7",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "De onde vem o minério de ferro, usado na produção do aço da carroceria dos carros?",
+   "alts": [
+    "É retirado das rochas que existem na natureza.",
+    "É produzido dentro das indústrias, sem usar a natureza.",
+    "É extraído da seringueira.",
+    "É feito a partir da areia."
+   ],
+   "certa": 0,
+   "exp": "O minério de ferro é um recurso natural retirado das rochas. O aço é feito com base na mistura de elementos naturais, como o ferro.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q8",
+   "mod": 1,
+   "tipo": "mc",
+   "enun": "Os pneus são feitos de vários materiais. Um deles é a borracha natural, que é feita de:",
+   "alts": [
+    "látex, um material extraído de uma árvore chamada seringueira.",
+    "petróleo retirado do fundo do mar.",
+    "areia levada a fornos com altas temperaturas.",
+    "algodão colhido nas plantações."
+   ],
+   "certa": 0,
+   "exp": "A borracha natural vem do látex, extraído da seringueira.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g2q9",
+   "mod": 1,
+   "tipo": "assoc",
+   "enun": "Registre qual matéria-prima é utilizada na fabricação de cada produto:",
+   "pares": [
+    [
+     "Camiseta",
+     "Algodão"
+    ],
+    [
+     "Geleia",
+     "Morango"
+    ],
+    [
+     "Pães",
+     "Trigo"
+    ],
+    [
+     "Cadeira",
+     "Madeira"
+    ]
+   ],
+   "exp": "Cada produto vem de uma matéria-prima que existe na natureza.",
+   "fonte": "L3 p.91, atividade 2",
+   "mat": "g"
+  },
+  {
+   "id": "g2q10",
+   "mod": 1,
+   "tipo": "assoc",
+   "enun": "Ligue cada parte do carro à sua matéria-prima:",
+   "pares": [
+    [
+     "Janelas",
+     "Vidro, feito de areia"
+    ],
+    [
+     "Pneus",
+     "Borracha natural, do látex"
+    ],
+    [
+     "Carroceria",
+     "Aço, feito com ferro"
+    ],
+    [
+     "Bancos",
+     "Tecido de algodão"
+    ]
+   ],
+   "exp": "Um único carro usa várias matérias-primas diferentes, todas vindas da natureza.",
+   "fonte": "L3 p.89",
+   "mat": "g"
+  },
+  {
+   "id": "g3q1",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "O que acontece com as matérias-primas antes de se tornarem os produtos que consumimos?",
+   "alts": [
+    "Elas passam por várias transformações.",
+    "Elas vão direto para as lojas, sem mudar.",
+    "Elas viram lixo.",
+    "Elas voltam para a natureza."
+   ],
+   "certa": 0,
+   "exp": "As matérias-primas podem passar por várias transformações antes de se tornarem os produtos consumidos pelas pessoas.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q2",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "No exemplo do livro, qual é a matéria-prima e qual é o produto?",
+   "alts": [
+    "A matéria-prima é a laranja e o produto é o suco.",
+    "A matéria-prima é o suco e o produto é a laranja.",
+    "A matéria-prima é a máquina e o produto é a fruta.",
+    "A matéria-prima é o copo e o produto é a laranja."
+   ],
+   "certa": 0,
+   "exp": "Tanto no formato artesanal quanto no industrial, a matéria-prima é a laranja e o produto é o suco.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q3",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Quando acontece a produção artesanal?",
+   "alts": [
+    "Quando a transformação da matéria-prima é feita manualmente ou com ferramentas que dependem do trabalho manual.",
+    "Quando a transformação é feita por grandes máquinas nas indústrias.",
+    "Quando o produto é vendido em muitas lojas.",
+    "Quando a matéria-prima vem de outro país."
+   ],
+   "certa": 0,
+   "exp": "Na produção artesanal o trabalho é manual, feito com as mãos ou com ferramentas simples.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q4",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Na produção artesanal, quem costuma cuidar das etapas do processo?",
+   "alts": [
+    "A mesma pessoa pode ficar responsável por todas as etapas.",
+    "Cada etapa fica com um grupo diferente de máquinas.",
+    "Ninguém participa: tudo é automático.",
+    "Só os donos das indústrias."
+   ],
+   "certa": 0,
+   "exp": "Na forma artesanal, a mesma pessoa pode fazer todas as etapas e costumam ser produzidas pequenas quantidades do mesmo item.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q5",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Como funciona a produção industrial?",
+   "alts": [
+    "A transformação é feita nas indústrias, com a produção dividida em várias etapas, usando máquinas e tecnologias.",
+    "A transformação é feita à mão, em casa.",
+    "Cada produto é feito por uma pessoa só, do começo ao fim.",
+    "São produzidas pequenas quantidades de cada item."
+   ],
+   "certa": 0,
+   "exp": "Na produção industrial, cada etapa fica sob a responsabilidade de um grupo de pessoas e/ou máquinas.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q6",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "Qual é a vantagem da produção industrial em relação à artesanal?",
+   "alts": [
+    "Ela consegue fabricar vários itens por vez, de maneira mais rápida.",
+    "Ela usa menos máquinas.",
+    "Ela produz quantidades menores.",
+    "Ela não precisa de matéria-prima."
+   ],
+   "certa": 0,
+   "exp": "A produção industrial fabrica vários itens de uma só vez e mais rapidamente que a artesanal.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q7",
+   "mod": 2,
+   "tipo": "vf",
+   "enun": "Um suco feito em casa, com as laranjas espremidas à mão, é um exemplo de produção artesanal.",
+   "certa": 0,
+   "exp": "Verdadeiro! Quando a transformação é manual, a produção é artesanal.",
+   "fonte": "L3 p.90",
+   "mat": "g"
+  },
+  {
+   "id": "g3q8",
+   "mod": 2,
+   "tipo": "mc",
+   "apoio": "Bruno adora usar tênis novos. Todos os meses ele vai à loja comprar novos modelos para não perder nenhum lançamento. Ao todo, já possui trinta pares de tênis e costuma usar apenas o modelo que comprou por último, deixando os outros guardados no armário.",
+   "enun": "O que se pode dizer sobre a forma como Bruno consome tênis?",
+   "alts": [
+    "Ele consome muito mais do que precisa, comprando produtos que nem chega a usar.",
+    "Ele consome de forma consciente, porque guarda tudo com cuidado.",
+    "Ele ajuda a natureza, porque compra sempre novidades.",
+    "Ele não gera nenhum impacto na natureza."
+   ],
+   "certa": 0,
+   "exp": "Consumir mais produtos do que o necessário faz com que mais recursos naturais sejam usados para fabricá-los.",
+   "fonte": "L3 p.92, atividade 4a",
+   "mat": "g"
+  },
+  {
+   "id": "g3q9",
+   "mod": 2,
+   "tipo": "mc",
+   "enun": "O que Bruno poderia fazer com os tênis que não usa mais, ajudando a preservar a natureza?",
+   "alts": [
+    "Doar ou passar adiante os pares que estão guardados, para que outras pessoas os usem.",
+    "Jogar todos no lixo comum.",
+    "Comprar mais pares para completar a coleção.",
+    "Guardar todos para sempre no armário."
+   ],
+   "certa": 0,
+   "exp": "Reaproveitar o que já existe evita a fabricação de novos produtos e, assim, economiza recursos naturais.",
+   "fonte": "L3 p.92, atividade 4b",
+   "mat": "g"
+  },
+  {
+   "id": "g4q1",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "O que costumamos chamar de lixo?",
+   "alts": [
+    "Os materiais que geralmente descartamos, como restos de comida, cascas de alimentos e folhas de papel.",
+    "Apenas as embalagens de plástico.",
+    "Somente aquilo que vai para o aterro sanitário.",
+    "Os produtos novos que compramos."
+   ],
+   "certa": 0,
+   "exp": "Fazemos o descarte de diversos materiais diariamente: restos de comida, cascas, papéis e pedaços de lápis, por exemplo.",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q2",
+   "mod": 3,
+   "tipo": "vf",
+   "enun": "O único destino possível para os materiais que descartamos é a lixeira.",
+   "certa": 1,
+   "exp": "Falso! Muitos materiais podem ser reaproveitados ou reutilizados antes de virarem lixo.",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q3",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "O que pode ser feito com as cascas de frutas em vez de jogá-las fora?",
+   "alts": [
+    "Elas podem ser reaproveitadas em receitas, como geleias, tortas, doces e bolos.",
+    "Elas só podem ir para o lixão.",
+    "Elas podem ser transformadas em vidro.",
+    "Elas devem ser guardadas no armário."
+   ],
+   "certa": 0,
+   "exp": "As cascas de frutas podem virar receitas deliciosas em vez de virar lixo.",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q4",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "O que se pode fazer com embalagens plásticas e de vidro vazias?",
+   "alts": [
+    "Depois de higienizadas, elas podem ser reaproveitadas para armazenar outros produtos e elementos.",
+    "Elas devem sempre ir para o lixão.",
+    "Elas não podem ser reaproveitadas de jeito nenhum.",
+    "Elas devem ser queimadas em casa."
+   ],
+   "certa": 0,
+   "exp": "Depois de bem lavadas, as embalagens podem guardar outras coisas — até plantas!",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q5",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "As sacolas plásticas usadas no transporte de produtos:",
+   "alts": [
+    "podem ser reutilizadas em diversas outras situações.",
+    "só servem uma única vez.",
+    "são recursos naturais.",
+    "devem ser descartadas em um lixão."
+   ],
+   "certa": 0,
+   "exp": "Reutilizar sacolas é uma forma simples de gerar menos lixo.",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q6",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "O que é importante pensar antes de jogar qualquer material na lixeira?",
+   "alts": [
+    "Se aquilo realmente precisa virar lixo ou se pode ser reutilizado em outro momento.",
+    "Se a lixeira está cheia.",
+    "Se o material é bonito.",
+    "Se alguém está olhando."
+   ],
+   "certa": 0,
+   "exp": "Existem diversas maneiras de usar os materiais que sobram das atividades do dia a dia.",
+   "fonte": "L3 p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g4q7",
+   "mod": 3,
+   "tipo": "mc",
+   "enun": "Por que consumir menos produtos ajuda a natureza?",
+   "alts": [
+    "Porque assim menos recursos naturais precisam ser explorados e menos lixo é gerado.",
+    "Porque as indústrias produzem mais rápido.",
+    "Porque os produtos ficam mais caros.",
+    "Porque o lixo desaparece sozinho."
+   ],
+   "certa": 0,
+   "exp": "Todo produto é feito a partir de recursos naturais. Consumindo com consciência, usamos menos a natureza e geramos menos lixo.",
+   "fonte": "L3 p.88, p.92 e p.93",
+   "mat": "g"
+  },
+  {
+   "id": "g5q1",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Como começa o caminho do lixo na maior parte dos municípios brasileiros?",
+   "alts": [
+    "Pela coleta: caminhões passam nas ruas e recolhem os lixos de casas, restaurantes, escolas etc.",
+    "Pela reciclagem nas fábricas.",
+    "Pelo aterro sanitário.",
+    "Pela cooperativa de catadores."
+   ],
+   "certa": 0,
+   "exp": "Tudo começa na coleta do lixo. Muitas vezes o lixo coletado é todo misturado no mesmo caminhão.",
+   "fonte": "L3 p.94",
+   "mat": "g"
+  },
+  {
+   "id": "g5q2",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "O que é a coleta seletiva de lixo?",
+   "alts": [
+    "Um serviço em que um caminhão passa em um dia específico da semana só para recolher os materiais recicláveis.",
+    "Um serviço que recolhe todo o lixo misturado.",
+    "Um lugar a céu aberto onde o lixo é jogado.",
+    "Uma fábrica que produz novos objetos."
+   ],
+   "certa": 0,
+   "exp": "Para a coleta seletiva funcionar, as pessoas devem separar os recicláveis dos restos de alimentos e de outros tipos de lixo.",
+   "fonte": "L3 p.94",
+   "mat": "g"
+  },
+  {
+   "id": "g5q3",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Quais materiais são recolhidos pela coleta seletiva?",
+   "alts": [
+    "Papel, plástico, metal e vidro.",
+    "Restos de comida e cascas de frutas.",
+    "Somente papel e papelão.",
+    "Terra, areia e pedras."
+   ],
+   "certa": 0,
+   "exp": "Esses são os materiais recicláveis, que podem ser utilizados para produzir novos objetos.",
+   "fonte": "L3 p.94",
+   "mat": "g"
+  },
+  {
+   "id": "g5q4",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "O que significa dizer que um material é reciclável?",
+   "alts": [
+    "Que ele pode ser utilizado para produzir novos objetos.",
+    "Que ele não pode mais ser usado.",
+    "Que ele precisa ir para o lixão.",
+    "Que ele é um recurso natural."
+   ],
+   "certa": 0,
+   "exp": "Reciclável: que pode ser utilizado para produzir novos objetos.",
+   "fonte": "L3 p.94",
+   "mat": "g"
+  },
+  {
+   "id": "g5q5",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "O que é um lixão?",
+   "alts": [
+    "Um lugar proibido por lei, onde o lixo é descartado a céu aberto, ficando exposto.",
+    "O lugar correto para descartar o lixo.",
+    "Uma fábrica de reciclagem.",
+    "Um caminhão que faz a coleta seletiva."
+   ],
+   "certa": 0,
+   "exp": "Nos lixões, os materiais são descartados a céu aberto. Por isso esses locais são proibidos por lei.",
+   "fonte": "L3 p.95",
+   "mat": "g"
+  },
+  {
+   "id": "g5q6",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Quais problemas o lixão pode causar?",
+   "alts": [
+    "Danos à natureza, como a contaminação do solo, e danos à saúde das pessoas, por acumular seres transmissores de doenças.",
+    "Nenhum problema, porque o lixo fica bem guardado.",
+    "Apenas mau cheiro, sem nenhum outro risco.",
+    "Só problemas para os animais, nunca para as pessoas."
+   ],
+   "certa": 0,
+   "exp": "Os lixões contaminam a água e o solo e poluem o ar, afetando diretamente a saúde de muitas pessoas.",
+   "fonte": "L3 p.95 e p.96, atividade 2",
+   "mat": "g"
+  },
+  {
+   "id": "g5q7",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Por que o aterro sanitário é um lugar correto para descartar o lixo?",
+   "alts": [
+    "Porque é preparado para evitar a poluição do solo e da água, e o lixo é coberto com uma camada de areia.",
+    "Porque o lixo fica a céu aberto.",
+    "Porque o lixo é jogado em qualquer lugar.",
+    "Porque nele o lixo é queimado."
+   ],
+   "certa": 0,
+   "exp": "Como o lixo é coberto, o mau cheiro é menor e há menos animais que podem causar doenças nas pessoas.",
+   "fonte": "L3 p.95",
+   "mat": "g"
+  },
+  {
+   "id": "g5q8",
+   "mod": 4,
+   "tipo": "mc",
+   "enun": "Para onde vão os materiais recicláveis depois de coletados?",
+   "alts": [
+    "Para centrais públicas de triagem ou cooperativas de catadores, onde são separados e depois enviados a fábricas para virarem outros produtos.",
+    "Direto para o lixão.",
+    "Para os aterros sanitários, junto com o resto do lixo.",
+    "Eles ficam guardados nos caminhões."
+   ],
+   "certa": 0,
+   "exp": "Nesses lugares os materiais são separados de acordo com suas características e depois transformados em novos produtos.",
+   "fonte": "L3 p.95",
+   "mat": "g"
+  },
+  {
+   "id": "g5q9",
+   "mod": 4,
+   "tipo": "assoc",
+   "enun": "Associe os lugares de destino do lixo às afirmativas sobre eles:",
+   "pares": [
+    [
+     "Aterro sanitário",
+     "Local preparado para receber o lixo com menor possibilidade de poluição dos recursos naturais"
+    ],
+    [
+     "Central de triagem ou cooperativa",
+     "Local em que o material reciclável é separado e depois encaminhado às indústrias"
+    ],
+    [
+     "Lixão",
+     "Local a céu aberto, proibido por lei"
+    ]
+   ],
+   "exp": "Aterro sanitário e lixão não são a mesma coisa: o aterro é preparado para proteger o solo e a água; o lixão deixa tudo exposto.",
+   "fonte": "L3 p.95 e p.97, atividade 3",
+   "mat": "g"
+  },
+  {
+   "id": "g5q10",
+   "mod": 4,
+   "tipo": "vf",
+   "enun": "Os lixões são permitidos por lei no Brasil.",
+   "certa": 1,
+   "exp": "Falso! Locais desse tipo são proibidos por lei, pois o lixo fica exposto a céu aberto.",
+   "fonte": "L3 p.95",
+   "mat": "g"
+  },
+  {
+   "id": "g6q1",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Quantos litros de água, em média, um brasileiro consome por dia em suas atividades?",
+   "alts": [
+    "200 litros — a mesma quantidade que um elefante bebe diariamente.",
+    "2 litros, só para beber.",
+    "12 litros.",
+    "1000 litros."
+   ],
+   "certa": 0,
+   "exp": "Os brasileiros consomem, em média, 200 litros de água por dia — o mesmo que um elefante bebe por dia.",
+   "fonte": "L3 p.106",
+   "mat": "g"
+  },
+  {
+   "id": "g6q2",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Por que é tão importante lavar as mãos com água e sabão?",
+   "alts": [
+    "Porque isso evita que seres causadores de doenças entrem em nosso corpo e prejudiquem nossa saúde.",
+    "Porque assim gastamos mais água.",
+    "Porque deixa as mãos perfumadas.",
+    "Porque as mãos ficam mais fortes."
+   ],
+   "certa": 0,
+   "exp": "É importante lavar as mãos depois de brincar, antes das refeições e logo após usar o banheiro.",
+   "fonte": "L3 p.110",
+   "mat": "g"
+  },
+  {
+   "id": "g6q3",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Quantos litros podem ser gastos se a torneira ficar aberta durante um minuto de lavagem das mãos?",
+   "alts": [
+    "Pouco mais de 2 litros.",
+    "135 litros.",
+    "279 litros.",
+    "Menos de meio litro."
+   ],
+   "certa": 0,
+   "exp": "Em um minuto com a torneira aberta, podem ser gastos pouco mais de 2 litros de água.",
+   "fonte": "L3 p.110",
+   "mat": "g"
+  },
+  {
+   "id": "g6q4",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Escovando os dentes com a torneira meio aberta durante 5 minutos, quanto se gasta? E fechando a torneira e usando um copo?",
+   "alts": [
+    "12 litros com a torneira aberta e menos de 1 litro com a torneira fechada.",
+    "2 litros com a torneira aberta e 1 litro com ela fechada.",
+    "135 litros com a torneira aberta e 45 litros com ela fechada.",
+    "22 litros com a torneira aberta e 12 litros com ela fechada."
+   ],
+   "certa": 0,
+   "exp": "Molhar a escova, fechar a torneira enquanto escova e enxaguar a boca com um copo economiza muita água.",
+   "fonte": "L3 p.110",
+   "mat": "g"
+  },
+  {
+   "id": "g6q5",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Durante 15 minutos de banho podem ser gastos 135 litros. O que fazer para reduzir esse gasto?",
+   "alts": [
+    "Fechar o chuveiro ao se ensaboar: o gasto cai para 45 litros.",
+    "Deixar de tomar banho.",
+    "Tomar banho com a torneira da pia aberta.",
+    "Aumentar o tempo do banho."
+   ],
+   "certa": 0,
+   "exp": "Fechar o chuveiro na hora de se ensaboar reduz o gasto de 135 para 45 litros. Deixar de tomar banho não é solução: a higiene é importante para a saúde.",
+   "fonte": "L3 p.110 e p.115",
+   "mat": "g"
+  },
+  {
+   "id": "g6q6",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Sobre a lavagem de roupas, é correto afirmar que:",
+   "alts": [
+    "lavar na pia com a torneira aberta por 15 minutos pode gastar até 279 litros; na máquina com até 5 quilos de roupa, o gasto é de 135 litros por lavagem.",
+    "lavar na pia gasta sempre menos água que a máquina.",
+    "a máquina não usa água.",
+    "lavar roupa gasta apenas 5 litros."
+   ],
+   "certa": 0,
+   "exp": "O ideal é colocar sempre a quantidade máxima de roupas que a máquina suporta.",
+   "fonte": "L3 p.110",
+   "mat": "g"
+  },
+  {
+   "id": "g6q7",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Quanta água se gasta lavando louça com a torneira aberta, e qual é a dica para evitar o desperdício?",
+   "alts": [
+    "117 litros a cada 15 minutos; a dica é ensaboar os utensílios com a torneira fechada.",
+    "22 litros a cada 15 minutos; a dica é lavar tudo de uma vez.",
+    "5 litros por dia; a dica é usar mais detergente.",
+    "180 litros por minuto; a dica é usar um regador."
+   ],
+   "certa": 0,
+   "exp": "A média para a lavagem de banheiros é de 22 litros; já a lavagem de louça com a torneira aberta gasta 117 litros a cada 15 minutos.",
+   "fonte": "L3 p.111",
+   "mat": "g"
+  },
+  {
+   "id": "g6q8",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Quanta água um adulto deve beber, em média, por dia para se manter saudável?",
+   "alts": [
+    "Cerca de 2 litros.",
+    "Cerca de 20 litros.",
+    "Cerca de 200 litros.",
+    "Menos de meio litro."
+   ],
+   "certa": 0,
+   "exp": "A quantidade pode variar de acordo com as necessidades de cada pessoa, mas a média para um adulto é de 2 litros por dia.",
+   "fonte": "L3 p.111",
+   "mat": "g"
+  },
+  {
+   "id": "g6q9",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Quantos litros de água são necessários para cozinhar um pacote de macarrão?",
+   "alts": [
+    "5 litros.",
+    "2 litros.",
+    "117 litros.",
+    "180 litros."
+   ],
+   "certa": 0,
+   "exp": "A água também é necessária para preparar alimentos e bebidas, e a quantidade varia conforme o alimento.",
+   "fonte": "L3 p.111",
+   "mat": "g"
+  },
+  {
+   "id": "g6q10",
+   "mod": 5,
+   "tipo": "mc",
+   "enun": "Ao regar as plantas com mangueira, são gastos cerca de 180 litros a cada 10 minutos. Qual é a dica do livro para gastar menos?",
+   "alts": [
+    "Usar um regador para molhar as plantas.",
+    "Regar as plantas duas vezes por dia.",
+    "Deixar a mangueira ligada por mais tempo.",
+    "Não regar mais as plantas."
+   ],
+   "certa": 0,
+   "exp": "Como todos os seres vivos, as plantas precisam de água — mas dá para regar sem desperdiçar, usando um regador.",
+   "fonte": "L3 p.111",
+   "mat": "g"
+  },
+  {
+   "id": "g6q11",
+   "mod": 5,
+   "tipo": "assoc",
+   "enun": "Ligue cada atividade à quantidade de água que ela pode gastar:",
+   "pares": [
+    [
+     "Banho de 15 minutos",
+     "135 litros"
+    ],
+    [
+     "Escovar os dentes com a torneira meio aberta por 5 minutos",
+     "12 litros"
+    ],
+    [
+     "Regar as plantas por 10 minutos",
+     "180 litros"
+    ],
+    [
+     "Lavar louça por 15 minutos com a torneira aberta",
+     "117 litros"
+    ]
+   ],
+   "exp": "Guardar esses números ajuda a perceber quanta água pode ser economizada com pequenas atitudes.",
+   "fonte": "L3 p.110 e p.111",
+   "mat": "g"
+  },
+  {
+   "id": "g7q1",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "O que significa usar a água de maneira indireta?",
+   "alts": [
+    "É quando consumimos um produto que precisou de água para ser fabricado.",
+    "É quando bebemos água direto da torneira.",
+    "É quando tomamos banho.",
+    "É quando regamos as plantas."
+   ],
+   "certa": 0,
+   "exp": "A água é importante para fabricar alimentos, remédios, roupas, automóveis e outros produtos. Quando consumimos esses produtos, usamos a água de maneira indireta.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q2",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Quantos litros de água são usados para fabricar uma folha de papel?",
+   "alts": [
+    "10 litros, o que corresponde a cerca de 50 copos d'água.",
+    "2 litros.",
+    "2700 litros.",
+    "400 000 litros."
+   ],
+   "certa": 0,
+   "exp": "Uma única folha de papel precisa de 10 litros de água — mais ou menos 50 copos.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q3",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Quantos litros de água são usados para fabricar uma camiseta de algodão?",
+   "alts": [
+    "2700 litros, mais ou menos 135 galões d'água.",
+    "10 litros.",
+    "135 litros.",
+    "15 500 litros."
+   ],
+   "certa": 0,
+   "exp": "Fabricar uma camiseta de algodão gasta 2700 litros de água.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q4",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "E para produzir um quilo de carne bovina, quanta água é necessária?",
+   "alts": [
+    "15 500 litros, quantidade que poderia encher uma piscina pequena.",
+    "5 litros.",
+    "200 litros.",
+    "2700 litros."
+   ],
+   "certa": 0,
+   "exp": "Produzir um quilo de carne bovina usa 15 500 litros de água.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q5",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Para fabricar um automóvel são usados 400 000 litros de água. Essa quantidade daria para:",
+   "alts": [
+    "abastecer, aproximadamente, a casa de 40 famílias de três pessoas por um mês.",
+    "encher um copo d'água.",
+    "lavar uma louça.",
+    "regar uma planta por 10 minutos."
+   ],
+   "certa": 0,
+   "exp": "É muita água! Por isso é importante consumir com consciência.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q6",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "O que quer dizer a palavra diluição?",
+   "alts": [
+    "Ação de misturar água a outra substância.",
+    "Ação de separar o lixo reciclável.",
+    "Ação de regar as plantas.",
+    "Ação de ferver a água."
+   ],
+   "certa": 0,
+   "exp": "Nas indústrias, a água é usada como matéria-prima, na limpeza de máquinas e na diluição de materiais.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q7",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "O que são as usinas hidrelétricas?",
+   "alts": [
+    "Locais onde a água é usada para produzir eletricidade; boa parte da energia elétrica do Brasil vem delas.",
+    "Fábricas que produzem água potável.",
+    "Locais onde o lixo é reciclado.",
+    "Máquinas que irrigam as plantações."
+   ],
+   "certa": 0,
+   "exp": "A usina hidrelétrica de Itaipu, entre o Brasil e o Paraguai, é considerada uma das maiores do mundo.",
+   "fonte": "L3 p.112",
+   "mat": "g"
+  },
+  {
+   "id": "g7q8",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Como funciona a irrigação por gotejamento?",
+   "alts": [
+    "A água passa por mangueiras com pequenos furos e sai por eles, molhando o solo bem perto de onde as plantas estão.",
+    "Grandes máquinas borrifam água por todo o terreno.",
+    "A chuva molha sozinha a plantação.",
+    "A água é levada em baldes até cada planta."
+   ],
+   "certa": 0,
+   "exp": "O gotejamento leva a água direto para perto das plantas, por mangueiras furadas.",
+   "fonte": "L3 p.113",
+   "mat": "g"
+  },
+  {
+   "id": "g7q9",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "E a irrigação por aspersão?",
+   "alts": [
+    "É usada em plantações maiores, com grandes máquinas que borrifam água por todo o terreno.",
+    "É feita com mangueiras de pequenos furos.",
+    "É usada apenas em hortas pequenas.",
+    "É a água da chuva armazenada em poços."
+   ],
+   "certa": 0,
+   "exp": "Aspersão: grandes máquinas borrifam a água por todo o terreno, como uma chuva artificial.",
+   "fonte": "L3 p.113",
+   "mat": "g"
+  },
+  {
+   "id": "g7q10",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Para que a água é usada na pecuária?",
+   "alts": [
+    "Para saciar a sede dos animais, produzir alimentos como pastagens e rações e limpar os locais onde os animais ficam abrigados, como os currais.",
+    "Apenas para lavar os tratores.",
+    "Somente para irrigar plantações de milho.",
+    "Para produzir energia elétrica nas fazendas."
+   ],
+   "certa": 0,
+   "exp": "Na pecuária a água é essencial para os animais e para a manutenção dos lugares onde eles vivem.",
+   "fonte": "L3 p.113",
+   "mat": "g"
+  },
+  {
+   "id": "g7q11",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "De que a melancia precisa para se desenvolver?",
+   "alts": [
+    "De bastante água — por isso é preciso observar o período de chuvas — e de uma terra em boas condições, com o solo preparado e com nutrientes.",
+    "Apenas de luz do Sol.",
+    "Somente de adubo, sem água.",
+    "De água salgada."
+   ],
+   "certa": 0,
+   "exp": "Antes de plantar, é preciso verificar a disponibilidade de água na região e preparar o solo, vendo se ele precisa de nutrientes.",
+   "fonte": "L3 p.108 e p.109",
+   "mat": "g"
+  },
+  {
+   "id": "g7q12",
+   "mod": 6,
+   "tipo": "mc",
+   "apoio": "No Rio Grande do Sul, o problema é a falta de chuva. No município de Hulha Negra, um produtor rural perdeu 80% da produção de leite. A pastagem, plantada em dezembro, não cresceu e faltou comida para os animais.",
+   "enun": "Qual recurso natural faltou no texto e qual atividade foi prejudicada?",
+   "alts": [
+    "Faltou água, e a atividade prejudicada foi a pecuária.",
+    "Faltou solo, e a atividade prejudicada foi a indústria.",
+    "Faltou ar, e a atividade prejudicada foi a agricultura.",
+    "Faltou energia elétrica, e a atividade prejudicada foi o comércio."
+   ],
+   "certa": 0,
+   "exp": "Sem chuva, a pastagem não cresceu e faltou comida para o gado — por isso a produção de leite caiu.",
+   "fonte": "L3 p.116, atividade 5",
+   "mat": "g"
+  },
+  {
+   "id": "g7q13",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Por que a água dos mares e oceanos não serve para o consumo humano?",
+   "alts": [
+    "Porque ela é salgada e, por isso, imprópria para o consumo humano.",
+    "Porque ela é muito fria.",
+    "Porque ela está longe das cidades.",
+    "Porque ela está poluída por lixões."
+   ],
+   "certa": 0,
+   "exp": "Na superfície terrestre há água doce e salgada. A dos mares e oceanos é salgada. A água doce é a própria para consumo.",
+   "fonte": "L3 p.117",
+   "mat": "g"
+  },
+  {
+   "id": "g7q14",
+   "mod": 6,
+   "tipo": "vf",
+   "enun": "A maior parte da água da Terra é doce e própria para o consumo.",
+   "certa": 1,
+   "exp": "Falso! A maior parte da água da Terra é salgada e está nos mares e oceanos. Apenas uma pequena quantidade é doce — por isso precisamos preservá-la.",
+   "fonte": "L3 p.117",
+   "mat": "g"
+  },
+  {
+   "id": "g7q15",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Onde podemos encontrar a água doce que está na superfície?",
+   "alts": [
+    "Em rios, lagos, lagoas, riachos e represas.",
+    "Apenas nos mares e oceanos.",
+    "Somente nas geleiras.",
+    "Somente dentro das indústrias."
+   ],
+   "certa": 0,
+   "exp": "Parte da água doce fica na superfície, em rios, lagos, lagoas, riachos, represas etc.",
+   "fonte": "L3 p.117",
+   "mat": "g"
+  },
+  {
+   "id": "g7q16",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "O que é o lençol freático?",
+   "alts": [
+    "O local abaixo da superfície terrestre onde a água doce fica armazenada; ela pode ser retirada por meio de poços.",
+    "Um tipo de represa construída pelas pessoas.",
+    "O nome da água salgada dos oceanos.",
+    "Uma máquina que irriga plantações."
+   ],
+   "certa": 0,
+   "exp": "Parte da água doce está abaixo da superfície e é retirada pela construção de poços. Esse local se chama lençol freático.",
+   "fonte": "L3 p.117",
+   "mat": "g"
+  },
+  {
+   "id": "g7q17",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "Além dos rios e dos lençóis freáticos, onde mais existe água doce?",
+   "alts": [
+    "Nas geleiras e na forma de chuva, granizo e neve.",
+    "Somente nos mares.",
+    "Somente nas piscinas.",
+    "Somente nas usinas hidrelétricas."
+   ],
+   "certa": 0,
+   "exp": "Há água doce também nas geleiras e nas diferentes formas de precipitação: chuva, granizo e neve.",
+   "fonte": "L3 p.117",
+   "mat": "g"
+  },
+  {
+   "id": "g7q18",
+   "mod": 6,
+   "tipo": "mc",
+   "enun": "O que o livro conta sobre a energia gerada pelo vento no Brasil?",
+   "alts": [
+    "O país está entre os dez do mundo que mais produzem energia a partir do vento.",
+    "O Brasil não produz energia com o vento.",
+    "Só o Rio Grande do Norte produz esse tipo de energia.",
+    "O vento só serve para refrescar as pessoas."
+   ],
+   "certa": 0,
+   "exp": "No Brasil os ventos geram muita energia elétrica, como no parque eólico de Galinhos, no Rio Grande do Norte.",
+   "fonte": "L3 p.106",
+   "mat": "g"
+  }
+ ]
+}

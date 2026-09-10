@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treino para a prova — História e Geografia</title>
+<style>
+  :root{
+    --ceu:#1F9AAA;
+    --ceu-claro:#D6F0F3;
+    --tijolo:#E2542B;
+    --amarelo:#FFC53D;
+    --noite:#152F45;
+    --papel:#FFF7E9;
+    --verde:#2E9E5B;
+    --verde-claro:#DFF3E7;
+    --vermelho:#C8402B;
+    --vermelho-claro:#FBE3DE;
+    --borda:#152F45;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Verdana","Trebuchet MS",system-ui,-apple-system,sans-serif;
+    background:var(--papel);
+    color:var(--noite);
+    font-size:17px;
+    line-height:1.5;
+    padding:0 0 40px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 14px}
+
+  header.topo{
+    background:var(--ceu);
+    border-bottom:5px solid var(--noite);
+    padding:14px 0 12px;
+  }
+  header.topo h1{
+    margin:0;font-size:1.15rem;color:#fff;letter-spacing:.3px;
+  }
+  header.topo p{margin:2px 0 0;color:#EAFBFD;font-size:.8rem}
+
+  .placar{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .chip{
+    background:#fff;border:3px solid var(--noite);border-radius:14px;
+    padding:4px 10px;font-size:.8rem;font-weight:bold;
+  }
+  .chip.ok{background:var(--verde-claro)}
+  .chip.no{background:var(--vermelho-claro)}
+
+  .barra{height:14px;background:#fff;border:3px solid var(--noite);border-radius:10px;margin-top:10px;overflow:hidden}
+  .barra i{display:block;height:100%;background:var(--amarelo);width:0%;transition:width .3s}
+
+  .cartao{
+    background:#fff;border:4px solid var(--noite);border-radius:18px;
+    padding:16px;margin-top:16px;box-shadow:6px 6px 0 rgba(21,47,69,.18);
+  }
+  .modtag{
+    display:inline-block;background:var(--amarelo);border:3px solid var(--noite);
+    border-radius:12px;padding:2px 10px;font-size:.78rem;font-weight:bold;margin-bottom:8px;
+  }
+  .revisao{background:var(--tijolo);color:#fff}
+  .enunciado{font-size:1.05rem;font-weight:bold;margin:6px 0 14px}
+  .texto-apoio{
+    background:var(--ceu-claro);border-left:6px solid var(--ceu);
+    padding:10px 12px;border-radius:8px;font-size:.92rem;margin-bottom:12px;font-weight:normal;
+  }
+  .fonte{font-size:.75rem;color:#5A7186;margin-top:10px}
+
+  button.alt{
+    display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;
+    background:#fff;border:3px solid var(--noite);border-radius:14px;
+    font-family:inherit;font-size:1rem;color:var(--noite);cursor:pointer;
+  }
+  button.alt:hover{background:var(--ceu-claro)}
+  button.alt:focus-visible{outline:4px solid var(--amarelo);outline-offset:2px}
+  button.alt .letra{
+    display:inline-block;width:26px;height:26px;line-height:22px;text-align:center;
+    background:var(--ceu);color:#fff;border:2px solid var(--noite);border-radius:50%;
+    margin-right:8px;font-weight:bold;font-size:.85rem;
+  }
+  button.alt.certa{background:var(--verde-claro);border-color:var(--verde)}
+  button.alt.errada{background:var(--vermelho-claro);border-color:var(--vermelho)}
+  button.alt[disabled]{cursor:default;opacity:.95}
+
+  .assoc-linha{display:flex;gap:8px;align-items:center;margin:10px 0;flex-wrap:wrap}
+  .assoc-linha span{flex:1 1 150px;font-weight:bold;font-size:.95rem}
+  .assoc-linha select{
+    flex:1 1 160px;padding:9px;border:3px solid var(--noite);border-radius:12px;
+    font-family:inherit;font-size:.92rem;background:#fff;color:var(--noite);
+  }
+
+  .acao{
+    background:var(--tijolo);color:#fff;border:3px solid var(--noite);border-radius:14px;
+    padding:12px 18px;font-family:inherit;font-size:1rem;font-weight:bold;cursor:pointer;
+    box-shadow:4px 4px 0 rgba(21,47,69,.25);
+  }
+  .acao:hover{background:#C8461F}
+  .acao.secundaria{background:#fff;color:var(--noite)}
+  .acao:focus-visible{outline:4px solid var(--amarelo);outline-offset:2px}
+
+  .feedback{margin-top:14px;padding:12px 14px;border:3px solid var(--noite);border-radius:14px;font-size:.95rem}
+  .feedback.ok{background:var(--verde-claro)}
+  .feedback.no{background:var(--vermelho-claro)}
+  .feedback b{display:block;font-size:1.05rem;margin-bottom:4px}
+
+  .lista-final{margin:0;padding-left:20px}
+  .lista-final li{margin-bottom:8px;font-size:.93rem}
+  h2{font-size:1.1rem;margin:18px 0 6px}
+  .rodape{text-align:center;margin-top:22px}
+  .rodape button{font-size:.85rem;padding:8px 14px}
+  .oculto{display:none}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <h1>Treino para a prova 📚</h1>
+    <p id="subtitulo">Escolha a matéria que você quer treinar</p>
+    <div class="placar" id="chips" style="display:none">
+      <span class="chip ok">✅ Acertos: <span id="cAcertos">0</span></span>
+      <span class="chip no">❌ Erros: <span id="cErros">0</span></span>
+      <span class="chip">🎯 <span id="cPerc">0</span>%</span>
+      <span class="chip" id="cModulo">Módulo 1</span>
+    </div>
+    <div id="caixaBarra" style="display:none"><div class="barra"><i id="barraProg"></i></div></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="tela"></div>
+  <div class="rodape">
+    <button class="acao secundaria" onclick="apagarProgresso()">🧹 Apagar progresso e recomeçar</button>
+  </div>
+</main>
+
+<script>
+/* ---------------- BANCO DE QUESTÕES (só conteúdo do material enviado) ---------------- */
+let MATERIAS = {};
+let Q = [];
+
+/* ---------------- ARMAZENAMENTO ---------------- */
+const CHAVE = "estudos_h_g_v2";
+const Store = {
+  async get(k){
+    try{
+      if(window.storage && window.storage.get){ const r = await window.storage.get(k); return r ? r.value : null; }
+      return localStorage.getItem(k);
+    }catch(e){ return null; }
+  },
+  async set(k,v){
+    try{
+      if(window.storage && window.storage.set){ await window.storage.set(k,v); return; }
+      localStorage.setItem(k,v);
+    }catch(e){ /* o app segue funcionando mesmo sem salvar */ }
+  },
+  async del(k){
+    try{
+      if(window.storage && window.storage.delete){ await window.storage.delete(k); return; }
+      localStorage.removeItem(k);
+    }catch(e){}
+  }
+};
+
+/* ---------------- ESTADO ---------------- */
+let MAT = null;                 // "h" ou "g"
+let EST = {h:null, g:null};     // um progresso para cada matéria
+let S = null;                   // atalho para EST[MAT]
+
+function estadoNovo(){
+  return {mod:0, fila:[], pos:0, acertos:0, erros:0, dominadas:[], errosPorQ:{}, carry:[], porModulo:{}, iniciado:false, fim:false};
+}
+function mods(){ return MATERIAS[MAT].modulos; }
+function qById(id){ return Q.find(q=>q.id===id); }
+function doModulo(mat, m){ return Q.filter(q=>q.mat===mat && q.mod===m); }
+function totalDaMateria(mat){ return Q.filter(q=>q.mat===mat).length; }
+function embaralhar(a){ const b=a.slice(); for(let i=b.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [b[i],b[j]]=[b[j],b[i]];} return b; }
+
+function montarFila(){
+  const novas = doModulo(MAT, S.mod).filter(q=>!S.dominadas.includes(q.id)).map(q=>q.id);
+  const revisao = S.carry.filter(id=>!S.dominadas.includes(id));
+  S.carry = [];
+  S.fila = embaralhar(revisao).concat(novas);
+  S.pos = 0;
+}
+
+async function salvar(){ await Store.set(CHAVE, JSON.stringify(EST)); }
+
+/* ---------------- RENDER ---------------- */
+const tela = document.getElementById("tela");
+
+function atualizarPlacar(){
+  const cab = document.getElementById("subtitulo");
+  const chips = document.getElementById("chips");
+  const barra = document.getElementById("caixaBarra");
+  if(!MAT){
+    cab.textContent = "Escolha a matéria que você quer treinar";
+    chips.style.display = "none";
+    barra.style.display = "none";
+    return;
+  }
+  chips.style.display = "flex";
+  barra.style.display = "block";
+  cab.textContent = MATERIAS[MAT].emoji + " " + MATERIAS[MAT].nome + " — " + MATERIAS[MAT].sub;
+  const total = S.acertos + S.erros;
+  document.getElementById("cAcertos").textContent = S.acertos;
+  document.getElementById("cErros").textContent = S.erros;
+  document.getElementById("cPerc").textContent = total ? Math.round(S.acertos/total*100) : 0;
+  document.getElementById("cModulo").textContent = S.fim ? "Fim!" : "Módulo "+(S.mod+1)+" de "+mods().length;
+  document.getElementById("barraProg").style.width =
+    Math.round(S.dominadas.length/totalDaMateria(MAT)*100)+"%";
+}
+
+function telaMaterias(){
+  MAT = null; S = null;
+  atualizarPlacar();
+  const card = m => {
+    const e = EST[m], t = totalDaMateria(m), p = Math.round(e.dominadas.length/t*100);
+    const M = MATERIAS[m];
+    return `<div class="cartao">
+        <span class="modtag">${M.emoji} ${M.nome}</span>
+        <p class="enunciado">${M.sub}</p>
+        <p style="font-size:.9rem">${M.modulos.length} módulos • ${t} perguntas • ${p}% concluído</p>
+        <div class="barra" style="margin:8px 0 12px"><i style="width:${p}%"></i></div>
+        <button class="acao" onclick="abrirMateria('${m}')">${e.iniciado? "▶️ Continuar" : "▶️ Começar"}</button>
+      </div>`;
+  };
+  tela.innerHTML = `
+    <div class="cartao">
+      <span class="modtag">Vamos estudar? 📚</span>
+      <p class="enunciado">Escolha a matéria de hoje</p>
+      <p>Se você errar uma pergunta, ela volta mais tarde até você acertar. Cada matéria guarda seu próprio progresso.</p>
+    </div>` + card("h") + card("g");
+}
+
+function abrirMateria(m){
+  MAT = m; S = EST[m];
+  if(!S.iniciado){
+    S.iniciado = true;
+    montarFila();
+  }else if(S.fim){
+    salvar(); atualizarPlacar(); telaFinal(); return;
+  }else if(!S.fila || S.fila.length===0){
+    montarFila();
+  }
+  salvar();
+  proxima();
+}
+
+function letra(i){ return ["A","B","C","D"][i]; }
+
+function proxima(){
+  atualizarPlacar();
+  if(S.pos >= S.fila.length){ fimDeModulo(); return; }
+  const q = qById(S.fila[S.pos]);
+  const emRevisao = (S.errosPorQ[q.id]||0) > 0;
+  let corpo = "";
+
+  if(q.tipo==="assoc"){
+    const direitas = embaralhar(q.pares.map(p=>p[1]));
+    corpo = q.pares.map((p,i)=>`
+      <div class="assoc-linha">
+        <span>${p[0]}</span>
+        <select id="as${i}">
+          <option value="">escolha...</option>
+          ${direitas.map(d=>`<option value="${d.replace(/"/g,'&quot;')}">${d}</option>`).join("")}
+        </select>
+      </div>`).join("") +
+      `<button class="acao" style="margin-top:10px" onclick="responderAssoc('${q.id}')">Conferir</button>`;
+  } else {
+    let alts, idxCerta;
+    if(q.tipo==="vf"){ alts=["Verdadeiro","Falso"]; idxCerta=q.certa; }
+    else{
+      const ordem = embaralhar(q.alts.map((t,i)=>({t,i})));
+      alts = ordem.map(o=>o.t);
+      idxCerta = ordem.findIndex(o=>o.i===q.certa);
+    }
+    corpo = alts.map((t,i)=>`<button class="alt" onclick="responder('${q.id}',${i},${idxCerta},this)"><span class="letra">${letra(i)}</span>${t}</button>`).join("");
+  }
+
+  tela.innerHTML = `
+    <div class="cartao">
+      <span class="modtag ${emRevisao?'revisao':''}">${emRevisao? "🔁 Revisão" : (S.mod+1)+" · "+mods()[S.mod]}</span>
+      ${q.apoio? `<div class="texto-apoio">${q.apoio}</div>`:""}
+      <p class="enunciado">${q.enun}</p>
+      <div id="opcoes">${corpo}</div>
+      <div id="fb"></div>
+    </div>`;
+}
+
+function registrar(q, acertou){
+  if(acertou){
+    S.acertos++;
+    if(!S.dominadas.includes(q.id)) S.dominadas.push(q.id);
+  }else{
+    S.erros++;
+    S.errosPorQ[q.id] = (S.errosPorQ[q.id]||0)+1;
+    if(S.errosPorQ[q.id] < 2){
+      const destino = Math.min(S.pos+3, S.fila.length);
+      S.fila.splice(destino,0,q.id);
+    }else if(!S.carry.includes(q.id)){
+      S.carry.push(q.id);
+    }
+  }
+  const pm = S.porModulo[S.mod] || {a:0,e:0};
+  acertou ? pm.a++ : pm.e++;
+  S.porModulo[S.mod] = pm;
+  salvar();
+}
+
+function mostrarFeedback(q, acertou){
+  const aviso = acertou ? "" : "<br>🔁 Essa pergunta vai voltar para você tentar de novo!";
+  document.getElementById("fb").innerHTML = `
+    <div class="feedback ${acertou?'ok':'no'}">
+      <b>${acertou? "✅ Muito bem!" : "❌ Vamos tentar novamente!"}</b>
+      ${q.exp}${aviso}
+      <div class="fonte">📖 Fonte: ${q.fonte}</div>
+    </div>
+    <button class="acao" style="margin-top:12px" onclick="avancar()">Próxima ➜</button>`;
+  atualizarPlacar();
+}
+
+function responder(id, escolha, idxCerta, botao){
+  const q = qById(id);
+  const acertou = (escolha === idxCerta);
+  const botoes = document.querySelectorAll("#opcoes .alt");
+  botoes.forEach((b,i)=>{ b.disabled = true; if(i===idxCerta) b.classList.add("certa"); });
+  if(!acertou) botao.classList.add("errada");
+  registrar(q, acertou);
+  mostrarFeedback(q, acertou);
+}
+
+function responderAssoc(id){
+  const q = qById(id);
+  let acertou = true;
+  q.pares.forEach((p,i)=>{
+    const sel = document.getElementById("as"+i);
+    if(sel.value !== p[1]) acertou = false;
+    sel.disabled = true;
+  });
+  document.querySelector("#opcoes .acao").style.display = "none";
+  registrar(q, acertou);
+  mostrarFeedback(q, acertou);
+  if(!acertou){
+    const extra = q.pares.map(p=>`<li><b>${p[0]}</b> ➜ ${p[1]}</li>`).join("");
+    document.querySelector("#fb .feedback").insertAdjacentHTML("beforeend",
+      `<ul style="margin:8px 0 0;padding-left:20px">${extra}</ul>`);
+  }
+}
+
+function avancar(){ S.pos++; salvar(); proxima(); }
+
+function fimDeModulo(){
+  if(S.mod < mods().length-1){
+    const pm = S.porModulo[S.mod] || {a:0,e:0};
+    const tot = pm.a+pm.e;
+    const perc = tot? Math.round(pm.a/tot*100):0;
+    const nCarry = S.carry.length;
+    tela.innerHTML = `
+      <div class="cartao">
+        <span class="modtag">Módulo ${S.mod+1} concluído! 🎉</span>
+        <p class="enunciado">Você acertou ${perc}% neste módulo.</p>
+        ${nCarry? `<p>Ainda temos <b>${nCarry} pergunta(s)</b> para revisar. Elas vão aparecer misturadas no próximo módulo. 🔁</p>` : `<p>Você não deixou nenhuma pergunta para trás. Excelente! ⭐</p>`}
+        <button class="acao" onclick="proximoModulo()">Ir para o módulo ${S.mod+2} ➜</button>
+        <button class="acao secundaria" style="margin-top:8px" onclick="telaMaterias()">Trocar de matéria</button>
+      </div>`;
+  }else{
+    telaFinal();
+  }
+  atualizarPlacar();
+}
+
+function proximoModulo(){
+  S.mod++;
+  montarFila();
+  salvar();
+  proxima();
+}
+
+function telaFinal(){
+  S.fim = true;
+  const total = S.acertos+S.erros;
+  const perc = total? Math.round(S.acertos/total*100):0;
+  const fortes=[], fracos=[];
+  const nomes = mods();
+  for(let m=0;m<nomes.length;m++){
+    const pm=S.porModulo[m]; if(!pm) continue;
+    const t=pm.a+pm.e, p=t?Math.round(pm.a/t*100):0;
+    (p>=80? fortes:fracos).push(nomes[m]+" ("+p+"%)");
+  }
+  const escaparam = Q.filter(q=>q.mat===MAT && !S.dominadas.includes(q.id));
+  tela.innerHTML = `
+    <div class="cartao">
+      <span class="modtag">Fim do treino de ${MATERIAS[MAT].nome}! 🏆</span>
+      <p class="enunciado">Desempenho final: ${perc}%</p>
+      <p>✅ ${S.acertos} acertos &nbsp;•&nbsp; ❌ ${S.erros} erros</p>
+      <h2>⭐ Pontos fortes</h2>
+      ${fortes.length? `<ul class="lista-final">${fortes.map(f=>`<li>${f}</li>`).join("")}</ul>` : "<p>Continue treinando para conquistar seus pontos fortes!</p>"}
+      <h2>📚 Assuntos para revisar</h2>
+      ${fracos.length? `<ul class="lista-final">${fracos.map(f=>`<li>${f}</li>`).join("")}</ul>` : "<p>Nenhum! Você foi muito bem em todos os módulos.</p>"}
+      <h2>🔁 Perguntas que ainda escaparam</h2>
+      ${escaparam.length? `<ul class="lista-final">${escaparam.map(q=>`<li>${q.enun} <span class="fonte">(${q.fonte})</span></li>`).join("")}</ul>
+        <button class="acao" onclick="treinarEscapadas()">Treinar só essas perguntas</button>`
+        : "<p>Nenhuma! Você acertou todas. 🎉</p>"}
+      <button class="acao secundaria" style="margin-top:10px" onclick="telaMaterias()">Trocar de matéria</button>
+    </div>`;
+  salvar();
+  atualizarPlacar();
+}
+
+function treinarEscapadas(){
+  const restantes = Q.filter(q=>q.mat===MAT && !S.dominadas.includes(q.id)).map(q=>q.id);
+  if(restantes.length===0){ telaFinal(); return; }
+  S.fim=false;
+  S.fila = embaralhar(restantes);
+  S.errosPorQ = {};
+  S.pos = 0;
+  salvar();
+  proxima();
+}
+
+async function apagarProgresso(){
+  const alvo = MAT ? MATERIAS[MAT].nome : "as duas matérias";
+  if(!confirm("Quer mesmo apagar o progresso de "+alvo+" e recomeçar do zero?")) return;
+  if(MAT){ EST[MAT] = estadoNovo(); S = EST[MAT]; await salvar(); telaMaterias(); }
+  else{ EST = {h:estadoNovo(), g:estadoNovo()}; await Store.del(CHAVE); telaMaterias(); }
+}
+
+/* ---------------- INÍCIO ---------------- */
+(async function(){
+  try{
+    const resp = await fetch("perguntas.json?v=" + Date.now());
+    const dados = await resp.json();
+    MATERIAS = dados.materias;
+    Q = dados.questoes;
+  }catch(e){
+    tela.innerHTML = `<div class="cartao">
+      <span class="modtag">Ops!</span>
+      <p class="enunciado">Não consegui carregar o arquivo perguntas.json.</p>
+      <p>Se você abriu o arquivo direto do celular ou do computador, publique a pasta em um site
+      (GitHub Pages, Netlify, Cloudflare Pages) e abra por lá — os navegadores bloqueiam a leitura
+      de arquivos locais.</p></div>`;
+    return;
+  }
+  const salvo = await Store.get(CHAVE);
+  EST = {h:estadoNovo(), g:estadoNovo()};
+  if(salvo){
+    try{
+      const p = JSON.parse(salvo);
+      if(p.h) EST.h = Object.assign(estadoNovo(), p.h);
+      if(p.g) EST.g = Object.assign(estadoNovo(), p.g);
+    }catch(e){}
+  }
+  telaMaterias();
+})();
+</script>
+</body>
+</html>

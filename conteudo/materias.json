@@ -1,0 +1,16 @@
+{
+  "historia": {
+    "nome": "História",
+    "emoji": "🏙️",
+    "cor": "#E2542B",
+    "ordem": 1,
+    "sub": "A história do espaço urbano brasileiro — Livro 3, Unidade 3"
+  },
+  "geografia": {
+    "nome": "Geografia",
+    "emoji": "🌱",
+    "cor": "#2E9E5B",
+    "ordem": 2,
+    "sub": "Cuidar para não faltar — Livro 3, Unidades 3 e 4"
+  }
+}

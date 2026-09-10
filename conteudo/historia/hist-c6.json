@@ -1,0 +1,1240 @@
+{
+  "capitulo": {
+    "id": "hist.c6",
+    "materia_id": "historia",
+    "titulo": "A história do espaço urbano brasileiro",
+    "livro": "L3",
+    "paginas": "14-35",
+    "ordem": 1,
+    "publicado": true
+  },
+  "modulos": [
+    {
+      "id": "hist.c6.m1",
+      "titulo": "De povoados a cidades: São Vicente",
+      "ordem": 1
+    },
+    {
+      "id": "hist.c6.m2",
+      "titulo": "Recife e as reformas holandesas",
+      "ordem": 2
+    },
+    {
+      "id": "hist.c6.m3",
+      "titulo": "Rio de Janeiro, a cidade do rei",
+      "ordem": 3
+    },
+    {
+      "id": "hist.c6.m4",
+      "titulo": "São Paulo e a produção de café",
+      "ordem": 4
+    },
+    {
+      "id": "hist.c6.m5",
+      "titulo": "Cidades planejadas e Brasília",
+      "ordem": 5
+    },
+    {
+      "id": "hist.c6.m6",
+      "titulo": "Espontânea ou planejada?",
+      "ordem": 6
+    }
+  ],
+  "questoes": [
+    {
+      "id": "hist.c6.m1.q01",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Por volta de que ano surgiram os primeiros povoamentos urbanos no Brasil?",
+      "apoio": null,
+      "alternativas": [
+        "Por volta de 1530, quando os portugueses passaram a morar no país.",
+        "Por volta de 1900, com a produção de café.",
+        "Por volta de 1808, com a chegada da família real.",
+        "Por volta de 1957, quando Natal cresceu."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Os primeiros povoamentos urbanos surgiram por volta de 1530, quando os portugueses passaram a morar no Brasil. Depois vieram as vilas, com casas, igrejas e comércios.",
+      "fonte": "L3 p.16",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q02",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Qual é a ordem certa do crescimento de uma cidade espontânea?",
+      "apoio": null,
+      "alternativas": [
+        "Povoado ➜ vila ➜ cidade",
+        "Cidade ➜ vila ➜ povoado",
+        "Vila ➜ povoado ➜ cidade",
+        "Projeto ➜ obra ➜ cidade"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Primeiro nasce um pequeno povoado, ele cresce e vira vila e, depois de muito tempo, vira cidade.",
+      "fonte": "L3 p.16 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q03",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "O que são cidades espontâneas?",
+      "apoio": null,
+      "alternativas": [
+        "Cidades que surgiram e se desenvolveram sem planejamento.",
+        "Cidades desenhadas por um arquiteto antes de existirem.",
+        "Cidades construídas só para serem capitais.",
+        "Cidades que foram destruídas pelo mar."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Espontâneas são as cidades que foram crescendo sozinhas, aos poucos, sem ninguém planejar antes.",
+      "fonte": "L3 p.16 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q04",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Qual é o nome da primeira vila brasileira e em que ano ela foi fundada?",
+      "apoio": null,
+      "alternativas": [
+        "São Vicente, em 1532",
+        "Salvador, em 1549",
+        "Recife, em 1637",
+        "Rio de Janeiro, em 1808"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A primeira vila brasileira foi São Vicente, fundada em 1532, perto do mar, no estado de São Paulo.",
+      "fonte": "L3 p.16",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q05",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Por que a Vila de São Vicente foi crescendo até virar cidade?",
+      "apoio": null,
+      "alternativas": [
+        "Por causa do comércio pelo porto, da criação de gado, do cultivo de alimentos e, principalmente, dos engenhos de açúcar.",
+        "Por causa da produção de café.",
+        "Porque a família real portuguesa foi morar lá.",
+        "Porque foi escolhida para ser a capital do Brasil."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "São Vicente cresceu com o comércio de mercadorias pelo porto, a criação de gado, o cultivo de alimentos e, principalmente, os engenhos de açúcar construídos pelos portugueses.",
+      "fonte": "L3 p.16",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q06",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Por que a Vila de São Vicente precisou ser reconstruída?",
+      "apoio": null,
+      "alternativas": [
+        "Porque em 1542 o mar invadiu e destruiu ruas, casas e a igreja.",
+        "Porque um incêndio destruiu a vila.",
+        "Porque os moradores se mudaram para Brasília.",
+        "Porque os holandeses reformaram a vila."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Em 1542 o mar invadiu a vila e destruiu grande parte dela. Por isso, ela foi reconstruída um pouco mais distante da praia.",
+      "fonte": "L3 p.16 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q07",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "vf",
+      "enunciado": "As primeiras vilas brasileiras precisaram ser reformadas e modernizadas com o passar dos anos, por causa das necessidades de seus moradores.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Verdadeiro! As ruas ficaram mais largas e muitas casas e construções foram feitas.",
+      "fonte": "L3 p.16",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q08",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "A obra Fundação de São Vicente, produzida em 1900 por Benedito Calixto, representa:",
+      "apoio": null,
+      "alternativas": [
+        "Povos indígenas e portugueses na Vila de São Vicente.",
+        "A família real chegando ao Rio de Janeiro.",
+        "A construção de Brasília.",
+        "O Viaduto do Chá em São Paulo."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nessa pintura aparecem povos indígenas e portugueses na Vila de São Vicente.",
+      "fonte": "L3 p.16",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q09",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "vf",
+      "enunciado": "São Vicente foi uma cidade planejada, desenhada antes de ser construída.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! São Vicente nasceu de uma vila que foi crescendo aos poucos: ela é uma cidade espontânea.",
+      "fonte": "L3 p.16 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m1.q10",
+      "modulo_id": "hist.c6.m1",
+      "tipo": "mc",
+      "enunciado": "Observando as duas fotos da cidade de Natal (1957 e atualmente), o que mudou na paisagem?",
+      "apoio": null,
+      "alternativas": [
+        "Hoje há muitos prédios, casas, ruas e uma ponte; antes havia mais vegetação e poucas construções.",
+        "Antes havia mais prédios do que hoje.",
+        "A cidade continua exatamente igual.",
+        "Hoje só existe vegetação no lugar da cidade."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A paisagem urbana de Natal se transformou: a cidade cresceu, ganhou muitas construções e a vegetação diminuiu.",
+      "fonte": "L3 p.14 e p.15",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q01",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Em que estado fica a cidade de Recife?",
+      "apoio": null,
+      "alternativas": [
+        "Pernambuco",
+        "Bahia",
+        "Rio Grande do Norte",
+        "Tocantins"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Recife é a capital de Pernambuco.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q02",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Entre quais anos Recife passou por uma reforma urbana feita pelos holandeses?",
+      "apoio": null,
+      "alternativas": [
+        "Entre 1637 e 1644",
+        "Entre 1808 e 1821",
+        "Entre 1530 e 1542",
+        "Entre 1970 e 1990"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Recife foi reformada entre 1637 e 1644, quando era administrada por holandeses.",
+      "fonte": "L3 p.17 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q03",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "mc",
+      "enunciado": "O que os holandeses construíram na cidade de Recife?",
+      "apoio": null,
+      "alternativas": [
+        "Ruas, pontes, casas, jardim botânico e zoológico",
+        "Só igrejas e engenhos de açúcar",
+        "Avenidas largas e prédios monumentais",
+        "Canaletas exclusivas para ônibus"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nessa época os holandeses construíram ruas, pontes, casas, um jardim botânico e um zoológico.",
+      "fonte": "L3 p.17 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q04",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "mc",
+      "enunciado": "O Palácio de Friburgo, em Recife, foi construído para ser a moradia de quem?",
+      "apoio": null,
+      "alternativas": [
+        "De Maurício de Nassau",
+        "Do rei de Portugal",
+        "De Lúcio Costa",
+        "De Benedito Calixto"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O Palácio de Friburgo foi a moradia de Maurício de Nassau, que governou a cidade durante a administração holandesa.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q05",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "vf",
+      "enunciado": "As construções feitas em Recife nessa época demonstravam a riqueza de parte da população.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Verdadeiro! As construções mostravam que parte da população era rica.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q06",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "mc",
+      "enunciado": "Quem administrava a cidade de Recife na época dessa grande reforma?",
+      "apoio": null,
+      "alternativas": [
+        "Os holandeses",
+        "Os franceses",
+        "A família real portuguesa",
+        "Os fazendeiros de café"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Recife era administrada por holandeses entre 1637 e 1644.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m2.q07",
+      "modulo_id": "hist.c6.m2",
+      "tipo": "assoc",
+      "enunciado": "Ligue cada cidade ao motivo pelo qual ela mudou:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "São Vicente",
+          "O mar invadiu a vila em 1542"
+        ],
+        [
+          "Recife",
+          "Reformas feitas pelos holandeses"
+        ],
+        [
+          "Rio de Janeiro",
+          "Chegada da família real portuguesa"
+        ],
+        [
+          "São Paulo",
+          "Riquezas da produção de café"
+        ]
+      ],
+      "explicacao": "São Vicente foi reconstruída depois da invasão do mar; Recife foi reformada pelos holandeses; o Rio mudou com a família real; São Paulo se modernizou com o dinheiro do café.",
+      "fonte": "L3 p.16 a p.18 e p.34",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q01",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Entre quais anos a cidade do Rio de Janeiro passou por grandes reformas?",
+      "apoio": null,
+      "alternativas": [
+        "Entre 1808 e 1821",
+        "Entre 1637 e 1644",
+        "Entre 1530 e 1532",
+        "Entre 1892 e 1938"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O Rio de Janeiro foi reformado entre 1808 e 1821, quando a família real portuguesa veio para o Brasil.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q02",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Por que a família real portuguesa resolveu deixar Portugal?",
+      "apoio": null,
+      "alternativas": [
+        "Porque estava em conflito com a França e queria fugir de uma possível guerra.",
+        "Porque queria construir uma nova capital.",
+        "Porque Portugal foi destruído pelo mar.",
+        "Porque queria plantar café no Brasil."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A família real estava em conflito com a França e saiu de Portugal para fugir de uma possível guerra.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q03",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Quem veio junto com a família real portuguesa para o Rio de Janeiro?",
+      "apoio": null,
+      "alternativas": [
+        "Soldados, comerciantes e funcionários públicos",
+        "Apenas o rei e a rainha",
+        "Trabalhadores vindos de Brasília",
+        "Engenheiros holandeses"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A família real trouxe soldados, comerciantes e funcionários públicos. Por isso o número de habitantes aumentou muito.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q04",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "O embarque da Família Real Portuguesa para o Brasil, obra de Nicolas-Louis-Albert Delerive, mostra um evento que provocou, na época:",
+      "apoio": null,
+      "alternativas": [
+        "O aumento da população da cidade do Rio de Janeiro.",
+        "A ida da população brasileira para Portugal.",
+        "A eleição de um novo presidente do Brasil.",
+        "A construção da cidade de Brasília."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Com a chegada da família real e de seus acompanhantes, a população do Rio de Janeiro aumentou bastante.",
+      "fonte": "L3 p.19, atividade 3",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q05",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Quais construções foram feitas no Rio de Janeiro com a chegada do rei e de sua família?",
+      "apoio": null,
+      "alternativas": [
+        "Estradas, o Museu Nacional, a Biblioteca Real, o Observatório Astronômico e o Jardim Botânico",
+        "Canaletas de ônibus e ciclovias",
+        "O Viaduto do Chá e a Avenida Paulista",
+        "O Palácio de Friburgo e um zoológico"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Em pouco tempo a paisagem urbana mudou: foram construídas estradas, o Museu Nacional, a Biblioteca Real, o Observatório Astronômico e o Jardim Botânico.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q06",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "O Jardim Botânico do Rio de Janeiro, construído há mais de 200 anos, é um espaço muito antigo da cidade. Marque a alternativa correta:",
+      "apoio": null,
+      "alternativas": [
+        "O Jardim Botânico faz parte das modificações acontecidas na cidade por causa da chegada dos portugueses.",
+        "Essa construção serviu como moradia para os novos habitantes portugueses, já que faltavam moradias para todos.",
+        "O Jardim Botânico foi construído pelos holandeses.",
+        "O Jardim Botânico foi planejado por Lúcio Costa."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O Jardim Botânico foi uma das construções feitas depois que os portugueses chegaram ao Rio de Janeiro.",
+      "fonte": "L3 p.20, atividade 4",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q07",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Qual problema apareceu no Rio de Janeiro quando muita gente chegou de uma vez?",
+      "apoio": null,
+      "alternativas": [
+        "Faltou moradia: as melhores casas foram tomadas pelos funcionários da família real e entregues aos portugueses.",
+        "Faltou água para todos os moradores.",
+        "As ruas ficaram largas demais.",
+        "O mar invadiu as casas da cidade."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A falta de moradia foi um problema. As melhores casas foram tomadas e entregues aos portugueses.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q08",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "vf",
+      "enunciado": "As pessoas que foram obrigadas a deixar suas casas para os portugueses ficaram muito satisfeitas com essa mudança.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Essa situação provocou o descontentamento das pessoas que perderam suas moradias.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q09",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "A obra O chafariz do campo, produzida em 1835 por Karl Wilhelm Theremin, retrata:",
+      "apoio": null,
+      "alternativas": [
+        "Uma fonte, construção que se tornou importante quando a família real veio ao Brasil.",
+        "O porto da Vila de São Vicente.",
+        "A construção de Brasília.",
+        "O zoológico construído em Recife."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As fontes (chafarizes) se tornaram construções importantes na época em que a família real portuguesa veio ao Brasil.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m3.q10",
+      "modulo_id": "hist.c6.m3",
+      "tipo": "mc",
+      "enunciado": "Por que o Brasil foi o destino escolhido pela família real portuguesa?",
+      "apoio": null,
+      "alternativas": [
+        "Porque, nesse período, o Brasil também era administrado pelos portugueses.",
+        "Porque o Brasil já era a capital de Portugal.",
+        "Porque o Brasil tinha acabado de ser planejado.",
+        "Porque os holandeses convidaram a família real."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Como o Brasil era administrado pelos portugueses na época, a família real decidiu partir para o Rio de Janeiro.",
+      "fonte": "L3 p.17",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q01",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Em que época a cidade de São Paulo passou por mudanças que a deixaram mais moderna?",
+      "apoio": null,
+      "alternativas": [
+        "Nos anos de 1900",
+        "Nos anos de 1530",
+        "Entre 1637 e 1644",
+        "Nos anos de 1970"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nos anos de 1900 São Paulo passou por reformas que modernizaram a cidade.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q02",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Escreva dois exemplos de reformas feitas em São Paulo nessa época. Qual alternativa apresenta exemplos corretos?",
+      "apoio": null,
+      "alternativas": [
+        "A abertura de ruas e avenidas e a criação de praças",
+        "A construção de um zoológico e de um jardim botânico pelos holandeses",
+        "A construção do Museu Nacional e da Biblioteca Real",
+        "O desenho da cidade em formato de avião"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Entre as reformas de São Paulo estão a abertura de ruas e avenidas, a criação de praças e a iluminação das ruas do centro.",
+      "fonte": "L3 p.18 e p.20, atividade 5a",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q03",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Que produto comercializado pelo Brasil nessa época contribuiu para a modernização de São Paulo?",
+      "apoio": null,
+      "alternativas": [
+        "O café",
+        "O açúcar",
+        "O chá-da-Índia",
+        "O ouro"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As riquezas vieram da produção de café, plantado na região. Por muitos anos ele foi o principal produto comercializado pelo Brasil.",
+      "fonte": "L3 p.18 e p.20, atividade 5b",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q04",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Onde moravam as famílias que ficaram ricas com o café, em São Paulo?",
+      "apoio": null,
+      "alternativas": [
+        "Em casarões construídos na cidade",
+        "Em vilas de pescadores",
+        "Em prédios monumentais de Brasília",
+        "No Palácio de Friburgo"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O dinheiro do café enriqueceu muitas pessoas, que viviam com suas famílias em casarões na cidade. Isso aparece na foto da Avenida Paulista de 1910.",
+      "fonte": "L3 p.18",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q05",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Em que ano foi inaugurado o Viaduto do Chá, o primeiro viaduto da cidade de São Paulo?",
+      "apoio": null,
+      "alternativas": [
+        "Em 1892",
+        "Em 1938",
+        "Em 1910",
+        "Em 1821"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O Viaduto do Chá foi inaugurado em 1892 e foi o primeiro viaduto de São Paulo.",
+      "fonte": "L3 p.20, texto da atividade 6",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q06",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Por que o Viaduto do Chá recebeu esse nome?",
+      "apoio": null,
+      "alternativas": [
+        "Porque nas suas proximidades ficava uma extensa plantação de chá-da-Índia.",
+        "Porque foi construído por uma família chamada Chá.",
+        "Porque nele funcionavam muitas casas de chá.",
+        "Porque o piso dele era feito de folhas de chá."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O nome veio da extensa plantação de chá-da-Índia que existia perto do local.",
+      "fonte": "L3 p.20, texto da atividade 6",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q07",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Qual era o objetivo da construção do Viaduto do Chá?",
+      "apoio": null,
+      "alternativas": [
+        "Ligar a Rua Direita à Rua do Chá (atual Rua Barão de Itapetininga), no centro da cidade.",
+        "Ligar São Paulo ao Rio de Janeiro.",
+        "Levar água até o centro da cidade.",
+        "Servir de moradia para os fazendeiros de café."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O viaduto foi construído para ligar a Rua Direita com a Rua do Chá, hoje chamada Rua Barão de Itapetininga.",
+      "fonte": "L3 p.20, texto da atividade 6",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q08",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "O que aconteceu com o Viaduto do Chá em 1938?",
+      "apoio": null,
+      "alternativas": [
+        "O velho viaduto de piso de madeira foi demolido e deu lugar a outro, de concreto, com o dobro de largura.",
+        "Ele foi destruído pelo mar.",
+        "Ele foi transformado em um museu.",
+        "Ele ganhou canaletas exclusivas para ônibus."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Em 1938 o viaduto antigo, com piso de madeira, foi demolido. No lugar dele foi construído um de concreto, com o dobro de largura.",
+      "fonte": "L3 p.20, texto da atividade 6",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q09",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "mc",
+      "enunciado": "Comparando as imagens do Viaduto do Chá por volta de 1900 e atualmente, que mudanças você observa?",
+      "apoio": null,
+      "alternativas": [
+        "Hoje há muitos prédios altos, mais carros e menos casas baixas; a paisagem ficou mais movimentada.",
+        "Hoje há menos construções do que antes.",
+        "A paisagem continua exatamente igual.",
+        "Hoje o viaduto é feito de madeira."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Na imagem antiga aparecem construções baixas; hoje o lugar tem prédios altos, muitos carros e uma paisagem bem mais urbanizada.",
+      "fonte": "L3 p.20, atividade 6b",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m4.q10",
+      "modulo_id": "hist.c6.m4",
+      "tipo": "vf",
+      "enunciado": "As reformas urbanas citadas no texto do Viaduto do Chá aconteceram na cidade do Rio de Janeiro.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! O Viaduto do Chá fica na cidade de São Paulo.",
+      "fonte": "L3 p.20, atividade 6a",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q01",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "As cidades planejadas são aquelas que:",
+      "apoio": null,
+      "alternativas": [
+        "Foram planejadas e projetadas antes de se formarem.",
+        "Se formaram naturalmente ao longo do tempo.",
+        "Foram planejadas depois de terem se formado.",
+        "Cresceram a partir de povoados sem projeto."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Cidades planejadas são pensadas detalhadamente antes mesmo de sua construção começar.",
+      "fonte": "L3 p.24 e p.30, atividade 1",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q02",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "O que costuma ser indicado no projeto de uma cidade planejada?",
+      "apoio": null,
+      "alternativas": [
+        "O comprimento e a largura das ruas, a localização de casas, parques, postos de saúde, escolas, comércio e prédios da administração pública.",
+        "Apenas o nome que a cidade vai ter.",
+        "Somente a quantidade de moradores.",
+        "Apenas a localização do porto."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Nos projetos das cidades planejadas tudo é pensado antes: ruas, moradias, parques, postos de saúde, escolas, comércio e prédios públicos.",
+      "fonte": "L3 p.24",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q03",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Quais são exemplos de cidades brasileiras planejadas citados no livro?",
+      "apoio": null,
+      "alternativas": [
+        "Teresina, Belo Horizonte e Palmas",
+        "Recife, Salvador e Natal",
+        "São Vicente, Manaus e Florianópolis",
+        "São Paulo, Rio de Janeiro e Recife"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Teresina (PI), Belo Horizonte (MG) e Palmas (TO) são exemplos de cidades planejadas.",
+      "fonte": "L3 p.24",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q04",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Por que a cidade de Brasília foi planejada?",
+      "apoio": null,
+      "alternativas": [
+        "Para se tornar a capital do Brasil.",
+        "Para ser uma cidade-fortaleza.",
+        "Para receber o porto de açúcar.",
+        "Para abrigar a família real portuguesa."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Brasília foi planejada para se tornar a capital do país. Hoje tem avenidas largas, áreas verdes e prédios monumentais.",
+      "fonte": "L3 p.24 e p.35",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q05",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Quem criou o desenho da cidade de Brasília?",
+      "apoio": null,
+      "alternativas": [
+        "O arquiteto Lúcio Costa",
+        "O engenheiro Jorge de Macedo",
+        "O engenheiro Roberto Brandão",
+        "Maurício de Nassau"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O desenho de Brasília foi criado pelo arquiteto Lúcio Costa.",
+      "fonte": "L3 p.24",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q06",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Brasília foi projetada em formato de avião. O que esse formato simbolizava?",
+      "apoio": null,
+      "alternativas": [
+        "O progresso e a modernização pelos quais o país estava passando na época.",
+        "A importância dos aeroportos para o Brasil.",
+        "A vontade de construir a cidade em pouco tempo.",
+        "A proteção contra a invasão de estrangeiros."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O formato de avião era símbolo dos processos de progresso e modernização que o país vivia.",
+      "fonte": "L3 p.24",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q07",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Por que construir Brasília foi um grande desafio?",
+      "apoio": null,
+      "alternativas": [
+        "Porque a região era isolada, de difícil acesso e pouco povoada.",
+        "Porque a região era cercada pelo mar.",
+        "Porque já existiam muitas construções no local.",
+        "Porque faltava café na região."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Como a região era isolada, de difícil acesso e pouco povoada, milhares de trabalhadores tiveram que se deslocar de outras partes do país.",
+      "fonte": "L3 p.25",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q08",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Morar em Brasília custava caro. O que isso provocou?",
+      "apoio": null,
+      "alternativas": [
+        "Muitos trabalhadores foram morar em regiões próximas, formando cidades ao redor da capital, que cresceram sem planejamento.",
+        "Todos os trabalhadores voltaram para suas cidades de origem.",
+        "A cidade parou de ser construída.",
+        "O governo diminuiu o tamanho das avenidas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "As cidades ao redor de Brasília cresceram de maneira improvisada, sem planejamento, o que provocou problemas urbanos e sociais que ainda não foram totalmente resolvidos.",
+      "fonte": "L3 p.25",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q09",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Em quanto tempo Brasília foi construída?",
+      "apoio": null,
+      "alternativas": [
+        "Em pouco mais de três anos",
+        "Em mais de cem anos",
+        "Entre 1637 e 1644",
+        "Em cerca de vinte anos"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Brasília foi construída em pouco mais de três anos, com o trabalho de milhares de pessoas vindas de todo o Brasil.",
+      "fonte": "L3 p.25 e p.35",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q10",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Sobre a cidade de Goiânia, é correto afirmar que:",
+      "apoio": null,
+      "alternativas": [
+        "Foi a primeira cidade brasileira planejada no século 20, com influência do estilo Art Déco, e visava ao desenvolvimento do interior do Brasil.",
+        "Foi a primeira vila fundada no Brasil, em 1532.",
+        "Foi planejada pelos holandeses para ser uma cidade-fortaleza.",
+        "Nunca foi planejada: cresceu a partir de um povoado."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Goiânia foi planejada para 50 mil habitantes (hoje tem mais de 1,4 milhão de pessoas) e o processo visava ao desenvolvimento do interior do Brasil.",
+      "fonte": "L3 p.26",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q11",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Por que Salvador, capital da Bahia, é considerada uma cidade planejada?",
+      "apoio": null,
+      "alternativas": [
+        "Porque foi pensada em 1549 para ser uma espécie de \"cidade-fortaleza\", administrativa e militar, e foi a primeira sede do Governo Geral do Brasil.",
+        "Porque foi projetada em formato de avião.",
+        "Porque foi reformada pelos holandeses entre 1637 e 1644.",
+        "Porque foi construída para ser a capital do país."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O planejamento de Salvador, em 1549, a colocava como cidade administrativa e militar, uma espécie de \"cidade-fortaleza\".",
+      "fonte": "L3 p.26",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q12",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "A cidade de Palmas, capital do Tocantins, tem como característica:",
+      "apoio": null,
+      "alternativas": [
+        "Avenidas gigantes e muito espaçadas, traçado em quadrículas e muitas áreas verdes.",
+        "Ruas estreitas que cresceram sem planejamento.",
+        "Ter sido reformada pelos holandeses.",
+        "Ter sido a primeira cidade planejada do Brasil, em 1549."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Palmas foi uma das últimas grandes experiências de planejamento urbano no Brasil, com traçado em quadrículas para facilitar as funções da cidade.",
+      "fonte": "L3 p.27",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q13",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "mc",
+      "enunciado": "Por que Curitiba ficou conhecida como \"capital ecológica\"?",
+      "apoio": null,
+      "alternativas": [
+        "Por causa dos ônibus biarticulados, das canaletas exclusivas, do programa de coleta de lixo reciclável e do grande número de parques e áreas verdes.",
+        "Porque foi planejada antes de ser construída.",
+        "Porque foi a primeira cidade fundada no Brasil.",
+        "Porque nela fica o maior jardim botânico do país."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Curitiba não foi planejada, mas passou por um processo de reestruturação entre os anos 70 e 90 que lhe deu esse título.",
+      "fonte": "L3 p.27",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m5.q14",
+      "modulo_id": "hist.c6.m5",
+      "tipo": "assoc",
+      "enunciado": "Ligue cada palavra ao seu significado:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Traçado",
+          "Organização, desenho de um espaço urbano"
+        ],
+        [
+          "Biarticulado",
+          "Ônibus maior, com duas articulações"
+        ],
+        [
+          "Canaleta",
+          "Via onde só os ônibus podem circular"
+        ],
+        [
+          "Art Déco",
+          "Arte decorativa europeia presente no cinema e na arquitetura"
+        ]
+      ],
+      "explicacao": "Essas palavras aparecem no boxe de vocabulário do livro, junto dos textos sobre Palmas, Curitiba e Goiânia.",
+      "fonte": "L3 p.26 e p.27",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q01",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Sinop é uma cidade:",
+      "apoio": "Sinop é uma cidade fundada em 1974 no Mato Grosso. A cidade foi pensada para ser ocupada por pessoas de outros estados do Brasil. Para isso, seu traçado urbano foi pensado e desenvolvido pelo engenheiro civil Roberto Brandão, para, então, ser construída. Atualmente, a cidade conta com características como ruas regulares e avenidas de até 50 metros de largura.",
+      "alternativas": [
+        "Planejada, porque foi pensada e desenhada por um engenheiro antes de ser construída.",
+        "Espontânea, porque cresceu a partir de um povoado.",
+        "Espontânea, porque foi fundada há pouco tempo.",
+        "Planejada, porque foi reformada depois de pronta."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O traçado urbano de Sinop foi pensado antes da construção, com ruas regulares e avenidas largas. Isso é característica de cidade planejada.",
+      "fonte": "L3 p.30, atividade 2a",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q02",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Manaus é uma cidade:",
+      "apoio": "Manaus, no Amazonas, surgiu de um povoado fundado em 1669. Esse povoado se formou ao redor da fortaleza de São José do Rio Negro. Lentamente, o povoado cresceu e tornou-se uma vila. No ano de 1848, o intenso comércio transformou a vila em uma cidade.",
+      "alternativas": [
+        "Espontânea, porque foi crescendo aos poucos: povoado, depois vila e depois cidade.",
+        "Planejada, porque foi construída em volta de uma fortaleza.",
+        "Planejada, porque tem avenidas largas.",
+        "Espontânea, porque foi projetada por um engenheiro."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Manaus nasceu de um povoado que virou vila e depois cidade, sem projeto anterior. Por isso é espontânea.",
+      "fonte": "L3 p.30, atividade 2b",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q03",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Para que serviu a fortaleza de São José do Rio Negro, ao redor da qual Manaus surgiu?",
+      "apoio": null,
+      "alternativas": [
+        "Para proteger a região da invasão de povos estrangeiros.",
+        "Para guardar a produção de café.",
+        "Para servir de moradia ao rei de Portugal.",
+        "Para abrigar o Governo Geral do Brasil."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "A fortaleza foi construída para proteger a região da invasão de povos estrangeiros.",
+      "fonte": "L3 p.30, atividade 2b",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q04",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Florianópolis é uma cidade:",
+      "apoio": "Florianópolis, em Santa Catarina, teve como primeiros habitantes os indígenas tupis-guaranis, que praticavam a agricultura e a pesca. Por volta de 1675, um viajante e explorador chamado Francisco Dias Velho, seus familiares e agregados chegaram à região, dando início a um povoado. Assim, o povoado se tornou uma vila e, com o passar do tempo, transformou-se em cidade.",
+      "alternativas": [
+        "Espontânea, porque se formou aos poucos a partir de um povoado.",
+        "Planejada, porque foi pensada por um explorador.",
+        "Planejada, porque seus primeiros habitantes eram indígenas.",
+        "Espontânea, porque tem ruas regulares e avenidas largas."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O povoado iniciado por Francisco Dias Velho cresceu, virou vila e depois cidade. Isso é crescimento espontâneo.",
+      "fonte": "L3 p.31, atividade 2c",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q05",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Maringá é uma cidade:",
+      "apoio": "Maringá se localiza no Paraná e foi inaugurada em 1947. O projeto da cidade foi criado pelo engenheiro Jorge de Macedo. Em seu desenho, foram considerados os espaços que deveriam se tornar parques, praças, ruas e avenidas. As áreas onde havia árvores e vegetação também foram pensadas e preservadas no projeto.",
+      "alternativas": [
+        "Planejada, porque um engenheiro fez o projeto com parques, praças, ruas e avenidas antes da cidade existir.",
+        "Espontânea, porque começou com um povoado de agricultores.",
+        "Espontânea, porque foi inaugurada em 1947.",
+        "Planejada, porque foi reformada nos anos 70."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "O projeto de Maringá foi criado pelo engenheiro Jorge de Macedo antes da cidade ser construída, já pensando nos parques, praças, ruas e avenidas.",
+      "fonte": "L3 p.31, atividade 2d",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q06",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "O que pode acontecer quando uma cidade não é planejada e não passa por reformas urbanas ao longo de sua história?",
+      "apoio": null,
+      "alternativas": [
+        "Ela pode crescer de maneira improvisada e ter problemas urbanos e sociais, como aconteceu nas cidades ao redor de Brasília.",
+        "Ela cresce com ruas sempre largas e organizadas.",
+        "Ela nunca aumenta de tamanho.",
+        "Ela se transforma automaticamente em capital."
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Sem planejamento e sem reformas, a cidade cresce de forma improvisada, o que provoca problemas urbanos e sociais.",
+      "fonte": "L3 p.25 e p.28, atividade 3",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q07",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "vf",
+      "enunciado": "Todas as cidades brasileiras surgiram a partir de povoados.",
+      "apoio": null,
+      "alternativas": [
+        "Verdadeiro",
+        "Falso"
+      ],
+      "correta": 1,
+      "pares": null,
+      "explicacao": "Falso! Nem todas: algumas foram projetadas antes de serem construídas. Essas são as cidades planejadas.",
+      "fonte": "L3 p.24 e p.35",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q08",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "assoc",
+      "enunciado": "Ligue cada cidade ao tipo a que ela pertence:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "Sinop (MT)",
+          "Planejada"
+        ],
+        [
+          "Manaus (AM)",
+          "Espontânea"
+        ],
+        [
+          "Maringá (PR)",
+          "Planejada"
+        ],
+        [
+          "Florianópolis (SC)",
+          "Espontânea"
+        ]
+      ],
+      "explicacao": "Sinop e Maringá tiveram projeto antes da construção. Manaus e Florianópolis nasceram de povoados que foram crescendo.",
+      "fonte": "L3 p.30 e p.31",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q09",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "assoc",
+      "enunciado": "Revisão geral: ligue cada cidade à sua marca na história:",
+      "apoio": null,
+      "alternativas": null,
+      "correta": null,
+      "pares": [
+        [
+          "São Vicente",
+          "Primeira vila do Brasil, fundada em 1532"
+        ],
+        [
+          "Brasília",
+          "Planejada em formato de avião para ser a capital"
+        ],
+        [
+          "Salvador",
+          "Cidade-fortaleza planejada em 1549"
+        ],
+        [
+          "Goiânia",
+          "Primeira cidade planejada do século 20"
+        ]
+      ],
+      "explicacao": "Guarde bem essas datas e características: elas aparecem muito nas provas.",
+      "fonte": "L3 p.16, p.24, p.26",
+      "dificuldade": 2,
+      "ativo": true
+    },
+    {
+      "id": "hist.c6.m6.q10",
+      "modulo_id": "hist.c6.m6",
+      "tipo": "mc",
+      "enunciado": "Complete: as cidades que se formaram a partir de povoados que viraram vilas e depois cidades são chamadas de ______, e as que foram projetadas antes de serem construídas são chamadas de ______.",
+      "apoio": null,
+      "alternativas": [
+        "espontâneas / planejadas",
+        "planejadas / espontâneas",
+        "antigas / modernas",
+        "reformadas / fundadas"
+      ],
+      "correta": 0,
+      "pares": null,
+      "explicacao": "Espontâneas: cresceram sozinhas. Planejadas: foram projetadas antes.",
+      "fonte": "L3 p.34 e p.35",
+      "dificuldade": 2,
+      "ativo": true
+    }
+  ]
+}
