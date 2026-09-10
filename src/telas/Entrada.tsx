@@ -2,26 +2,27 @@ import { useState, type FormEvent } from 'react'
 import { BotaoPrincipal, Card, cores, Mascote } from '../design'
 import { supabase } from '../data/supabaseClient'
 
+const EMAIL_FAMILIA = import.meta.env.VITE_FAMILIA_EMAIL
+
+// Sem e-mail nem link mágico: é uma família de 2-3 pessoas, então um PIN fixo (senha da
+// única conta responsável) já resolve — só precisa ser digitado uma vez por aparelho, depois
+// a sessão fica salva e cai direto na escolha do perfil da criança.
 export function Entrada() {
-  const [email, setEmail] = useState('')
-  const [enviado, setEnviado] = useState(false)
-  const [enviando, setEnviando] = useState(false)
+  const [pin, setPin] = useState('')
+  const [entrando, setEntrando] = useState(false)
   const [erro, setErro] = useState<string | null>(null)
 
-  async function enviarLink(evento: FormEvent) {
+  async function entrar(evento: FormEvent) {
     evento.preventDefault()
     setErro(null)
-    setEnviando(true)
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: { emailRedirectTo: window.location.origin },
-    })
-    setEnviando(false)
+    setEntrando(true)
+    const { error } = await supabase.auth.signInWithPassword({ email: EMAIL_FAMILIA, password: pin })
+    setEntrando(false)
     if (error) {
-      setErro(error.message)
+      setErro('PIN incorreto. Tenta de novo.')
+      setPin('')
       return
     }
-    setEnviado(true)
   }
 
   return (
@@ -30,42 +31,35 @@ export function Entrada() {
       style={{ backgroundColor: cores.fundo, minHeight: '100vh', color: cores.contorno }}
     >
       <Mascote estado="acenando" />
-      <p className="text-xl font-extrabold">Entrar no App de Estudos</p>
+      <p className="text-xl font-extrabold">App de Estudos</p>
 
       <Card className="flex w-full flex-col gap-3">
-        {enviado ? (
-          <>
-            <p className="font-extrabold">Verifique seu e-mail! 📩</p>
-            <p className="text-sm">
-              Mandamos um link mágico para <strong>{email}</strong>. Abra no mesmo aparelho pra entrar — não precisa de senha.
+        <form onSubmit={entrar} className="flex flex-col gap-3">
+          <label htmlFor="pin" className="text-sm font-bold">
+            Digite o PIN da família
+          </label>
+          <input
+            id="pin"
+            type="password"
+            inputMode="numeric"
+            autoComplete="current-password"
+            required
+            minLength={6}
+            value={pin}
+            onChange={(evento) => setPin(evento.target.value)}
+            placeholder="••••••"
+            className="rounded-lg p-3 text-center text-2xl tracking-[0.5em]"
+            style={{ border: `3px solid ${cores.contorno}` }}
+          />
+          {erro && (
+            <p className="text-sm font-bold" style={{ color: cores.laranja }}>
+              {erro}
             </p>
-          </>
-        ) : (
-          <form onSubmit={enviarLink} className="flex flex-col gap-3">
-            <label htmlFor="email" className="text-sm font-bold">
-              E-mail do responsável
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              autoComplete="email"
-              value={email}
-              onChange={(evento) => setEmail(evento.target.value)}
-              placeholder="seuemail@exemplo.com"
-              className="rounded-lg p-3 text-base"
-              style={{ border: `3px solid ${cores.contorno}` }}
-            />
-            {erro && (
-              <p className="text-sm font-bold" style={{ color: cores.laranja }}>
-                {erro}
-              </p>
-            )}
-            <BotaoPrincipal type="submit" disabled={enviando}>
-              {enviando ? 'Enviando...' : 'Entrar com link mágico'}
-            </BotaoPrincipal>
-          </form>
-        )}
+          )}
+          <BotaoPrincipal type="submit" disabled={entrando}>
+            {entrando ? 'Entrando...' : 'Entrar'}
+          </BotaoPrincipal>
+        </form>
       </Card>
     </main>
   )
