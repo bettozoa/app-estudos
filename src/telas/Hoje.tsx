@@ -2,6 +2,7 @@ import { calcularNivel } from '../domain/nivel'
 import { decidirAcaoDoDia } from '../domain/decidirAcaoDoDia'
 import { BarraProgresso, BotaoPrincipal, Card, cores, IconeEscudo, IconeEstrela, IconeFogo, IconeMoeda, Mascote, Pilula } from '../design'
 import { useStats } from '../app/useStats'
+import { useSkinStore } from '../estado/skinStore'
 import type { ResumoMateria } from '../app/resumoMateria'
 
 interface HojeProps {
@@ -11,16 +12,18 @@ interface HojeProps {
   hoje: Date
   onEstudar: (materiaId: string) => void
   onVerTrilha: () => void
+  onVerLoja: () => void
 }
 
-export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha }: HojeProps) {
+export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha, onVerLoja }: HojeProps) {
   const stats = useStats(alunoId, versao)
   const info = stats ? calcularNivel(stats.xp) : null
+  const skinAtual = useSkinStore((s) => s.skinAtual)
 
   return (
     <main className="tela-com-fade mx-auto flex max-w-md flex-col gap-5 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
       <div className="flex flex-col items-center gap-2 pt-4">
-        <Mascote estado="acenando" />
+        <Mascote estado="acenando" skinId={skinAtual} />
         <p className="text-xl font-extrabold" style={{ color: cores.contorno }}>
           Vamos estudar?
         </p>
@@ -47,9 +50,14 @@ export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha }:
         <CartaoMateria key={resumo.materia.id} resumo={resumo} hoje={hoje} onEstudar={() => onEstudar(resumo.materia.id)} />
       ))}
 
-      <BotaoPrincipal variante="secundaria" onClick={onVerTrilha}>
-        Ver trilha
-      </BotaoPrincipal>
+      <div className="flex gap-3">
+        <BotaoPrincipal variante="secundaria" onClick={onVerTrilha}>
+          Ver trilha
+        </BotaoPrincipal>
+        <BotaoPrincipal variante="secundaria" onClick={onVerLoja}>
+          Loja
+        </BotaoPrincipal>
+      </div>
     </main>
   )
 }

@@ -1,6 +1,7 @@
 import { CONQUISTAS } from '../app/conquistasInfo'
 import { BotaoPrincipal, Card, Confete, cores, Mascote, Pilula } from '../design'
 import { useSessaoStore } from '../estado/sessaoStore'
+import { useSkinStore } from '../estado/skinStore'
 
 interface FimDeSessaoProps {
   onContinuar: () => void
@@ -22,6 +23,7 @@ export function FimDeSessao({ onContinuar }: FimDeSessaoProps) {
   const ofensivaAtual = useSessaoStore((s) => s.ofensivaAtual)
   const conquistasNovas = useSessaoStore((s) => s.conquistasNovas)
   const erradas = useSessaoStore((s) => s.erradas)
+  const skinAtual = useSkinStore((s) => s.skinAtual)
 
   const total = acertos + erros
   const percentual = total > 0 ? Math.round((acertos / total) * 100) : 0
@@ -34,7 +36,7 @@ export function FimDeSessao({ onContinuar }: FimDeSessaoProps) {
     >
       {houveConquista && <Confete />}
 
-      <Mascote estado={percentual >= 70 ? 'comemorando' : 'encorajando'} />
+      <Mascote estado={percentual >= 70 ? 'comemorando' : 'encorajando'} skinId={skinAtual} />
       <h1 className="text-xl font-extrabold">{fraseDoGato(percentual, total)}</h1>
 
       <Card className="w-full">

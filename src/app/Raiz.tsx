@@ -32,5 +32,5 @@ export function Raiz() {
 
   if (!sessao) return <Entrada />
   if (!perfil) return <SelecaoPerfil responsavelId={sessao.user.id} onSelecionar={escolherPerfil} />
-  return <Fluxo aluno={perfil} />
+  return <Fluxo aluno={perfil} onAtualizarAluno={escolherPerfil} />
 }

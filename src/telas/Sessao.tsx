@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { BarraProgresso, BotaoPrincipal, Card, CartaoAlternativa, cores, Mascote } from '../design'
 import { useSessaoStore } from '../estado/sessaoStore'
+import { useSkinStore } from '../estado/skinStore'
 import type { Questao } from '../domain/tipos'
 import { embaralhar } from '../app/utilAleatorio'
 import { alternarSom, estaSomLigado, tocarSomAcerto, tocarSomErro } from '../app/som'
@@ -21,6 +22,7 @@ export function Sessao({ onFinalizar, onSair }: SessaoProps) {
   const avancar = useSessaoStore((s) => s.avancar)
   const questao = fila[posicao]
   const [somLigado, setSomLigado] = useState(estaSomLigado)
+  const skinAtual = useSkinStore((s) => s.skinAtual)
 
   useEffect(() => {
     if (fila.length > 0 && !questao) onFinalizar()
@@ -58,7 +60,7 @@ export function Sessao({ onFinalizar, onSair }: SessaoProps) {
       </div>
 
       <div className="flex justify-center">
-        <Mascote estado={!feedback ? 'pensando' : feedback.acertou ? 'comemorando' : 'encorajando'} tamanho={72} />
+        <Mascote estado={!feedback ? 'pensando' : feedback.acertou ? 'comemorando' : 'encorajando'} tamanho={72} skinId={skinAtual} />
       </div>
 
       <Card className="flex flex-col gap-3">

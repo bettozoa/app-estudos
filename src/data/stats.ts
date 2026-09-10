@@ -56,6 +56,15 @@ export async function registrarOfensivaDoDia(alunoId: string, hoje: Date = new D
   return stats
 }
 
+// Desconta moedas da Loja (skins do gato). Retorna false sem gastar nada se não tiver saldo.
+export async function gastarMoedas(alunoId: string, quantidade: number): Promise<boolean> {
+  const atual = await obterStats(alunoId)
+  if (atual.moedas < quantidade) return false
+
+  await db.alunoStats.put({ ...atual, moedas: atual.moedas - quantidade, sincronizado: false })
+  return true
+}
+
 export async function listarConquistasObtidas(alunoId: string): Promise<string[]> {
   const linhas = await db.alunoConquistas.where('alunoId').equals(alunoId).toArray()
   return linhas.map((l) => l.codigo)

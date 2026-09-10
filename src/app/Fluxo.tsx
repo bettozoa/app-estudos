@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { Aluno } from '../data/alunos'
 import { db } from '../data/db'
 import { listarConquistasObtidas, registrarConquistasNovas, registrarOfensivaDoDia } from '../data/stats'
@@ -6,10 +6,13 @@ import { sincronizarConquistas } from '../data/sync'
 import { avaliarConquistas } from '../domain/conquistas'
 import { montarSessao } from '../domain/sessao'
 import { useSessaoStore } from '../estado/sessaoStore'
+import { useSkinStore } from '../estado/skinStore'
 import { FimDeSessao } from '../telas/FimDeSessao'
 import { Hoje } from '../telas/Hoje'
+import { Loja } from '../telas/Loja'
 import { Sessao } from '../telas/Sessao'
 import { Trilha } from '../telas/Trilha'
+import { SKIN_PADRAO } from './skins'
 import { indexarConteudo, type CapituloComQuestoes } from './indexarConteudo'
 import { algumModuloRecemDominado, capituloDominado, tirarSnapshotCapitulo } from './progressoCapitulo'
 import { calcularResumoMateria } from './resumoMateria'
@@ -17,15 +20,16 @@ import { useResumoDoDia } from './useResumoDoDia'
 import { useSincronizacao } from './useSincronizacao'
 import { embaralhar, formatarDataISO } from './utilAleatorio'
 
-type Etapa = { tipo: 'hoje' } | { tipo: 'sessao' } | { tipo: 'fim' } | { tipo: 'trilha' }
+type Etapa = { tipo: 'hoje' } | { tipo: 'sessao' } | { tipo: 'fim' } | { tipo: 'trilha' } | { tipo: 'loja' }
 
 const TAMANHO_SESSAO = 20
 
 interface FluxoProps {
   aluno: Aluno
+  onAtualizarAluno: (aluno: Aluno) => void
 }
 
-export function Fluxo({ aluno }: FluxoProps) {
+export function Fluxo({ aluno, onAtualizarAluno }: FluxoProps) {
   const hoje = useMemo(() => new Date(), [])
   const [etapa, setEtapa] = useState<Etapa>({ tipo: 'hoje' })
   const [versao, setVersao] = useState(0)
@@ -33,6 +37,11 @@ export function Fluxo({ aluno }: FluxoProps) {
   const [snapshotAntes, setSnapshotAntes] = useState<Map<string, number>>(new Map())
   const resumos = useResumoDoDia(aluno.id, hoje, versao)
   const sincronizacaoInicialPronta = useSincronizacao(aluno.id, () => setVersao((v) => v + 1))
+  const setSkin = useSkinStore((s) => s.setSkin)
+
+  useEffect(() => {
+    setSkin(aluno.avatar?.skinGato ?? SKIN_PADRAO)
+  }, [aluno.avatar?.skinGato, setSkin])
 
   if (!sincronizacaoInicialPronta || !resumos) {
     return <div className="p-6 text-center">Carregando...</div>
@@ -105,6 +114,18 @@ export function Fluxo({ aluno }: FluxoProps) {
       return <FimDeSessao onContinuar={voltarParaHoje} />
     case 'trilha':
       return <Trilha alunoId={aluno.id} versao={versao} onVoltar={() => setEtapa({ tipo: 'hoje' })} />
+    case 'loja':
+      return (
+        <Loja
+          aluno={aluno}
+          versao={versao}
+          onVoltar={() => setEtapa({ tipo: 'hoje' })}
+          onAtualizarAluno={(novoAluno) => {
+            onAtualizarAluno(novoAluno)
+            setVersao((v) => v + 1)
+          }}
+        />
+      )
     default:
       return (
         <Hoje
@@ -114,6 +135,7 @@ export function Fluxo({ aluno }: FluxoProps) {
           hoje={hoje}
           onEstudar={iniciarEstudo}
           onVerTrilha={() => setEtapa({ tipo: 'trilha' })}
+          onVerLoja={() => setEtapa({ tipo: 'loja' })}
         />
       )
   }
