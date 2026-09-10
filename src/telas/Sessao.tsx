@@ -65,25 +65,30 @@ interface EscolhaProps {
 function TelaEscolha({ questao, feedback, onResponder }: EscolhaProps) {
   const [escolha, setEscolha] = useState<number | null>(null)
 
+  // Embaralha a ORDEM de exibição (guardando o índice original de cada alternativa) — sem
+  // isso, a resposta certa aparece sempre na mesma posição do arquivo de conteúdo (quase
+  // sempre a primeira, já que é assim que o material de origem foi escrito).
+  const ordemExibicao = useMemo(() => embaralhar((questao.alternativas ?? []).map((_, i) => i)), [questao.id])
+
   useEffect(() => setEscolha(null), [questao.id])
 
-  function escolher(indice: number) {
+  function escolher(indiceOriginal: number) {
     if (feedback) return
-    setEscolha(indice)
-    onResponder(indice === questao.correta)
+    setEscolha(indiceOriginal)
+    onResponder(indiceOriginal === questao.correta)
   }
 
   return (
     <div className="flex flex-col gap-2">
-      {questao.alternativas?.map((alternativa, indice) => {
+      {ordemExibicao.map((indiceOriginal) => {
         let estado: 'neutro' | 'certa' | 'errada' = 'neutro'
         if (feedback) {
-          if (indice === questao.correta) estado = 'certa'
-          else if (indice === escolha) estado = 'errada'
+          if (indiceOriginal === questao.correta) estado = 'certa'
+          else if (indiceOriginal === escolha) estado = 'errada'
         }
         return (
-          <CartaoAlternativa key={indice} estado={estado} disabled={!!feedback} onClick={() => escolher(indice)}>
-            {alternativa}
+          <CartaoAlternativa key={indiceOriginal} estado={estado} disabled={!!feedback} onClick={() => escolher(indiceOriginal)}>
+            {questao.alternativas![indiceOriginal]}
           </CartaoAlternativa>
         )
       })}
