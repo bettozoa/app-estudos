@@ -32,10 +32,9 @@ export function Fluxo({ aluno }: FluxoProps) {
   const [capituloEmEstudo, setCapituloEmEstudo] = useState<CapituloComQuestoes | null>(null)
   const [snapshotAntes, setSnapshotAntes] = useState<Map<string, number>>(new Map())
   const resumos = useResumoDoDia(aluno.id, hoje, versao)
+  const sincronizacaoInicialPronta = useSincronizacao(aluno.id, () => setVersao((v) => v + 1))
 
-  useSincronizacao(aluno.id, () => setVersao((v) => v + 1))
-
-  if (!resumos) {
+  if (!sincronizacaoInicialPronta || !resumos) {
     return <div className="p-6 text-center">Carregando...</div>
   }
 
@@ -68,7 +67,7 @@ export function Fluxo({ aluno }: FluxoProps) {
 
     const todosProgresso = await db.progresso.where('alunoId').equals(aluno.id).toArray()
     const progressoPorId = new Map(todosProgresso.map((p) => [p.questaoId, p]))
-    const materiasIndexadas = indexarConteudo()
+    const materiasIndexadas = await indexarConteudo()
     const hojeISO = formatarDataISO(hoje)
     const resumosFrescos = materiasIndexadas.map((m) => calcularResumoMateria(m, progressoPorId, hojeISO))
     const filaVazia = resumosFrescos.every((r) => r.revisoesVencidas.length === 0)

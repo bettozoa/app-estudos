@@ -1,5 +1,21 @@
-import { carregarConteudo, type Capitulo, type Modulo } from '../data/carregarConteudo'
+import { db } from '../data/db'
 import type { Questao } from '../domain/tipos'
+
+export interface Modulo {
+  id: string
+  titulo: string
+  ordem: number
+}
+
+export interface Capitulo {
+  id: string
+  materiaId: string
+  titulo: string
+  livro: string | null
+  paginas: string | null
+  ordem: number
+  publicado: boolean
+}
 
 export interface CapituloComQuestoes extends Capitulo {
   modulos: Modulo[]
@@ -14,24 +30,31 @@ export interface MateriaIndexada {
   capitulos: CapituloComQuestoes[]
 }
 
-// Reagrupa o conteúdo plano de carregarConteudo() por matéria/capítulo, usando o prefixo do id
-// hierárquico ("hist.c6.m1.q01" pertence ao módulo "hist.c6.m1", do capítulo "hist.c6") —
-// é exatamente para isso que os ids são estáveis e hierárquicos (regra 3 do CLAUDE.md).
-export function indexarConteudo(): MateriaIndexada[] {
-  const { materias, capitulos, modulos, questoes } = carregarConteudo()
+// Lê o cache local de conteúdo (Dexie, populado por data/sincronizarConteudo.ts a partir do
+// Supabase — Fase 3) e reagrupa por matéria/capítulo/módulo, na ordem certa.
+export async function indexarConteudo(): Promise<MateriaIndexada[]> {
+  const [materias, capitulos, modulos, questoes] = await Promise.all([
+    db.conteudoMaterias.toArray(),
+    db.conteudoCapitulos.toArray(),
+    db.conteudoModulos.toArray(),
+    db.conteudoQuestoes.toArray(),
+  ])
 
-  return Object.entries(materias)
-    .sort((a, b) => a[1].ordem - b[1].ordem)
-    .map(([materiaId, info]) => {
+  const capituloIdPorModuloId = new Map(modulos.map((m) => [m.id, m.capituloId]))
+
+  return materias
+    .slice()
+    .sort((a, b) => a.ordem - b.ordem)
+    .map((materia) => {
       const capitulosDaMateria = capitulos
-        .filter((c) => c.materiaId === materiaId && c.publicado)
+        .filter((c) => c.materiaId === materia.id && c.publicado)
         .sort((a, b) => a.ordem - b.ordem)
-        .map((cap) => ({
-          ...cap,
-          modulos: modulos.filter((m) => m.id.startsWith(`${cap.id}.`)).sort((a, b) => a.ordem - b.ordem),
-          questoes: questoes.filter((q) => q.moduloId.startsWith(`${cap.id}.`)),
+        .map((capitulo) => ({
+          ...capitulo,
+          modulos: modulos.filter((m) => m.capituloId === capitulo.id).sort((a, b) => a.ordem - b.ordem),
+          questoes: questoes.filter((q) => capituloIdPorModuloId.get(q.moduloId) === capitulo.id),
         }))
 
-      return { id: materiaId, nome: info.nome, emoji: info.emoji, cor: info.cor, capitulos: capitulosDaMateria }
+      return { id: materia.id, nome: materia.nome, emoji: materia.emoji, cor: materia.cor, capitulos: capitulosDaMateria }
     })
 }

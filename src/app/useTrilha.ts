@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { db } from '../data/db'
 import { indexarConteudo } from './indexarConteudo'
 
@@ -30,20 +30,15 @@ export interface TrilhaMateria {
 // dominado, com anel de domínio por módulo. Desbloqueio é sequencial dentro do capítulo — só
 // o primeiro módulo ainda não dominado fica "aberto", os de depois ficam bloqueados.
 export function useTrilha(alunoId: string, versao: number): TrilhaMateria[] | null {
-  const materias = useMemo(() => indexarConteudo(), [])
   const [trilha, setTrilha] = useState<TrilhaMateria[] | null>(null)
 
   useEffect(() => {
     let cancelado = false
-    db.progresso
-      .where('alunoId')
-      .equals(alunoId)
-      .toArray()
-      .then((linhas) => {
-        if (cancelado) return
-        const caixaPorId = new Map(linhas.map((l) => [l.questaoId, l.caixa]))
+    Promise.all([indexarConteudo(), db.progresso.where('alunoId').equals(alunoId).toArray()]).then(([materias, linhas]) => {
+      if (cancelado) return
+      const caixaPorId = new Map(linhas.map((l) => [l.questaoId, l.caixa]))
 
-        const resultado: TrilhaMateria[] = materias.map((materia) => ({
+      const resultado: TrilhaMateria[] = materias.map((materia) => ({
           id: materia.id,
           nome: materia.nome,
           emoji: materia.emoji,
@@ -71,12 +66,12 @@ export function useTrilha(alunoId: string, versao: number): TrilhaMateria[] | nu
           }),
         }))
 
-        setTrilha(resultado)
-      })
+      setTrilha(resultado)
+    })
     return () => {
       cancelado = true
     }
-  }, [alunoId, materias, versao])
+  }, [alunoId, versao])
 
   return trilha
 }

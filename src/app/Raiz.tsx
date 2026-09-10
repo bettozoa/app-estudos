@@ -8,7 +8,7 @@ import { useAuth } from './useAuth'
 const CHAVE_PERFIL_ATIVO = 'app-estudos:perfil-ativo'
 
 export function Raiz() {
-  const { sessao, carregando } = useAuth()
+  const sessao = useAuth()
   const [perfil, setPerfil] = useState<Aluno | null>(null)
 
   useEffect(() => {
@@ -30,7 +30,6 @@ export function Raiz() {
     setPerfil(aluno)
   }
 
-  if (carregando) return <div className="p-6 text-center">Carregando...</div>
   if (!sessao) return <Entrada />
   if (!perfil) return <SelecaoPerfil responsavelId={sessao.user.id} onSelecionar={escolherPerfil} />
   return <Fluxo aluno={perfil} />

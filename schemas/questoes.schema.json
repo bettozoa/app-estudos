@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Capítulo de conteúdo",
+  "description": "Formato de cada arquivo em conteudo/<materia>/<capitulo>.json — capítulo + módulos + questões.",
+  "type": "object",
+  "required": ["capitulo", "modulos", "questoes"],
+  "additionalProperties": false,
+  "properties": {
+    "capitulo": {
+      "type": "object",
+      "required": ["id", "materia_id", "titulo", "ordem", "publicado"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "materia_id": { "type": "string", "minLength": 1 },
+        "titulo": { "type": "string", "minLength": 1 },
+        "livro": { "type": ["string", "null"] },
+        "paginas": { "type": ["string", "null"] },
+        "ordem": { "type": "integer", "minimum": 1 },
+        "publicado": { "type": "boolean" }
+      }
+    },
+    "modulos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "titulo", "ordem"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "titulo": { "type": "string", "minLength": 1 },
+          "ordem": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "questoes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/questao" }
+    }
+  },
+  "$defs": {
+    "questao": {
+      "type": "object",
+      "required": ["id", "modulo_id", "tipo", "enunciado", "explicacao", "fonte", "dificuldade", "ativo"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "modulo_id": { "type": "string", "minLength": 1 },
+        "tipo": { "enum": ["mc", "vf", "assoc"] },
+        "enunciado": { "type": "string", "minLength": 1 },
+        "apoio": { "type": ["string", "null"] },
+        "alternativas": {
+          "type": ["array", "null"],
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "correta": { "type": ["integer", "null"], "minimum": 0 },
+        "pares": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "explicacao": { "type": "string", "minLength": 1 },
+        "fonte": { "type": "string", "minLength": 1 },
+        "dificuldade": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "ativo": { "type": "boolean" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "tipo": { "const": "mc" } } },
+          "then": { "required": ["alternativas", "correta"] }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "vf" } } },
+          "then": { "required": ["correta"] }
+        },
+        {
+          "if": { "properties": { "tipo": { "const": "assoc" } } },
+          "then": { "required": ["pares"] }
+        }
+      ]
+    }
+  }
+}
