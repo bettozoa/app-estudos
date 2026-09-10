@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { processarFilaSync } from '../data/sync'
 import { registrarResposta } from '../data/progresso'
 import type { Questao } from '../domain/tipos'
 
@@ -63,6 +64,10 @@ export const useSessaoStore = create<SessaoState & SessaoActions>((set, get) => 
       erros: estado.erros + (acertou ? 0 : 1),
       feedback: { acertou },
     }))
+
+    // Tenta subir a fila na hora, sem travar a UI — se não houver rede, fica pendente e
+    // o worker periódico (ver useSincronizacao) tenta de novo depois.
+    void processarFilaSync(alunoId)
   },
 
   avancar: () => set((estado) => ({ posicao: estado.posicao + 1, feedback: null })),

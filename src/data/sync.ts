@@ -40,8 +40,9 @@ export async function processarFilaSync(alunoId: string): Promise<{ enviados: nu
       await db.progresso.update([item.alunoId, item.questaoId], { sincronizado: true })
       if (item.id !== undefined) await db.filaSync.delete(item.id)
       enviados++
-    } catch {
+    } catch (erro) {
       falharam++
+      console.error('[sync] falhou ao enviar resposta, fica na fila pra tentar de novo:', erro)
     }
   }
 

@@ -17,8 +17,8 @@ export function useSincronizacao(alunoId: string, aoAtualizar: () => void): void
       try {
         await sincronizar(alunoId)
         if (!cancelado) aoAtualizarRef.current()
-      } catch {
-        // sem rede ou erro passageiro: tenta de novo no próximo gatilho
+      } catch (erro) {
+        console.error('[sync] falhou o pull, tenta de novo no próximo gatilho:', erro)
       }
     }
 
