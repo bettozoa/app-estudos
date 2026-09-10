@@ -9,12 +9,13 @@ interface SessaoState {
   erros: number
   feedback: { acertou: boolean } | null
   reinseridas: Set<string>
+  alunoId: string | null
   materiaId: string | null
   capituloId: string | null
 }
 
 interface SessaoActions {
-  iniciar: (params: { fila: Questao[]; materiaId: string; capituloId: string }) => void
+  iniciar: (params: { fila: Questao[]; alunoId: string; materiaId: string; capituloId: string }) => void
   responder: (acertou: boolean) => Promise<void>
   avancar: () => void
 }
@@ -26,6 +27,7 @@ const ESTADO_INICIAL: SessaoState = {
   erros: 0,
   feedback: null,
   reinseridas: new Set(),
+  alunoId: null,
   materiaId: null,
   capituloId: null,
 }
@@ -36,14 +38,15 @@ const ESTADO_INICIAL: SessaoState = {
 export const useSessaoStore = create<SessaoState & SessaoActions>((set, get) => ({
   ...ESTADO_INICIAL,
 
-  iniciar: ({ fila, materiaId, capituloId }) => set({ ...ESTADO_INICIAL, fila, materiaId, capituloId, reinseridas: new Set() }),
+  iniciar: ({ fila, alunoId, materiaId, capituloId }) =>
+    set({ ...ESTADO_INICIAL, fila, alunoId, materiaId, capituloId, reinseridas: new Set() }),
 
   responder: async (acertou) => {
-    const { fila, posicao, reinseridas } = get()
+    const { fila, posicao, reinseridas, alunoId } = get()
     const questao = fila[posicao]
-    if (!questao) return
+    if (!questao || !alunoId) return
 
-    await registrarResposta(questao.id, acertou)
+    await registrarResposta(alunoId, questao.id, acertou)
 
     let novaFila = fila
     const novasReinseridas = new Set(reinseridas)

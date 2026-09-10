@@ -1,21 +1,29 @@
 import { useMemo, useState } from 'react'
+import type { Aluno } from '../data/alunos'
 import { montarSessao } from '../domain/sessao'
 import { useSessaoStore } from '../estado/sessaoStore'
 import { FimDeSessao } from '../telas/FimDeSessao'
 import { Hoje } from '../telas/Hoje'
 import { Sessao } from '../telas/Sessao'
 import { useResumoDoDia } from './useResumoDoDia'
+import { useSincronizacao } from './useSincronizacao'
 import { embaralhar } from './utilAleatorio'
 
 type Etapa = { tipo: 'hoje' } | { tipo: 'sessao' } | { tipo: 'fim' }
 
 const TAMANHO_SESSAO = 20
 
-export function Fluxo() {
+interface FluxoProps {
+  aluno: Aluno
+}
+
+export function Fluxo({ aluno }: FluxoProps) {
   const hoje = useMemo(() => new Date(), [])
   const [etapa, setEtapa] = useState<Etapa>({ tipo: 'hoje' })
   const [versao, setVersao] = useState(0)
-  const resumos = useResumoDoDia(hoje, versao)
+  const resumos = useResumoDoDia(aluno.id, hoje, versao)
+
+  useSincronizacao(aluno.id, () => setVersao((v) => v + 1))
 
   if (!resumos) {
     return <div className="p-6 text-center">Carregando...</div>
@@ -31,7 +39,7 @@ export function Fluxo() {
       fila = embaralhar(resumo.capituloAtual.questoes).slice(0, TAMANHO_SESSAO)
     }
 
-    useSessaoStore.getState().iniciar({ fila, materiaId, capituloId: resumo.capituloAtual.id })
+    useSessaoStore.getState().iniciar({ fila, alunoId: aluno.id, materiaId, capituloId: resumo.capituloAtual.id })
     setEtapa({ tipo: 'sessao' })
   }
 
