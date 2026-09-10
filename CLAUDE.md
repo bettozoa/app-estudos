@@ -59,19 +59,34 @@ Rode `npm run build` e `npm run test` antes de dizer que uma tarefa terminou.
 
 ## Estado atual
 
-Fases 0, 1 e 2 completas. App roda como PWA instalável, offline, com motor Leitner, design
-system e as telas Hoje/Sessão/Fim de sessão/Trilha. Contas via Supabase (link mágico), seleção
-de perfil da criança, RLS e fila de sincronização (push de respostas, pull de progresso, com a
-regra de conflito) testados de ponta a ponta contra o projeto real. Gamificação (XP, nível,
+Fases 0, 1, 2 e 3 completas. App roda como PWA instalável, com motor Leitner, design system e
+as telas Hoje/Sessão/Fim de sessão/Trilha. Contas via Supabase (link mágico), seleção de
+perfil da criança, RLS e fila de sincronização (push de respostas, pull de progresso, com a
+regra de conflito) testadas de ponta a ponta contra o projeto real. Gamificação (XP, nível,
 moedas, ofensiva com escudo, 7 conquistas de exemplo, trilha visual com nós por módulo)
-também testada de ponta a ponta — inclui `aluno_stats`/`conquistas`/`aluno_conquistas`, que
-já estavam na seção 4 do plano desde a Fase 1 mas só foram migradas agora.
+também testada de ponta a ponta.
+
+**Conteúdo agora vive no banco, não no bundle.** `schemas/questoes.schema.json` +
+`scripts/validar.ts` (Ajv, ids duplicados entre arquivos, fonte/explicação obrigatórias) +
+`scripts/importar.ts` (upsert idempotente por id, incrementa `conteudo_versao`) publicam
+`conteudo/**/*.json` no Supabase — precisa de `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` num
+`.env` local, nunca commitado. O app baixa `materias/capitulos/modulos/questoes` e guarda em
+cache no Dexie, comparando `conteudo_versao` a cada sincronização; se já existe cache local, a
+tela nunca espera rede pra abrir (evita o timeout de ~20-30s do `fetch` do navegador quando
+offline de verdade).
 
 Existe um protótipo em `legado/` (HTML de um arquivo só, referência de comportamento, não de
-código) e o conteúdo real de 3 capítulos (`conteudo/`), já também semeado nas tabelas do
-Supabase via `supabase/seed_conteudo.sql` — um adiantamento pontual da Fase 3, feito só pra
-desbloquear o teste da Fase 1 (a fila de sync tem foreign key pra `questoes`). A Fase 3 ainda
-precisa trazer os scripts de validação/importação de verdade e o versionamento de conteúdo.
+código). `supabase/seed_conteudo.sql` (Fase 1) ficou como registro histórico do adiantamento
+pontual feito antes do `importar.ts` existir — não precisa mais ser usado.
 
-Próxima fase: Fase 3 (conteúdo no banco — `schemas/questoes.schema.json`, scripts de
-validação/importação, capítulos publicáveis sem novo deploy).
+Duas coisas descobertas testando a Fase 3 de ponta a ponta (login real via link gerado pela
+Admin API, sem depender de e-mail):
+1. RLS de `aluno_stats` estava sem policy de `insert` (upsert sempre valida a policy de
+   insert, mesmo quando o caminho real é update) — corrigido em
+   `supabase/migrations/20260910140759_corrige_rls_aluno_stats.sql`.
+2. `useAuth` dependia de `supabase.auth.getSession()`, que pode tentar renovar o token e ficar
+   pendurada esperando rede — trocado por leitura direta do localStorage
+   (`sb-<project-ref>-auth-token`) mais `onAuthStateChange` pra manter atualizado depois.
+
+Próxima fase: Fase 4 (área do responsável — PIN, cadastro de provas, relatório de erros,
+simulado em PDF).
