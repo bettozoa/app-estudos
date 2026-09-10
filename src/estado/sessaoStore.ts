@@ -4,9 +4,15 @@ import { registrarXpEMoedas } from '../data/stats'
 import { processarFilaSync, sincronizarStats } from '../data/sync'
 import type { Questao, SituacaoResposta } from '../domain/tipos'
 
+// Teto de crescimento da fila (achado da auditoria: sem isso, uma sessão de 15-20 perguntas
+// podia efetivamente dobrar de tamanho num dia ruim). Depois desse limite, errar ainda marca
+// a questão pra voltar amanhã (agendarProxima já cuida disso) — só não reinsere na sessão de hoje.
+const FATOR_MAXIMO_FILA = 1.4
+
 interface SessaoState {
   fila: Questao[]
   posicao: number
+  tamanhoOriginal: number
   acertos: number
   erros: number
   xpGanho: number
@@ -15,6 +21,7 @@ interface SessaoState {
   maiorSequencia: number
   feedback: { acertou: boolean } | null
   reinseridas: Set<string>
+  erradas: Questao[]
   alunoId: string | null
   materiaId: string | null
   capituloId: string | null
@@ -33,6 +40,7 @@ interface SessaoActions {
 const ESTADO_INICIAL: SessaoState = {
   fila: [],
   posicao: 0,
+  tamanhoOriginal: 0,
   acertos: 0,
   erros: 0,
   xpGanho: 0,
@@ -41,6 +49,7 @@ const ESTADO_INICIAL: SessaoState = {
   maiorSequencia: 0,
   feedback: null,
   reinseridas: new Set(),
+  erradas: [],
   alunoId: null,
   materiaId: null,
   capituloId: null,
@@ -56,10 +65,10 @@ export const useSessaoStore = create<SessaoState & SessaoActions>((set, get) => 
   ...ESTADO_INICIAL,
 
   iniciar: ({ fila, alunoId, materiaId, capituloId }) =>
-    set({ ...ESTADO_INICIAL, fila, alunoId, materiaId, capituloId, reinseridas: new Set() }),
+    set({ ...ESTADO_INICIAL, fila, tamanhoOriginal: fila.length, alunoId, materiaId, capituloId, reinseridas: new Set() }),
 
   responder: async (acertou) => {
-    const { fila, posicao, reinseridas, alunoId } = get()
+    const { fila, posicao, tamanhoOriginal, reinseridas, erradas, alunoId } = get()
     const questao = fila[posicao]
     if (!questao || !alunoId) return
 
@@ -77,7 +86,8 @@ export const useSessaoStore = create<SessaoState & SessaoActions>((set, get) => 
 
     let novaFila = fila
     const novasReinseridas = new Set(reinseridas)
-    if (!acertou && !reinseridas.has(questao.id)) {
+    const tetoFila = Math.ceil(tamanhoOriginal * FATOR_MAXIMO_FILA)
+    if (!acertou && !reinseridas.has(questao.id) && fila.length < tetoFila) {
       const destino = Math.min(posicao + 3, fila.length)
       novaFila = [...fila.slice(0, destino), questao, ...fila.slice(destino)]
       novasReinseridas.add(questao.id)
@@ -88,6 +98,9 @@ export const useSessaoStore = create<SessaoState & SessaoActions>((set, get) => 
       return {
         fila: novaFila,
         reinseridas: novasReinseridas,
+        // "O que escapou" no fim de sessão: só o que continua errado no fim, não o que foi
+        // errado e depois corrigido na reinserção.
+        erradas: acertou ? erradas.filter((q) => q.id !== questao.id) : [...erradas.filter((q) => q.id !== questao.id), questao],
         acertos: estado.acertos + (acertou ? 1 : 0),
         erros: estado.erros + (acertou ? 0 : 1),
         xpGanho: estado.xpGanho + xpGanho,

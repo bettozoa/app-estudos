@@ -1,12 +1,16 @@
 import { useEffect, useMemo, useState } from 'react'
-import { BarraProgresso, BotaoPrincipal, Card, CartaoAlternativa, cores } from '../design'
+import { BarraProgresso, BotaoPrincipal, Card, CartaoAlternativa, cores, Mascote } from '../design'
 import { useSessaoStore } from '../estado/sessaoStore'
 import type { Questao } from '../domain/tipos'
 import { embaralhar } from '../app/utilAleatorio'
+import { alternarSom, estaSomLigado, tocarSomAcerto, tocarSomErro } from '../app/som'
 
 interface SessaoProps {
   onFinalizar: () => void
 }
+
+const FRASES_ACERTO = ['Muito bem! ✅', 'Isso aí! 🎯', 'Mandou bem! ⭐', 'Acertou! 👏']
+const FRASES_ERRO = ['Vamos tentar de novo! 🔁', 'Quase! Olha só... 🔍', 'Essa foi difícil, hein? 🤔']
 
 export function Sessao({ onFinalizar }: SessaoProps) {
   const fila = useSessaoStore((s) => s.fila)
@@ -15,20 +19,47 @@ export function Sessao({ onFinalizar }: SessaoProps) {
   const responder = useSessaoStore((s) => s.responder)
   const avancar = useSessaoStore((s) => s.avancar)
   const questao = fila[posicao]
+  const [somLigado, setSomLigado] = useState(estaSomLigado)
 
   useEffect(() => {
     if (fila.length > 0 && !questao) onFinalizar()
   }, [fila.length, questao, onFinalizar])
 
+  useEffect(() => {
+    if (!feedback) return
+    if (feedback.acertou) tocarSomAcerto()
+    else tocarSomErro()
+  }, [feedback])
+
   if (!questao) return null
 
+  const fraseFeedback = feedback
+    ? (feedback.acertou ? FRASES_ACERTO : FRASES_ERRO)[posicao % (feedback.acertou ? FRASES_ACERTO.length : FRASES_ERRO.length)]
+    : ''
+
   return (
-    <main className="mx-auto flex max-w-md flex-col gap-4 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
-      <BarraProgresso progresso={posicao / fila.length} />
+    <main className="tela-com-fade mx-auto flex max-w-md flex-col gap-4 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
+      <div className="flex items-center gap-2">
+        <div className="flex-1">
+          <BarraProgresso progresso={posicao / fila.length} />
+        </div>
+        <button
+          type="button"
+          aria-label={somLigado ? 'Desligar som' : 'Ligar som'}
+          onClick={() => setSomLigado(alternarSom())}
+          className="text-xl"
+        >
+          {somLigado ? '🔊' : '🔇'}
+        </button>
+      </div>
+
+      <div className="flex justify-center">
+        <Mascote estado={!feedback ? 'pensando' : feedback.acertou ? 'comemorando' : 'encorajando'} tamanho={72} />
+      </div>
 
       <Card className="flex flex-col gap-3">
         {questao.apoio && (
-          <p className="rounded-lg p-3 text-sm" style={{ backgroundColor: '#EAF7FA', color: cores.contorno }}>
+          <p className="rounded-lg p-3 text-base" style={{ backgroundColor: '#EAF7FA', color: cores.contorno }}>
             {questao.apoio}
           </p>
         )}
@@ -43,9 +74,9 @@ export function Sessao({ onFinalizar }: SessaoProps) {
         )}
 
         {feedback && (
-          <div className="flex flex-col gap-2 rounded-lg p-3" style={{ backgroundColor: feedback.acertou ? '#DFF3E7' : cores.erroFundo }}>
-            <p className="font-extrabold">{feedback.acertou ? 'Muito bem! ✅' : 'Vamos tentar de novo! 🔁'}</p>
-            <p className="text-sm">{questao.explicacao}</p>
+          <div className="animar-entrada flex flex-col gap-2 rounded-lg p-3" style={{ backgroundColor: feedback.acertou ? '#DFF3E7' : cores.erroFundo }}>
+            <p className="font-extrabold">{fraseFeedback}</p>
+            <p className="text-base">{questao.explicacao}</p>
             <p className="text-xs opacity-70">Fonte: {questao.fonte}</p>
           </div>
         )}
@@ -87,7 +118,13 @@ function TelaEscolha({ questao, feedback, onResponder }: EscolhaProps) {
           else if (indiceOriginal === escolha) estado = 'errada'
         }
         return (
-          <CartaoAlternativa key={indiceOriginal} estado={estado} disabled={!!feedback} onClick={() => escolher(indiceOriginal)}>
+          <CartaoAlternativa
+            key={indiceOriginal}
+            estado={estado}
+            foiEscolhida={indiceOriginal === escolha}
+            disabled={!!feedback}
+            onClick={() => escolher(indiceOriginal)}
+          >
             {questao.alternativas![indiceOriginal]}
           </CartaoAlternativa>
         )
@@ -110,29 +147,35 @@ function TelaAssoc({ questao, feedback, onResponder }: EscolhaProps) {
 
   return (
     <div className="flex flex-col gap-3">
-      {pares.map((par, i) => (
-        <div key={i} className="flex items-center gap-2">
-          <span className="flex-1 text-sm font-bold">{par[0]}</span>
-          <select
-            disabled={!!feedback}
-            value={selecionados[i]}
-            onChange={(e) => {
-              const copia = [...selecionados]
-              copia[i] = e.target.value
-              setSelecionados(copia)
-            }}
-            className="flex-1 rounded-lg p-2 text-sm"
-            style={{ border: `3px solid ${cores.contorno}` }}
-          >
-            <option value="">escolha...</option>
-            {opcoes.map((op) => (
-              <option key={op} value={op}>
-                {op}
-              </option>
-            ))}
-          </select>
-        </div>
-      ))}
+      {pares.map((par, i) => {
+        const usadaEmOutroCampo = (op: string) => selecionados.some((s, j) => j !== i && s === op)
+        const estadoLinha = feedback ? (selecionados[i] === par[1] ? 'certa' : 'errada') : 'neutro'
+        const corLinha = { neutro: cores.contorno, certa: cores.verde, errada: cores.laranja }[estadoLinha]
+        return (
+          <div key={i} className="flex flex-col gap-1">
+            <span className="text-base font-bold break-words">{par[0]}</span>
+            <select
+              disabled={!!feedback}
+              value={selecionados[i]}
+              onChange={(e) => {
+                const copia = [...selecionados]
+                copia[i] = e.target.value
+                setSelecionados(copia)
+              }}
+              className="w-full min-w-0 rounded-lg p-3 text-base"
+              style={{ border: `3px solid ${corLinha}`, backgroundColor: feedback ? (estadoLinha === 'certa' ? '#DFF3E7' : cores.erroFundo) : cores.superficie }}
+            >
+              <option value="">escolha...</option>
+              {opcoes.map((op) => (
+                <option key={op} value={op} disabled={usadaEmOutroCampo(op)}>
+                  {op}
+                  {usadaEmOutroCampo(op) ? ' (já usada)' : ''}
+                </option>
+              ))}
+            </select>
+          </div>
+        )
+      })}
 
       {!feedback && (
         <BotaoPrincipal disabled={selecionados.some((s) => !s)} onClick={conferir}>
@@ -140,13 +183,15 @@ function TelaAssoc({ questao, feedback, onResponder }: EscolhaProps) {
         </BotaoPrincipal>
       )}
 
-      {feedback && !feedback.acertou && (
+      {feedback && !feedback.acertou && pares.some((par, i) => selecionados[i] !== par[1]) && (
         <ul className="list-disc pl-5 text-sm">
-          {pares.map((par, i) => (
-            <li key={i}>
-              {par[0]} ➜ {par[1]}
-            </li>
-          ))}
+          {pares.map((par, i) =>
+            selecionados[i] !== par[1] ? (
+              <li key={i}>
+                {par[0]} ➜ {par[1]}
+              </li>
+            ) : null,
+          )}
         </ul>
       )}
     </div>

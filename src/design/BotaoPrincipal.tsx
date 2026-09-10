@@ -32,14 +32,14 @@ export function BotaoPrincipal({ variante = 'primaria', className = '', style, c
         soltar()
         props.onPointerLeave?.(e)
       }}
-      className={`min-h-[56px] w-full px-6 text-[19px] font-bold transition-transform duration-75 ${className}`}
+      className={`min-h-[56px] w-full px-6 text-[19px] font-bold transition-transform duration-75 disabled:cursor-not-allowed disabled:opacity-40 ${className}`}
       style={{
         color: corTexto,
         backgroundColor: corFundo,
         border: `3px solid ${cores.contorno}`,
         borderRadius: raios.botao,
-        boxShadow: pressionado ? 'none' : `0 4px 0 ${corBase}`,
-        transform: pressionado ? 'translateY(4px)' : 'translateY(0)',
+        boxShadow: props.disabled || pressionado ? 'none' : `0 4px 0 ${corBase}`,
+        transform: !props.disabled && pressionado ? 'translateY(4px)' : 'translateY(0)',
         ...style,
       }}
     >

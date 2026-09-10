@@ -35,12 +35,17 @@ export function SelecaoPerfil({ responsavelId, onSelecionar }: SelecaoPerfilProp
   }
 
   if (alunos === null) {
-    return <div className="p-6 text-center">Carregando...</div>
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center gap-2" style={{ backgroundColor: cores.fundo }}>
+        <img src="/mascote/webp/parado.webp" alt="" width={72} height={72} />
+        <p style={{ color: cores.contorno }}>Carregando...</p>
+      </main>
+    )
   }
 
   return (
     <main
-      className="mx-auto flex max-w-md flex-col gap-4 p-5"
+      className="tela-com-fade mx-auto flex max-w-md flex-col gap-4 p-5"
       style={{ backgroundColor: cores.fundo, minHeight: '100vh', color: cores.contorno }}
     >
       <div className="flex flex-col items-center gap-2 pt-2">

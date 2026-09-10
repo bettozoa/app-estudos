@@ -1,6 +1,6 @@
 import { calcularNivel } from '../domain/nivel'
 import { decidirAcaoDoDia } from '../domain/decidirAcaoDoDia'
-import { BarraProgresso, BotaoPrincipal, Card, cores, Mascote, Pilula } from '../design'
+import { BarraProgresso, BotaoPrincipal, Card, cores, IconeEscudo, IconeEstrela, IconeFogo, IconeMoeda, Mascote, Pilula } from '../design'
 import { useStats } from '../app/useStats'
 import type { ResumoMateria } from '../app/resumoMateria'
 
@@ -18,7 +18,7 @@ export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha }:
   const info = stats ? calcularNivel(stats.xp) : null
 
   return (
-    <main className="mx-auto flex max-w-md flex-col gap-5 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
+    <main className="tela-com-fade mx-auto flex max-w-md flex-col gap-5 p-5" style={{ backgroundColor: cores.fundo, minHeight: '100vh' }}>
       <div className="flex flex-col items-center gap-2 pt-4">
         <Mascote estado="acenando" />
         <p className="text-xl font-extrabold" style={{ color: cores.contorno }}>
@@ -27,9 +27,18 @@ export function Hoje({ alunoId, versao, resumos, hoje, onEstudar, onVerTrilha }:
 
         {stats && info && (
           <div className="flex flex-wrap justify-center gap-2">
-            <Pilula cor={cores.amarelo}>⭐ Nível {info.nivel}</Pilula>
-            <Pilula cor={cores.laranja}>🔥 {stats.ofensiva} dia(s)</Pilula>
-            <Pilula>🪙 {stats.moedas}</Pilula>
+            <Pilula cor={cores.amarelo} icone={<IconeEstrela tamanho={16} />}>
+              Nível {info.nivel}
+            </Pilula>
+            <Pilula cor={cores.laranja} icone={<IconeFogo tamanho={16} />}>
+              {stats.ofensiva} dia(s)
+            </Pilula>
+            {stats.escudos > 0 && (
+              <Pilula cor={cores.azulCeu} icone={<IconeEscudo tamanho={16} cor="#fff" />}>
+                {stats.escudos}
+              </Pilula>
+            )}
+            <Pilula icone={<IconeMoeda tamanho={16} />}>{stats.moedas}</Pilula>
           </div>
         )}
       </div>

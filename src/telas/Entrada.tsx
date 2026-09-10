@@ -27,7 +27,7 @@ export function Entrada() {
 
   return (
     <main
-      className="mx-auto flex max-w-md flex-col items-center gap-4 p-5"
+      className="tela-com-fade mx-auto flex max-w-md flex-col items-center gap-4 p-5"
       style={{ backgroundColor: cores.fundo, minHeight: '100vh', color: cores.contorno }}
     >
       <Mascote estado="acenando" />
